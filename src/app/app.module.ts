@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { Division2BuilderModule } from './division2-builder/division2-builder.module'; 
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule, Division2BuilderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
