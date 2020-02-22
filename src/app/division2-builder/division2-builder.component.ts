@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from './shared/data.service';
 
 @Component({
   selector: 'app-division2-builder',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./division2-builder.component.css']
 })
 export class Division2BuilderComponent implements OnInit {
-
-  constructor() { }
+  weaponSlot;
+  constructor(
+    private dataService: DataService
+  ) { }
 
   ngOnInit(): void {
+    this.weaponSlot = this.dataService.getData();
+    console.log(this.weaponSlot);
   }
 
 }

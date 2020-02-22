@@ -1,0 +1,16 @@
+{
+	"weaponSlot": [
+		{
+			"name": "primary",
+			"key": "primary"
+		},
+		{
+			"name": "primary",
+			"key": "secondary"
+		},
+		{
+			"name": "sidearm",
+			"key": "sidearm"
+		}
+	]
+}
