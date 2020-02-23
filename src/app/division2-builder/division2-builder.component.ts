@@ -13,8 +13,9 @@ export class Division2BuilderComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.weaponSlot = this.dataService.getData();
-    console.log(this.weaponSlot);
+    this.dataService.getData().subscribe(val => this.weaponSlot = val.weaponSlot);
+    // console.log(this.weaponSlot);
+
   }
 
 }

@@ -5,12 +5,65 @@
 			"key": "primary"
 		},
 		{
-			"name": "primary",
-			"key": "secondary"
+			"name": "secondary",
+			"key": "primary"
 		},
 		{
 			"name": "sidearm",
 			"key": "sidearm"
+		}
+	],
+	
+	"attribute": [
+		{
+			"name": "armor regeneration",
+			"category": "defence"
+		},
+		{
+			"name": "damage to elites",
+			"category": "offence"
+		},
+		{
+			"name": "skill cooldown reduction",
+			"category": "utility"
+		},
+		{
+			"name": "assault rifle critical hit range",
+			"category": "mod",
+			"subCategory": "offence"
+		},		
+		{
+			"name": "accuracy",
+			"category": "weapon"
+		}
+	],
+	
+	"weaponType": [
+		{
+			"name": "assult rifle",
+			"bonus": [
+				{
+					"attribute":{
+						"name": "headshot damage",
+						"category": "offence"
+					},
+					"value": 0.55
+				},
+				{
+					"attribute":{
+						"name": "critical hit range",
+						"category": "weapon"
+					},
+					"value": "10 - 45"
+				},
+				{
+					"attribute":{
+						"name": "damage to health",
+						"category": "offence"
+					},
+					"value": 0.29
+				}
+			]
 		}
 	]
 }
