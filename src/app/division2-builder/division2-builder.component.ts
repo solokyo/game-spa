@@ -9,13 +9,9 @@ import { DataService } from './shared/data.service';
 export class Division2BuilderComponent implements OnInit {
   weaponSlot;
   constructor(
-    private dataService: DataService
+    
   ) { }
 
-  ngOnInit(): void {
-    this.dataService.getData().subscribe(val => this.weaponSlot = val.weaponSlot);
-    // console.log(this.weaponSlot);
-
-  }
+  ngOnInit(): void {}
 
 }

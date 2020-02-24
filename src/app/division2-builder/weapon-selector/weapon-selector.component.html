@@ -1,1 +1,7 @@
 <p>weapon-selector works!</p>
+<div>
+    <div *ngFor="let slot of weaponSlot">
+        <div>{{ slot.name }}</div>
+        <div (click)="selectWeapon(slot.key)">Select a weapon</div>
+    </div>
+</div>
