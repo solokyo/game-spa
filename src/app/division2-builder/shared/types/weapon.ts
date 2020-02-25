@@ -3,15 +3,19 @@ import { WeaponTalent } from './weapon-talent';
 import { WeaponMod } from './weapon-mod';
 
 export interface Weapon {
-    weaponName: string;
-    weaponVariant: string;
-    weaponType: WeaponType;
+    name: string;
+    variant: string;
+    type: WeaponType;
+    category: 'primary'|'sidearm';
     damage: number;
     rpm: number;
     magSize: number;
     optimalRange: string;
     critHitRange: number;
     reloadSpeed: number;
-    talent: WeaponTalent;
-    mods: Array<{slot: string, type: Array<string>}>;
+    activeTalent?: WeaponTalent;
+    weaponHandlingTalent?: WeaponTalent;
+    passiveTalent?: WeaponTalent;
+    avaliableMods: Array<{slot:string, type: Array<string>}>;
+    mods?: Array<WeaponMod>;
 }

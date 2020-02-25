@@ -14,8 +14,8 @@ export class WeaponSelectorComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.dataService.getData().subscribe(val => this.weaponSlot = val.weaponSlot);
-    // console.log(this.weaponSlot);
+    this.weaponSlot = this.dataService.getWeaponSlot();
+    console.log(this.weaponSlot);
   }
 
   selectWeapon(key: string){
