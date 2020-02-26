@@ -13,51 +13,52 @@
 			"key": "sidearm"
 		}
 	],
-	
-	"attribute": [
-		{
-			"name": "armor regeneration",
-			"category": "defence"
-		},
-		{
-			"name": "damage to elites",
+	"Attribute": {
+		"criticalHitChance": {
+			"name": "Critical Hit Change",
 			"category": "offence"
 		},
-		{
-			"name": "skill cooldown reduction",
-			"category": "utility"
+		"criticalHitDamage": {
+			"name": "Critical Hit Damage",
+			"category": "offence"
 		},
-		{
-			"name": "assault rifle critical hit range",
-			"category": "mod",
-			"subCategory": "offence"
-		},		
-		{
-			"name": "accuracy",
+		"magSize": {
+			"name": "Mag Size",
+			"category": "weapon"
+		},
+		"reloadSpeed": {
+			"name": "Reload Speed",
+			"category": "weapon"
+		},
+		"rpm": {
+			"name": "RPM",
+			"category": "weapon"
+		},
+		"accuracy": {
+			"name": "Accuracy",
 			"category": "weapon"
 		}
-	],
-	
+	},
 	"weaponType": [
 		{
 			"name": "assult rifle",
 			"bonus": [
 				{
-					"attribute":{
+					"attribute": {
 						"name": "headshot damage",
 						"category": "offence"
 					},
 					"value": 0.55
 				},
 				{
-					"attribute":{
+					"attribute": {
 						"name": "critical hit range",
 						"category": "weapon"
 					},
 					"value": "10 - 45"
 				},
 				{
-					"attribute":{
+					"attribute": {
 						"name": "damage to health",
 						"category": "offence"
 					},
