@@ -1,0 +1,53 @@
+{
+	"gearModRolls":[
+		{
+			"name":"Critical",
+			"category":"Offensive",
+			"group":"Protocol",
+			"primaryAttribute":{
+				"attribute": "weaponDamage",
+				"min": 0.005,
+				"max": 0.04
+			},
+			"secondaryAttribute":[
+				{
+					"attribute": "criticalHitChance",
+					"min": 0.005,
+					"max": 0.055
+				},
+				{
+					"attribute": "criticalHitDamage",
+					"min": 0.005,
+					"max": 0.03
+				},
+				{
+					"attribute": "headshotDamage",
+					"min": 0.01,
+					"max": 0.065
+				},
+				{
+					"attribute": "criticalHitRange",
+					"min": 0.005,
+					"max": 0.055
+				}
+			]
+		},
+		{
+			"name":"Precision",
+			"category":"Offensive",
+			"group":"Protocol",
+			"primaryAttribute":{
+				"attribute": "weaponDamage",
+				"min": 0.005,
+				"max": 0.04
+			},
+			"secondaryAttribute":[
+				{
+					"attribute": "xpOnWeakpointKill",
+					"min": 0.02,
+					"max": 0.09
+				}
+			]
+		},
+	]
+}

@@ -1,0 +1,317 @@
+{
+	"Attribute": {
+
+		"magSize":{
+			"name":"Mag Size",
+			"category":"weapon"
+		},
+		"reloadSpeed":{
+			"name":"Reload Speed",
+			"category":"weapon"
+		},
+		"rpm":{
+			"name":"RPM",
+			"category":"weapon"
+		},
+		"accuracy":{
+			"name":"Accuracy",
+			"category":"weapon"
+		},
+		"weaponHandling":{
+			"name":"Weapon Handling",
+			"category":"weapon"
+		},
+		"criticalHitRange":{
+			"name":"Critical Hit Range",
+			"category":"weapon"
+		},
+		"optimalRange":{
+			"name":"Optimal Range",
+			"category":"weapon"
+		},
+		"allWeaponDdamageBonus":{
+			"name":"All Weapon Damage Bonus",
+			"category":"offence"
+		},
+		"headShotDamage":{
+			"name":"Head Shot Damage",
+			"category":"offence"
+		},
+		"criticalHitChance":{
+			"name":"Critical Hit Chance",
+			"category":"offence"
+		},
+		"criticalHitDamage":{
+			"name":"Critical Hit Damage",
+			"category":"offence"
+		},
+		"damageToArmor":{
+			"name":"Damage to Armor",
+			"category":"offence"
+		},
+		"damageToElites":{
+			"name":"Damage to Elites",
+			"category":"offence"
+		},
+		"damageToHealth":{
+			"name":"Damage to Health",
+			"category":"offence"
+		},
+		"damageToOutOfCover":{
+			"name":"Damage to Out Of Cover",
+			"category":"offence"
+		},
+		"assaultRifleDamageBonus":{
+			"name":"Assault Rifle Damage Bonus",
+			"category":"offence"
+		},
+		"assaultRifleCriticalHitChance":{
+			"name":"Assault Rifle Critical Hit Chance",
+			"category":"offence"
+		},
+		"assaultRifleCriticalHitDamage":{
+			"name":"Assault Rifle Critical Hit Damage",
+			"category":"offence"
+		},
+		"lmgDamageBonus":{
+			"name":"LMG Damage Bonus",
+			"category":"offence"
+		},
+		"lmgCriticalHitChance":{
+			"name":"LMG Critical Hit Chance",
+			"category":"offence"
+		},
+		"lmgCriticalHitDamage":{
+			"name":"LMG Critical Hit Damage",
+			"category":"offence"
+		},
+		"smgDamageBonus":{
+			"name":"SMG Damage Bonus",
+			"category":"offence"
+		},
+		"smgCriticalHitChance":{
+			"name":"SMG Critical Hit Chance",
+			"category":"offence"
+		},
+		"smgCriticalHitDamage":{
+			"name":"SMG Critical Hit Damage",
+			"category":"offence"
+		},
+		"marksmanRifleDamageBonus":{
+			"name":"Marksman Rifle Damage Bonus",
+			"category":"offence"
+		},
+		"marksmanRifleCriticalHitChance":{
+			"name":"Marksman Rifle Critical Hit Chance",
+			"category":"offence"
+		},
+		"marksmanRifleCriticalHitDamage":{
+			"name":"Marksman Rifle Critical Hit Damage",
+			"category":"offence"
+		},
+		"shotgunDamageBonus":{
+			"name":"Shotgun Damage Bonus",
+			"category":"offence"
+		},
+		"shotgunCriticalHitChance":{
+			"name":"Shotgun Critical Hit Chance",
+			"category":"offence"
+		},
+		"shotgunCriticalHitDamage":{
+			"name":"Shotgun Critical Hit Damage",
+			"category":"offence"
+		},
+		"pistolDamageBonus":{
+			"name":"Pistol Damage Bonus",
+			"category":"offence"
+		},
+		"pistolCriticalHitChance":{
+			"name":"Pistol Critical Hit Chance",
+			"category":"offence"
+		},
+		"pistolCriticalHitDamage":{
+			"name":"Pistol Critical Hit Damage",
+			"category":"offence"
+		},
+		"rifleDamageBonus":{
+			"name":"Rifle Damage Bonus",
+			"category":"offence"
+		},
+		"rifleCriticalHitChance":{
+			"name":"Rifle Critical Hit Chance",
+			"category":"offence"
+		},
+		"rifleCriticalHitDamage":{
+			"name":"Rifle Critical Hit Damage",
+			"category":"offence"
+		},
+		"explosivesDamage":{
+			"name":"Explosives Damage",
+			"category":"offence"
+		},
+		"armor":{
+			"name":"Armor",
+			"category":"defensive"
+		},
+		"armorPercentage":{
+			"name":"Armor Percentage",
+			"category":"defensive"
+		},
+		"armorOnKill":{
+			"name":"Armor On Kill",
+			"category":"defensive"
+		},
+		"armorRegeneration":{
+			"name":"Armor Regeneration",
+			"category":"defensive"
+		},
+		"health":{
+			"name":"Health",
+			"category":"defensive"
+		},		
+		"healthPercentage":{
+			"name":"Health Percentage",
+			"category":"defensive"
+		},
+		"healthOnKill":{
+			"name":"Health On Kill",
+			"category":"defensive"
+		},
+		"healthRegeneration":{
+			"name":"Health Regeneration",
+			"category":"defensive"
+		},
+		"protectionFromElites":{
+			"name":"Protection From Elites",
+			"category":"defensive"
+		},
+		"hazardProtection":{
+			"name":"Hazard Protection",
+			"category":"defensive"
+		},
+		"bleedResistance":{
+			"name":"Bleed Resistance",
+			"category":"defensive"
+		},
+		"blindDeafResistance":{
+			"name":"Blind/Deaf Resistance",
+			"category":"defensive"
+		},
+		"burnResistance":{
+			"name":"Burn Resistance",
+			"category":"defensive"
+		},
+		"disorientResistance":{
+			"name":"Disorient Resistance",
+			"category":"defensive"
+		},
+		"disruptResistance":{
+			"name":"Disrupt Resistance",
+			"category":"defensive"
+		},
+		"ensnareResistance":{
+			"name":"Ensnare Resistance",
+			"category":"defensive"
+		},
+		"explosiveResistance":{
+			"name":"Explosive Resistance",
+			"category":"defensive"
+		},
+		"poisonResistance":{
+			"name":"Poison Resistance",
+			"category":"defensive"
+		},
+		"shockResistance":{
+			"name":"Shock Resistance",
+			"category":"defensive"
+		},
+		"skillPower":{
+			"name":"Skill Power",
+			"category":"utility"
+		},
+		"skillHaste":{
+			"name":"Skill Haste",
+			"category":"utility"
+		},
+		"droneSkillPower":{
+			"name":"Drone Skill Power",
+			"category":"utility"
+		},
+		"chemLauncherSkillPower":{
+			"name":"Chem Launcher Skill Power",
+			"category":"utility"
+		},
+		"pluseSkillPower":{
+			"name":"Pluse Skill Power",
+			"category":"utility"
+		},
+		"hiveSkillPower":{
+			"name":"HiveSkill Power",
+			"category":"utility"
+		},
+		"fireflySkillPower":{
+			"name":"Firefly Skill Power",
+			"category":"utility"
+		},
+		"seekerMineSkillPower":{
+			"name":"Seeker Mine Skill Power",
+			"category":"utility"
+		},
+		"shieldSkillPower":{
+			"name":"Shield Skill Power",
+			"category":"utility"
+		},
+		"turretSkillPower":{
+			"name":"Turret Skill Power",
+			"category":"utility"
+		},
+		"extraIncomingHealing":{
+			"name":"Extra Incoming Healing",
+			"category":"defensive"
+		},
+		"extraOutgoingHealing":{
+			"name":"Extra Outgoing Healing",
+			"category":"utility"
+		},
+		"bleedDamage":{
+			"name":"Bleed Damage",
+			"category":"utility"
+		},
+		"burnDamage":{
+			"name":"Burn Damage",
+			"category":"utility"
+		},
+		"grenadeDamage":{
+			"name":"granadeDamage",
+			"category":"utility"
+		},
+		"bleedDuration":{
+			"name":"Bleed Duration",
+			"category":"defence"
+		},
+		"blindDeafDuration":{
+			"name":"Blind/Deaf Duration",
+			"category":"defence"
+		},
+		"burnDuration":{
+			"name":"Burn Duration",
+			"category":"defence"
+		},
+		"disorientDuration":{
+			"name":"Disorient Duration",
+			"category":"defence"
+		},
+		"disruptDuration":{
+			"name":"Disrupt Duration",
+			"category":"defence"
+		},
+		"ensnareDuration":{
+			"name":"Ensnare Duration",
+			"category":"defence"
+		},
+		"shockDuration":{
+			"name":"Shock Duration",
+			"category":"defence"
+		}
+	}
+}
