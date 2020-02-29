@@ -33,23 +33,6 @@
 			]
 		},
 		{
-			"name":"Precision",
-			"category":"Offensive",
-			"group":"Protocol",
-			"primaryAttribute":{
-				"attribute": "weaponDamage",
-				"min": 0.005,
-				"max": 0.04
-			},
-			"secondaryAttribute":[
-				{
-					"attribute": "xpOnWeakpointKill",
-					"min": 0.02,
-					"max": 0.09
-				}
-			]
-		},
-		{
 			"name":"Firearms",
 			"category":"Offensive",
 			"group":"System",
@@ -125,6 +108,283 @@
 					"attribute": "damageToHealth",
 					"min": 0.005,
 					"max": 0.03
+				}
+			]
+		},
+		{
+			"name":"Resistance",
+			"category":"Defensive",
+			"group":"Protocol",
+			"primaryAttribute":{
+				"attribute": "health",
+				"min": 1924,
+				"max": 15386
+			},
+			"secondaryAttribute":[
+				{
+					"attribute": "bleedResistance",
+					"min": 0.006,
+					"max": 0.042
+				},
+				{
+					"attribute": "blindDeafResistance",
+					"min": 0.006,
+					"max": 0.042
+				},
+				{
+					"attribute": "burnResistance",
+					"min": 0.006,
+					"max": 0.042
+				},
+				{
+					"attribute": "disorientResistance",
+					"min": 0.006,
+					"max": 0.042
+				},
+				{
+					"attribute": "disruptResistance",
+					"min": 0.006,
+					"max": 0.042
+				},
+				{
+					"attribute": "ensnareResistance",
+					"min": 0.006,
+					"max": 0.042
+				},
+				{
+					"attribute": "poisonResistance",
+					"min": 0.006,
+					"max": 0.042
+				},
+				{
+					"attribute": "shockResistance",
+					"min": 0.006,
+					"max": 0.042
+				}
+			]
+		},
+		{
+			"name":"Stamina",
+			"category":"Defensive",
+			"group":"Protocol",
+			"primaryAttribute":{
+				"attribute": "health",
+				"min": 1924,
+				"max": 15386
+			},
+			"secondaryAttribute":[
+				{
+					"attribute": "armorOnKill",
+					"min": 962,
+					"max": 7693
+				},
+				{
+					"attribute": "armorRegeneration",
+					"min": 321,
+					"max": 2564
+				},
+				{
+					"attribute": "healthRegeneration",
+					"min": 0.04,
+					"max": 0.28
+				},
+				{
+					"attribute": "incomingHealing",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "skillProxyHealth",
+					"min": 0.01,
+					"max": 0.085
+				},
+			]
+		},
+		{
+			"name":"Mending",
+			"category":"Defensive",
+			"group":"System",
+			"primaryAttribute":{
+				"attribute": "armor",
+				"min": 1479,
+				"max": 11835
+			},
+			"secondaryAttribute":[
+				{
+					"attribute": "armorOnKill",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "armorRegeneration",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "armorPercentage",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "protectionFromElites",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "explosiveResistance",
+					"min": 0.025,
+					"max": 0.205
+				},
+				{
+					"attribute": "health",
+					"min": 1924,
+					"max": 15386
+				},
+				{
+					"attribute": "healthPercentage",
+					"min": 0.01,
+					"max": 0.07
+				},
+			]
+		},
+		{
+			"name":"Intensity",
+			"category":"Utility",
+			"group":"Protocol",
+			"primaryAttribute":{
+				"attribute": "skillPower",
+				"min": 35,
+				"max": 277
+			},
+			"secondaryAttribute":[
+				{
+					"attribute": "bleedDuration",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "blindDeafDuration",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "burnDuration",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "disorientDuration",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "disruptDuration",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "ensnareDuration",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "shockDuration",
+					"min": 0.01,
+					"max": 0.085
+				}
+			]
+		},
+		{
+			"name":"Electronics",
+			"category":"Utility",
+			"group":"System",
+			"primaryAttribute":{
+				"attribute": "skillPower",
+				"min": 35,
+				"max": 277
+			},
+			"secondaryAttribute":[
+				{
+					"attribute": "droneSkillPower",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "chemLauncherSkillPower",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "pluseSkillPower",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "hiveSkillPower",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "fireflySkillPower",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "seekerMineSkillPower",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "shieldSkillPower",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "turretSkillPower",
+					"min": 0.01,
+					"max": 0.085
+				}
+			]
+		},
+		{
+			"name":"Electronics",
+			"category":"Utility",
+			"group":"System",
+			"primaryAttribute":{
+				"attribute": "skillPower",
+				"min": 35,
+				"max": 277
+			},
+			"secondaryAttribute":[
+				{
+					"attribute": "explosiveDamage",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "grenadeDamage",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "bleedDamage",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "burnDamage",
+					"min": 0.01,
+					"max": 0.085
+				},
+				{
+					"attribute": "reloadSpeedBonus",
+					"min": 0.015,
+					"max": 0.105
+				},
+				{
+					"attribute": "outgoingHealing",
+					"min": 0.01,
+					"max": 0.085
 				}
 			]
 		},
