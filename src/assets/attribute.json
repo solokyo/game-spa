@@ -9,6 +9,10 @@
 			"name":"Reload Speed",
 			"category":"weapon"
 		},
+		"reloadSpeedBonus":{
+			"name":"Reload Speed Bonus",
+			"category":"weapon"
+		},
 		"rpm":{
 			"name":"RPM",
 			"category":"weapon"
@@ -25,11 +29,19 @@
 			"name":"Critical Hit Range",
 			"category":"weapon"
 		},
+		"criticalHitRangeBonus":{
+			"name":"Critical Hit Range Bonus",
+			"category":"weapon"
+		},
 		"optimalRange":{
 			"name":"Optimal Range",
 			"category":"weapon"
 		},
-		"allWeaponDdamageBonus":{
+		"optimalRangeBonus":{
+			"name":"Optimal Range Bonus",
+			"category":"weapon"
+		},
+		"allWeaponDamageBonus":{
 			"name":"All Weapon Damage Bonus",
 			"category":"offence"
 		},
@@ -287,31 +299,35 @@
 		},
 		"bleedDuration":{
 			"name":"Bleed Duration",
-			"category":"defence"
+			"category":"defensive"
 		},
 		"blindDeafDuration":{
 			"name":"Blind/Deaf Duration",
-			"category":"defence"
+			"category":"defensive"
 		},
 		"burnDuration":{
 			"name":"Burn Duration",
-			"category":"defence"
+			"category":"defensive"
 		},
 		"disorientDuration":{
 			"name":"Disorient Duration",
-			"category":"defence"
+			"category":"defensive"
 		},
 		"disruptDuration":{
 			"name":"Disrupt Duration",
-			"category":"defence"
+			"category":"defensive"
 		},
 		"ensnareDuration":{
 			"name":"Ensnare Duration",
-			"category":"defence"
+			"category":"defensive"
 		},
 		"shockDuration":{
 			"name":"Shock Duration",
-			"category":"defence"
+			"category":"defensive"
+		},
+		"skillProxyHealth":{
+			"name":"Skill Proxy Health",
+			"category":"defensive"
 		}
 	}
 }

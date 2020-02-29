@@ -90,7 +90,7 @@
 			},
 			"secondaryAttribute":[
 				{
-					"attribute": "optimalRange",
+					"attribute": "optimalRangeBonus",
 					"min": 0.015,
 					"max": 0.105
 				},

@@ -1,0 +1,60 @@
+{
+	"weaponMods": [
+		{
+			"slot": "optic",
+			"name": "Streamlined Iron Sights",
+			"availableOn": ["regular"],
+			"bonus": [
+				{
+					"attribute": "reloadSpeedBonus",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "optic",
+			"name": "Weighted Iron Sights",
+			"availableOn": ["regular"],
+			"bonus": [
+				{
+					"attribute": "stability",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "optic",
+			"name": "Open Iron Sights",
+			"availableOn": ["regular"],
+			"bonus": [
+				{
+					"attribute": "accuracy",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "optic",
+			"name": "552 Holo Sight",
+			"availableOn": ["long","regular"],
+			"bonus": [
+				{
+					"attribute": "accuracy",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "optic",
+			"name": "Acog Scope (4x)",
+			"availableOn": ["long","regular"],
+			"bonus": [
+				{
+					"attribute": "optimalRange",
+					"value": 0.1
+				}
+			]
+		},
+		
+	]
+}
