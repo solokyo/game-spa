@@ -51,10 +51,635 @@
 			"bonus": [
 				{
 					"attribute": "optimalRange",
+					"value": 0.2
+				}
+			]
+		},
+		{
+			"slot": "optic",
+			"name": "C79 Scope (3.4x)",
+			"availableOn": ["long","regular"],
+			"bonus": [
+				{
+					"attribute": "damageToElites",
+					"value": 0.05
+				}
+			]
+		},
+		{
+			"slot": "optic",
+			"name": "CQBSS Scope (8x)",
+			"availableOn": ["long","regular"],
+			"bonus": [
+				{
+					"attribute": "headshotDamage",
+					"value": 0.3
+				}
+			]
+		},
+		{
+			"slot": "optic",
+			"name": "Digital Scope",
+			"availableOn": ["long","regular"],
+			"bonus": [
+				{
+					"attribute": "headshotDamage",
+					"value": 0.45
+				},
+				{
+					"attribute": "criticalHitDamage",
+					"value": -0.05
+				}
+			]
+		},
+		{
+			"slot": "optic",
+			"name": "EXPS3 Holo Sight",
+			"availableOn": ["long","regular","short"],
+			"bonus": [
+				{
+					"attribute": "damageToElites",
+					"value": 0.08
+				}
+			]
+		},
+		{
+			"slot": "optic",
+			"name": "Low Reflex Sight",
+			"availableOn": ["short","coupling"],
+			"bonus": [
+				{
+					"attribute": "damageToElites",
+					"value": 0.1
+				},
+				{
+					"attribute": "optimalRange",
+					"value": -0.1
+				}
+			]
+		},
+		{
+			"slot": "optic",
+			"name": "PRO Red Dot Sight",
+			"availableOn": ["long","regular","short"],
+			"bonus": [
+				{
+					"attribute": "stability",
+					"value": 0.05
+				}
+			]
+		},
+		{
+			"slot": "optic",
+			"name": "Reflex Sight",
+			"availableOn": ["long","regular","short"],
+			"bonus": [
+				{
+					"attribute": "criticalHitRangeBonus",
+					"value": 0.2
+				}
+			]
+		},
+		{
+			"slot": "optic",
+			"name": "Rugged Mini Reflex Sight",
+			"availableOn": ["long","regular","short","coupling"],
+			"bonus": [
+				{
+					"attribute": "criticalHitChanceBonus",
+					"value": 0.05
+				}
+			]
+		},
+		{
+			"slot": "optic",
+			"name": "Russian Red Dot Sight",
+			"availableOn": ["long","regular","short"],
+			"bonus": [
+				{
+					"attribute": "criticalHitDamage",
+					"value": 0.05
+				}
+			]
+		},
+		{
+			"slot": "optic",
+			"name": "Small RDS Scope",
+			"availableOn": ["long","regular","short"],
+			"bonus": [
+				{
+					"attribute": "stability",
+					"value": 0.15
+				},
+				{
+					"attribute": "accuracy",
+					"value": -0.05
+				}
+			]
+		},
+		{
+			"slot": "optic",
+			"name": "T2 Micro Red Dot Sight",
+			"availableOn": ["long","regular","short"],
+			"bonus": [
+				{
+					"attribute": "accuracy",
 					"value": 0.1
 				}
 			]
 		},
-		
+		{
+			"slot": "optic",
+			"name": "VX1 Scope (12x)",
+			"availableOn": ["long","regular"],
+			"bonus": [
+				{
+					"attribute": "headshotDamage",
+					"value": 0.35
+				},
+				{
+					"attribute": "reloadSpeedBonus",
+					"value": -0.1
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Oversized 9mm Mag",
+			"availableOn": ["9mm"],
+			"bonus": [
+				{
+					"attribute": "magSize",
+					"value": 10
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Extended 9mm Mag",
+			"availableOn": ["9mm"],
+			"bonus": [
+				{
+					"attribute": "magSize",
+					"value": 20
+				},
+				{
+					"attribute": "reloadSpeedBonus",
+					"value": -0.1
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Segmented 9mm Mag",
+			"availableOn": ["9mm"],
+			"bonus": [
+				{
+					"attribute": "reloadSpeedBonus",
+					"value": 0.2
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Heavy Spring 9mm Mag",
+			"availableOn": ["9mm"],
+			"bonus": [
+				{
+					"attribute": "criticalHitDamage",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Special Forces 9mm Mag",
+			"availableOn": ["9mm"],
+			"bonus": [
+				{
+					"attribute": "damageToElites",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Extended .45 ACP Mag",
+			"availableOn": [".45"],
+			"bonus": [
+				{
+					"attribute": "magSize",
+					"value": 10
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Oversized .45 ACP Mag",
+			"availableOn": [".45"],
+			"bonus": [
+				{
+					"attribute": "magSize",
+					"value": 20
+				},
+				{
+					"attribute": "reloadSpeedBonus",
+					"value": -0.1
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Short Spring .45 ACP Mag",
+			"availableOn": [".45"],
+			"bonus": [
+				{
+					"attribute": "reloadSpeedBonus",
+					"value": 0.2
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Force Feed .45 ACP Mag",
+			"availableOn": [".45"],
+			"bonus": [
+				{
+					"attribute": "damageToElites",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Precision Feeding .45 ACP Mag",
+			"availableOn": [".45"],
+			"bonus": [
+				{
+					"attribute": "stability",
+					"value": 0.2
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Light Extended 5.56 Mag",
+			"availableOn": ["5.56"],
+			"bonus": [
+				{
+					"attribute": "magSize",
+					"value": 10
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Sturdy Extended 5.56 Mag",
+			"availableOn": ["5.56"],
+			"bonus": [
+				{
+					"attribute": "magSize",
+					"value": 20
+				},
+				{
+					"attribute": "reloadSpeedBonus",
+					"value": -0.1
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Tactical 5.56 Mag",
+			"availableOn": ["5.56"],
+			"bonus": [
+				{
+					"attribute": "criticalHitDamage",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Infantry 5.56 Mag",
+			"availableOn": ["5.56"],
+			"bonus": [
+				{
+					"attribute": "optimalRange",
+					"value": 0.3
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Balanced Spring 5.56 Mag",
+			"availableOn": ["5.56"],
+			"bonus": [
+				{
+					"attribute": "stability",
+					"value": 0.2
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Light Extended 7.62 Mag",
+			"availableOn": ["7.62"],
+			"bonus": [
+				{
+					"attribute": "magSize",
+					"value": 10
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Sturdy Extended 7.62 Mag",
+			"availableOn": ["7.62"],
+			"bonus": [
+				{
+					"attribute": "magSize",
+					"value": 20
+				},
+				{
+					"attribute": "reloadSpeedBonus",
+					"value": -0.1
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Weighted 7.62 Mag",
+			"availableOn": ["7.62"],
+			"bonus": [
+				{
+					"attribute": "stability",
+					"value": 0.2
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Precision 7.62 Mag",
+			"availableOn": ["7.62"],
+			"bonus": [
+				{
+					"attribute": "headshotDamage",
+					"value": 0.07
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Thin 7.62 Mag",
+			"availableOn": ["7.62"],
+			"bonus": [
+				{
+					"attribute": "reloadSpeedBonus",
+					"value": 0.2
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Large Pouch",
+			"availableOn": ["belt-fed"],
+			"bonus": [
+				{
+					"attribute": "magSize",
+					"value": 35
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Gunner Spec Large Pouch",
+			"availableOn": ["belt-fed"],
+			"bonus": [
+				{
+					"attribute": "magSize",
+					"value": 50
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Tactical Small Pouch",
+			"availableOn": ["belt-fed"],
+			"bonus": [
+				{
+					"attribute": "reloadSpeedBonus",
+					"value": 0.2
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Nimble Link Belt",
+			"availableOn": ["belt-fed"],
+			"bonus": [
+				{
+					"attribute": "rpm",
+					"value": 0.05
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Non-disruptive Link",
+			"availableOn": ["belt-fed"],
+			"bonus": [
+				{
+					"attribute": "criticalHitDamage",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Calibrated Link",
+			"availableOn": ["belt-fed"],
+			"bonus": [
+				{
+					"attribute": "stability",
+					"value": 0.15
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Compensated Integrated Spring",
+			"availableOn": ["integrated"],
+			"bonus": [
+				{
+					"attribute": "reloadSpeedBonus",
+					"value": 0.2
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Overbalanced Integrated Spring",
+			"availableOn": ["integrated"],
+			"bonus": [
+				{
+					"attribute": "stability",
+					"value": 0.2
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Stiff Integrated Spring",
+			"availableOn": ["integrated"],
+			"bonus": [
+				{
+					"attribute": "allWeaponDamageBonus",
+					"value": 0.05
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Underbalanced Integrated Spring",
+			"availableOn": ["integrated"],
+			"bonus": [
+				{
+					"attribute": "damageToElites",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Tightly Packed Marksman Mag",
+			"availableOn": ["mmr"],
+			"bonus": [
+				{
+					"attribute": "magSize",
+					"value": 5
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Lightweight Marksman Mag",
+			"availableOn": ["mmr"],
+			"bonus": [
+				{
+					"attribute": "reloadSpeedBonus",
+					"value": 0.2
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Compact Marksman Mag",
+			"availableOn": ["mmr"],
+			"bonus": [
+				{
+					"attribute": "damageToElites",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Sturdy Marksman Mag",
+			"availableOn": ["mmr"],
+			"bonus": [
+				{
+					"attribute": "stability",
+					"value": 0.2
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Mended Marksman Mag",
+			"availableOn": ["mmr"],
+			"bonus": [
+				{
+					"attribute": "optimalRange",
+					"value": 0.2
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Extended Pistol Mag",
+			"availableOn": ["sidearm"],
+			"bonus": [
+				{
+					"attribute": "magSize",
+					"value": 11
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Field Pistol Mag",
+			"availableOn": ["sidearm"],
+			"bonus": [
+				{
+					"attribute": "optimalRange",
+					"value": 0.3
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Police Pistol Mag",
+			"availableOn": ["sidearm"],
+			"bonus": [
+				{
+					"attribute": "reloadSpeedBonus",
+					"value": 0.2
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Speed Loading Revolver",
+			"availableOn": ["revolver"],
+			"bonus": [
+				{
+					"attribute": "reloadSpeedBonus",
+					"value": 0.2
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Hard Tubular Spring",
+			"availableOn": ["tubular"],
+			"bonus": [
+				{
+					"attribute": "rpm",
+					"value": 0.05
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Counter-Clockwise Tubular Spring",
+			"availableOn": ["tubular"],
+			"bonus": [
+				{
+					"attribute": "damageToElites",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "magazine",
+			"name": "Flexible Tubular Spring",
+			"availableOn": ["tubular"],
+			"bonus": [
+				{
+					"attribute": "reloadSpeedBonus",
+					"value": 0.2
+				}
+			]
+		}
 	]
 }
