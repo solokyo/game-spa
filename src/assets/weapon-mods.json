@@ -146,7 +146,7 @@
 			"availableOn": ["long","regular","short","coupling"],
 			"bonus": [
 				{
-					"attribute": "criticalHitChanceBonus",
+					"attribute": "criticalHitChance",
 					"value": 0.05
 				}
 			]
@@ -678,6 +678,366 @@
 				{
 					"attribute": "reloadSpeedBonus",
 					"value": 0.2
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Compensator 9mm",
+			"availableOn": ["9mm"],
+			"bonus": [
+				{
+					"attribute": "stability",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Flash Hider 9mm",
+			"availableOn": ["9mm"],
+			"bonus": [
+				{
+					"attribute": "criticalHitDamage",
+					"value": 0.05
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Loud Vent Brake 9mm",
+			"availableOn": ["9mm"],
+			"bonus": [
+				{
+					"attribute": "optimalRange",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Muzzle Brake 9mm",
+			"availableOn": ["9mm"],
+			"bonus": [
+				{
+					"attribute": "damageToElites",
+					"value": 0.05
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Osprey 9mm Suppressor",
+			"availableOn": ["9mm"],
+			"bonus": [
+				{
+					"attribute": "criticalHitChance",
+					"value": 0.05
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Small Suppressor 9mm",
+			"availableOn": ["9mm"],
+			"bonus": [
+				{
+					"attribute": "accuracy",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Compensator .45",
+			"availableOn": [".45"],
+			"bonus": [
+				{
+					"attribute": "stability",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Flash Hider .45",
+			"availableOn": [".45"],
+			"bonus": [
+				{
+					"attribute": "criticalHitDamage",
+					"value": 0.05
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Loud Vent Brake .45",
+			"availableOn": [".45"],
+			"bonus": [
+				{
+					"attribute": "optimalRange",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Muzzle Brake .45",
+			"availableOn": [".45"],
+			"bonus": [
+				{
+					"attribute": "damageToElites",
+					"value": 0.05
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Osprey .45 Suppressor",
+			"availableOn": [".45"],
+			"bonus": [
+				{
+					"attribute": "criticalHitChance",
+					"value": 0.05
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Small Suppressor .45",
+			"availableOn": [".45"],
+			"bonus": [
+				{
+					"attribute": "accuracy",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Compensator 5.56",
+			"availableOn": ["5.56"],
+			"bonus": [
+				{
+					"attribute": "stability",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Flash Hider 5.56",
+			"availableOn": ["5.56"],
+			"bonus": [
+				{
+					"attribute": "criticalHitDamage",
+					"value": 0.05
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Large Suppressor 5.56",
+			"availableOn": ["5.56"],
+			"bonus": [
+				{
+					"attribute": "accuracy",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Loud Vent Brake 5.56",
+			"availableOn": ["5.56"],
+			"bonus": [
+				{
+					"attribute": "optimalRange",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Muzzle Brake 5.56",
+			"availableOn": ["5.56"],
+			"bonus": [
+				{
+					"attribute": "damageToElites",
+					"value": 0.05
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Omega 5.56 Rifle Suppressor",
+			"availableOn": ["5.56"],
+			"bonus": [
+				{
+					"attribute": "stability",
+					"value": 0.2
+				},
+				{
+					"attribute": "optimalRange",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Compensator 7.62",
+			"availableOn": ["7.62"],
+			"bonus": [
+				{
+					"attribute": "stability",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Flash Hider 7.62",
+			"availableOn": ["7.62"],
+			"bonus": [
+				{
+					"attribute": "criticalHitDamage",
+					"value": 0.05
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Large Suppressor 7.62",
+			"availableOn": ["7.62"],
+			"bonus": [
+				{
+					"attribute": "accuracy",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Loud Vent Brake 7.62",
+			"availableOn": ["7.62"],
+			"bonus": [
+				{
+					"attribute": "optimalRange",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Muzzle Brake 7.62",
+			"availableOn": ["7.62"],
+			"bonus": [
+				{
+					"attribute": "damageToElites",
+					"value": 0.05
+				}
+			]
+		},
+		{
+			"slot": "muzzle",
+			"name": "Omega 7.62 Rifle Suppressor",
+			"availableOn": ["7.62"],
+			"bonus": [
+				{
+					"attribute": "stability",
+					"value": 0.2
+				},
+				{
+					"attribute": "optimalRange",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "underbarrel",
+			"name": "Angled Grip",
+			"availableOn": ["long","short"],
+			"bonus": [
+				{
+					"attribute": "stability",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "underbarrel",
+			"name": "Compact Coupled Laser Pointer",
+			"availableOn": ["coupling"],
+			"bonus": [
+				{
+					"attribute": "headshotDamage",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "underbarrel",
+			"name": "Compact Coupled Small Laser Pointer",
+			"availableOn": ["coupling"],
+			"bonus": [
+				{
+					"attribute": "criticalHitChance",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "underbarrel",
+			"name": "Handstop",
+			"availableOn": ["long"],
+			"bonus": [
+				{
+					"attribute": "reloadSpeedBonus",
+					"value": 0.1
+				}
+			]
+		},
+		{
+			"slot": "underbarrel",
+			"name": "Laser Pointer",
+			"availableOn": ["long","short"],
+			"bonus": [
+				{
+					"attribute": "criticalHitChance",
+					"value": 0.05
+				}
+			]
+		},
+		{
+			"slot": "underbarrel",
+			"name": "Short Grip",
+			"availableOn": ["long"],
+			"bonus": [
+				{
+					"attribute": "criticalHitDamage",
+					"value": 0.05
+				}
+			]
+		},
+		{
+			"slot": "underbarrel",
+			"name": "Small Laser Pointer",
+			"availableOn": ["long","short"],
+			"bonus": [
+				{
+					"attribute": "criticalHitChance",
+					"value": 0.07
+				}
+			]
+		},
+		{
+			"slot": "underbarrel",
+			"name": "Vertical Grip",
+			"availableOn": ["long","short"],
+			"bonus": [
+				{
+					"attribute": "accuracy",
+					"value": 0.1
 				}
 			]
 		}
