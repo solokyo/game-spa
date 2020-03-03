@@ -1,0 +1,115 @@
+{
+	"weaponTypes" : [
+		{
+			"name": "assaultRifle",
+			"bonus": [
+				{
+					"attribute": "criticalHitRange"
+					"value": "10 - 45"
+				},
+				{
+					"attribute": "headshotDamage",
+					"value": 0.55
+				},
+				{
+					"attribute": "damageToHealth",
+					"value": 0.29
+				}
+			]
+		},
+		{
+			"name": "lmg",
+			"bonus": [
+				{
+					"attribute": "criticalHitRange"
+					"value": "10 - 50"
+				},
+				{
+					"attribute": "headshotDamage",
+					"value": 0.65
+				},
+				{
+					"attribute": "damageToOutOfCover",
+					"value": 0.15
+				}
+			]
+		},
+		{
+			"name": "marksmanRifle",
+			"bonus": [
+				{
+					"attribute": "criticalHitRange"
+					"value": "10 - 70"
+				},
+				{
+					"attribute": "headshotDamage",
+					"value": 1.38
+				}
+			]
+		},
+		{
+			"name": "pistol",
+			"bonus": [
+				{
+					"attribute": "criticalHitRange"
+					"value": "0 - 30"
+				},
+				{
+					"attribute": "headshotDamage",
+					"value": 1
+				}
+			]
+		},
+		{
+			"name": "rifle",
+			"bonus": [
+				{
+					"attribute": "criticalHitRange"
+					"value": "10 - 60"
+				},
+				{
+					"attribute": "headshotDamage",
+					"value": 0.6
+				},
+				{
+					"attribute": "criticalHitDamage",
+					"value": 0.15
+				}
+			]
+		},
+		{
+			"name": "shotgun",
+			"bonus": [
+				{
+					"attribute": "criticalHitRange"
+					"value": "0 - 20"
+				},
+				{
+					"attribute": "headshotDamage",
+					"value": 0.45
+				},
+				{
+					"attribute": "damageToArmor",
+					"value": 0.09
+				}
+			]
+		},
+		{
+			"name": "smg",
+			"bonus": [
+				{
+					"attribute": "criticalHitRange"
+					"value": "0 - 20"
+				},
+				{
+					"attribute": "headshotDamage",
+					"value": 0.5
+				},
+				{
+					"attribute": "criticalHitChance",
+					"value": 0.145
+				}
+			]
+		},
+	]
+}
