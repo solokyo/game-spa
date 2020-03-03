@@ -4,7 +4,7 @@
 			"name": "assaultRifle",
 			"bonus": [
 				{
-					"attribute": "criticalHitRange"
+					"attribute": "criticalHitRange",
 					"value": "10 - 45"
 				},
 				{
@@ -21,7 +21,7 @@
 			"name": "lmg",
 			"bonus": [
 				{
-					"attribute": "criticalHitRange"
+					"attribute": "criticalHitRange",
 					"value": "10 - 50"
 				},
 				{
@@ -38,7 +38,7 @@
 			"name": "marksmanRifle",
 			"bonus": [
 				{
-					"attribute": "criticalHitRange"
+					"attribute": "criticalHitRange",
 					"value": "10 - 70"
 				},
 				{
@@ -51,7 +51,7 @@
 			"name": "pistol",
 			"bonus": [
 				{
-					"attribute": "criticalHitRange"
+					"attribute": "criticalHitRange",
 					"value": "0 - 30"
 				},
 				{
@@ -64,7 +64,7 @@
 			"name": "rifle",
 			"bonus": [
 				{
-					"attribute": "criticalHitRange"
+					"attribute": "criticalHitRange",
 					"value": "10 - 60"
 				},
 				{
@@ -81,7 +81,7 @@
 			"name": "shotgun",
 			"bonus": [
 				{
-					"attribute": "criticalHitRange"
+					"attribute": "criticalHitRange",
 					"value": "0 - 20"
 				},
 				{
@@ -98,7 +98,7 @@
 			"name": "smg",
 			"bonus": [
 				{
-					"attribute": "criticalHitRange"
+					"attribute": "criticalHitRange",
 					"value": "0 - 20"
 				},
 				{
@@ -110,6 +110,6 @@
 					"value": 0.145
 				}
 			]
-		},
+		}
 	]
 }
