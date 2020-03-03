@@ -5,7 +5,7 @@
 			"bonus": [
 				{
 					"attribute": "criticalHitRange"
-					"value": : "10 - 45"
+					"value": "10 - 45"
 				},
 				{
 					"attribute": "headshotDamage",
@@ -22,7 +22,7 @@
 			"bonus": [
 				{
 					"attribute": "criticalHitRange"
-					"value": : "10 - 50"
+					"value": "10 - 50"
 				},
 				{
 					"attribute": "headshotDamage",
@@ -39,7 +39,7 @@
 			"bonus": [
 				{
 					"attribute": "criticalHitRange"
-					"value": : "10 - 70"
+					"value": "10 - 70"
 				},
 				{
 					"attribute": "headshotDamage",
@@ -52,7 +52,7 @@
 			"bonus": [
 				{
 					"attribute": "criticalHitRange"
-					"value": : "0 - 30"
+					"value": "0 - 30"
 				},
 				{
 					"attribute": "headshotDamage",
@@ -65,7 +65,7 @@
 			"bonus": [
 				{
 					"attribute": "criticalHitRange"
-					"value": : "10 - 60"
+					"value": "10 - 60"
 				},
 				{
 					"attribute": "headshotDamage",
@@ -82,7 +82,7 @@
 			"bonus": [
 				{
 					"attribute": "criticalHitRange"
-					"value": : "0 - 20"
+					"value": "0 - 20"
 				},
 				{
 					"attribute": "headshotDamage",
@@ -99,7 +99,7 @@
 			"bonus": [
 				{
 					"attribute": "criticalHitRange"
-					"value": : "0 - 20"
+					"value": "0 - 20"
 				},
 				{
 					"attribute": "headshotDamage",
