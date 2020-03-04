@@ -1,5 +1,9 @@
 {
 	"Attribute": {
+		"damage": {
+			"name": "Damage",
+			"category": "weapon"
+		},
 		"magSize":{
 			"name":"Mag Size",
 			"category":"weapon"
