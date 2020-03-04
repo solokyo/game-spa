@@ -1,0 +1,90 @@
+// https://stackoverflow.com/questions/24444738/sum-similar-keys-in-an-array-of-objects
+// https://stackoverflow.com/questions/8085004/iterate-through-nested-javascript-objects
+
+let weapon = {
+  "name": "fuck",
+  "bonus": [
+    {
+      "attribute": "damage",
+      "value": 10
+    },
+    {
+      "attribute": "headshotDamge",
+      "value": 0.5
+    }
+  ]
+}
+
+let gears = [
+  {
+    "name": "vest",
+    "bonus": [
+      {
+        "attribute": "damage",
+        "value": 10
+      },
+      {
+        "attribute": "headshotDamge",
+        "value": 0.5
+      }
+    ]
+  },
+  {
+    "name": "glove",
+    "bonus": [
+      {
+        "attribute": "damage",
+        "value": 10
+      },
+      {
+        "attribute": "headshotDamge",
+        "value": 0.5
+      }
+    ],
+    "mods": [
+      {
+        "name": "offensive mod",
+        "bonus": [
+          {
+            "attribute": "damage",
+            "value": 10
+          },
+          {
+            "attribute": "headshotDamge",
+            "value": 0.5
+          }
+        ]
+      }
+    ]
+  }
+]
+
+let stats = {
+  "damage": 0,
+  "headshotDamge": 1
+}
+const iterate = (obj) => {
+    Object.keys(obj).forEach(key => {
+
+      //console.log(`key: ${key}, value: ${obj[key]}`)
+
+      if (typeof obj[key] === 'object') {
+        if (key === 'bonus') {
+          sumStats(obj[key]);
+        }
+        iterate(obj[key]);
+      }
+    })
+}
+
+function sumStats(obj) { 
+  obj.forEach(function(d) {
+    if (stats.hasOwnProperty(d.attribute)) {
+      stats[d.attribute] = stats[d.attribute] + d.value;
+    } else {
+      stats[d.attribute] = d.value;
+    }
+  });
+  console.log(stats);
+}
+iterate(gears);
