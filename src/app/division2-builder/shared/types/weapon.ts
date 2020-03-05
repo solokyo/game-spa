@@ -7,15 +7,8 @@ export interface Weapon {
     variant: string;
     type: WeaponType;
     category: 'primary'|'sidearm';
-    damage: number;
-    rpm: number;
-    magSize: number;
-    optimalRange: string;
-    critHitRange: number;
-    reloadSpeed: number;
-    activeTalent?: WeaponTalent;
-    weaponHandlingTalent?: WeaponTalent;
-    passiveTalent?: WeaponTalent;
-    avaliableMods: Array<{slot:string, type: Array<string>}>;
+    bonus: Array<{ attribute: string, value: number }>;
+    talent?: WeaponTalent;
+    avaliableMods: Array<{slot:string, type: string}>;
     mods?: Array<WeaponMod>;
 }
