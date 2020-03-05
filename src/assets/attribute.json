@@ -80,84 +80,28 @@
 			"name":"Assault Rifle Damage Bonus",
 			"category":"offence"
 		},
-		"assaultRifleCriticalHitChance":{
-			"name":"Assault Rifle Critical Hit Chance",
-			"category":"offence"
-		},
-		"assaultRifleCriticalHitDamage":{
-			"name":"Assault Rifle Critical Hit Damage",
-			"category":"offence"
-		},
 		"lmgDamageBonus":{
 			"name":"LMG Damage Bonus",
-			"category":"offence"
-		},
-		"lmgCriticalHitChance":{
-			"name":"LMG Critical Hit Chance",
-			"category":"offence"
-		},
-		"lmgCriticalHitDamage":{
-			"name":"LMG Critical Hit Damage",
 			"category":"offence"
 		},
 		"smgDamageBonus":{
 			"name":"SMG Damage Bonus",
 			"category":"offence"
 		},
-		"smgCriticalHitChance":{
-			"name":"SMG Critical Hit Chance",
-			"category":"offence"
-		},
-		"smgCriticalHitDamage":{
-			"name":"SMG Critical Hit Damage",
-			"category":"offence"
-		},
 		"marksmanRifleDamageBonus":{
 			"name":"Marksman Rifle Damage Bonus",
-			"category":"offence"
-		},
-		"marksmanRifleCriticalHitChance":{
-			"name":"Marksman Rifle Critical Hit Chance",
-			"category":"offence"
-		},
-		"marksmanRifleCriticalHitDamage":{
-			"name":"Marksman Rifle Critical Hit Damage",
 			"category":"offence"
 		},
 		"shotgunDamageBonus":{
 			"name":"Shotgun Damage Bonus",
 			"category":"offence"
 		},
-		"shotgunCriticalHitChance":{
-			"name":"Shotgun Critical Hit Chance",
-			"category":"offence"
-		},
-		"shotgunCriticalHitDamage":{
-			"name":"Shotgun Critical Hit Damage",
-			"category":"offence"
-		},
 		"pistolDamageBonus":{
 			"name":"Pistol Damage Bonus",
 			"category":"offence"
 		},
-		"pistolCriticalHitChance":{
-			"name":"Pistol Critical Hit Chance",
-			"category":"offence"
-		},
-		"pistolCriticalHitDamage":{
-			"name":"Pistol Critical Hit Damage",
-			"category":"offence"
-		},
 		"rifleDamageBonus":{
 			"name":"Rifle Damage Bonus",
-			"category":"offence"
-		},
-		"rifleCriticalHitChance":{
-			"name":"Rifle Critical Hit Chance",
-			"category":"offence"
-		},
-		"rifleCriticalHitDamage":{
-			"name":"Rifle Critical Hit Damage",
 			"category":"offence"
 		},
 		"explosivesDamage":{
@@ -240,44 +184,12 @@
 			"name":"Shock Resistance",
 			"category":"defensive"
 		},
-		"skillPower":{
+		"skillTier ":{
 			"name":"Skill Power",
 			"category":"utility"
 		},
 		"skillHaste":{
 			"name":"Skill Haste",
-			"category":"utility"
-		},
-		"droneSkillPower":{
-			"name":"Drone Skill Power",
-			"category":"utility"
-		},
-		"chemLauncherSkillPower":{
-			"name":"Chem Launcher Skill Power",
-			"category":"utility"
-		},
-		"pluseSkillPower":{
-			"name":"Pluse Skill Power",
-			"category":"utility"
-		},
-		"hiveSkillPower":{
-			"name":"HiveSkill Power",
-			"category":"utility"
-		},
-		"fireflySkillPower":{
-			"name":"Firefly Skill Power",
-			"category":"utility"
-		},
-		"seekerMineSkillPower":{
-			"name":"Seeker Mine Skill Power",
-			"category":"utility"
-		},
-		"shieldSkillPower":{
-			"name":"Shield Skill Power",
-			"category":"utility"
-		},
-		"turretSkillPower":{
-			"name":"Turret Skill Power",
 			"category":"utility"
 		},
 		"extraIncomingHealing":{
