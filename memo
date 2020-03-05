@@ -93,27 +93,28 @@ iterate(gears);
 
 weapon attributes
     core: {
-        rifle: criticalHitDamage
-        ar: damageToHealth
-        mmr: headshotDamage
-        shotgun: damageToArmor
-        smg: criticalHitChance
-        lmg: damageToTargetOutOfCover
+        [weaponType]Damage 10 15
+        rifle: criticalHitDamage 12 17
+        ar: damageToHealth  8 11
+        mmr: headshotDamage 81 111 
+        shotgun: damageToArmor 8 12 
+        smg: criticalHitChance 11.5 21 
+        lmg: damageToTargetOutOfCover 8 12
         pistol: none
-    } 
-        criticalHitDamage
-        damageToArmor
-        criticalHitChance
-        damageToHealth
-        damageToTargetOutOfCover
-        headshotDamage
-        reloadSpeed
-        Stability
-        accuracy
-        optimalRange
-        magSize
-        rateOfFire
-        swapSpeed
+    }
+        damageToArmor 6 6
+        criticalHitChance 6.5 9.5
+        damageToHealth 6.5 9.5
+        damageToTargetOutOfCover 7 10
+        headshotDamage 7 10 
+        criticalHitDamage 7 10 
+        reloadSpeed 7.9 12
+        Stability 7.9 12
+        accuracy 7.9 12
+        optimalRange 14.5 24
+        magSize 8 12.5
+        rateOfFire 4.3 5
+        swapSpeed 10 15
 
 gearMods:
     utility: 

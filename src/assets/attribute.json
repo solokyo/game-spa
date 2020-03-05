@@ -231,6 +231,10 @@
 		"statusEffects":{
 			"name":"Status Effects",
 			"category":"utility"
+		},
+		"swapSpeed":{
+			"name":"Swap Speed",
+			"category":"weapon"
 		}
 	}
 }
