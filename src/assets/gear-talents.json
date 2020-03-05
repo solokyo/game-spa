@@ -189,6 +189,36 @@
             "name": "Obliterate",
             "description": "Critical hits increase total weapon damage by 1% for 5s. Stacks up to 15 times.",
             "availableOn": ["chest"]
+        },
+        {
+            "name": "Trauma",
+            "description": "Applies blind to an enemy hit in the head. Cooldown: 30s. Applies bleed to an enemy hit in the chest. Cooldown: 30s.",
+            "availableOn": ["chest"]
+        },
+        {
+            "name": "Reassigned",
+            "description": "Killing an enemy adds 1 round of a random special ammo into your sidearm. Cooldown: 20s",
+            "availableOn": ["chest"]
+        },
+        {
+            "name": "Mad Bomber",
+            "description": "Grenade radius is increased by 50%. Grenades that kill an enemy are refunded. Grenades can now be 'cooked' by holding the fire button, making them explode earlier",
+            "availableOn": ["chest"]
+        },
+        {
+            "name": "Tamper Proff",
+            "description": "Enemies that walk within 3m of your hive, turret or remote pluse are shocked. Arm time: 5s, Cooldown per skill: 10s",
+            "availableOn": ["chest"]
+        },
+        {
+            "name": "Efficient",
+            "description": "Using an armor kit has a 50% chance to not consume the armor kit. Specialization armor kit bonuses are increased by 100%",
+            "availableOn": ["chest"]
+        },
+        {
+            "name": "Enternch",
+            "description": "If your below 30% armor, headshots from cover repair 20% of your armor. Cooldown: 3s",
+            "availableOn": ["chest"]
         }
     ]
 }

@@ -28,14 +28,6 @@
 			"name":"Weapon Handling",
 			"category":"weapon"
 		},
-		"criticalHitRange":{
-			"name":"Critical Hit Range",
-			"category":"weapon"
-		},
-		"criticalHitRangeBonus":{
-			"name":"Critical Hit Range Bonus",
-			"category":"weapon"
-		},
 		"optimalRange":{
 			"name":"Optimal Range",
 			"category":"weapon"
@@ -62,10 +54,6 @@
 		},
 		"damageToArmor":{
 			"name":"Damage to Armor",
-			"category":"offence"
-		},
-		"damageToElites":{
-			"name":"Damage to Elites",
 			"category":"offence"
 		},
 		"damageToHealth":{
@@ -208,10 +196,6 @@
 			"name":"Burn Damage",
 			"category":"utility"
 		},
-		"grenadeDamage":{
-			"name":"granadeDamage",
-			"category":"utility"
-		},
 		"bleedDuration":{
 			"name":"Bleed Duration",
 			"category":"defensive"
@@ -243,6 +227,10 @@
 		"skillProxyHealth":{
 			"name":"Skill Proxy Health",
 			"category":"defensive"
+		},
+		"statusEffects":{
+			"name":"Status Effects",
+			"category":"utility"
 		}
 	}
 }

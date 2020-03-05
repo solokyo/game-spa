@@ -88,3 +88,65 @@ function sumStats(obj) {
   console.log(stats);
 }
 iterate(gears);
+
+------------------------------------------------------------------
+
+weapon attributes
+    core: {
+        rifle: criticalHitDamage
+        ar: damageToHealth
+        mmr: headshotDamage
+        shotgun: damageToArmor
+        smg: criticalHitChance
+        lmg: damageToTargetOutOfCover
+        pistol: none
+    } 
+        criticalHitDamage
+        damageToArmor
+        criticalHitChance
+        damageToHealth
+        damageToTargetOutOfCover
+        headshotDamage
+        reloadSpeed
+        Stability
+        accuracy
+        optimalRange
+        magSize
+        rateOfFire
+        swapSpeed
+
+gearMods:
+    utility: 
+        repair-skills(outgoingHealing)
+        skillDuration
+        skillHeast
+    defensive:
+        armorOnkill
+        healthOnkill
+        protectionFromElits
+        incomingRepairs
+        [effets]resistances
+    offensive:
+        criticalHitChance
+        criticalHitDamage
+        headshotDamage
+
+gears 
+    coreAttr:             30    40
+        utility: skillTier 1    1
+        denensive: armor  42458 170000
+        offensive: allWeaponDamage 9.9% 15%
+    availableAttr:
+        Weapon Handling 9% 14%
+        Critical Hit Chance 5.1% 6%
+        Critical Hit Damage 7.9% 12%
+        Headshot Damage 6.9% 10%
+        Skill Damage  6.9% 10%
+        Skill Repair 12.1% 20%
+        Skill Haste 7.9% 12%
+        Status Effects 6.6% 10%
+        Armor Regeneration 1223 4925
+        Hazard Protection 6.6% 10%
+        Health 4965 18935
+        Explosive Resistance 6.6% 10%
+
