@@ -1,240 +1,240 @@
 {
-	"Attribute": {
-		"damage": {
-			"name": "Damage",
-			"category": "weapon"
-		},
-		"magSize":{
-			"name":"Mag Size",
-			"category":"weapon"
-		},
-		"reloadSpeed":{
-			"name":"Reload Speed",
-			"category":"weapon"
-		},
-		"reloadSpeedBonus":{
-			"name":"Reload Speed Bonus",
-			"category":"weapon"
-		},
-		"rpm":{
-			"name":"RPM",
-			"category":"weapon"
-		},
-		"accuracy":{
-			"name":"Accuracy",
-			"category":"weapon"
-		},
-		"weaponHandling":{
-			"name":"Weapon Handling",
-			"category":"weapon"
-		},
-		"optimalRange":{
-			"name":"Optimal Range",
-			"category":"weapon"
-		},
-		"optimalRangeBonus":{
-			"name":"Optimal Range Bonus",
-			"category":"weapon"
-		},
-		"allWeaponDamageBonus":{
-			"name":"All Weapon Damage Bonus",
-			"category":"offence"
-		},
-		"headShotDamage":{
-			"name":"Head Shot Damage",
-			"category":"offence"
-		},
-		"criticalHitChance":{
-			"name":"Critical Hit Chance",
-			"category":"offence"
-		},
-		"criticalHitDamage":{
-			"name":"Critical Hit Damage",
-			"category":"offence"
-		},
-		"damageToArmor":{
-			"name":"Damage to Armor",
-			"category":"offence"
-		},
-		"damageToHealth":{
-			"name":"Damage to Health",
-			"category":"offence"
-		},
-		"damageToOutOfCover":{
-			"name":"Damage to Out Of Cover",
-			"category":"offence"
-		},
-		"assaultRifleDamageBonus":{
-			"name":"Assault Rifle Damage Bonus",
-			"category":"offence"
-		},
-		"lmgDamageBonus":{
-			"name":"LMG Damage Bonus",
-			"category":"offence"
-		},
-		"smgDamageBonus":{
-			"name":"SMG Damage Bonus",
-			"category":"offence"
-		},
-		"marksmanRifleDamageBonus":{
-			"name":"Marksman Rifle Damage Bonus",
-			"category":"offence"
-		},
-		"shotgunDamageBonus":{
-			"name":"Shotgun Damage Bonus",
-			"category":"offence"
-		},
-		"pistolDamageBonus":{
-			"name":"Pistol Damage Bonus",
-			"category":"offence"
-		},
-		"rifleDamageBonus":{
-			"name":"Rifle Damage Bonus",
-			"category":"offence"
-		},
-		"explosivesDamage":{
-			"name":"Explosives Damage",
-			"category":"offence"
-		},
-		"armor":{
-			"name":"Armor",
-			"category":"defensive"
-		},
-		"armorPercentage":{
-			"name":"Armor Percentage",
-			"category":"defensive"
-		},
-		"armorOnKill":{
-			"name":"Armor On Kill",
-			"category":"defensive"
-		},
-		"armorRegeneration":{
-			"name":"Armor Regeneration",
-			"category":"defensive"
-		},
-		"health":{
-			"name":"Health",
-			"category":"defensive"
-		},		
-		"healthPercentage":{
-			"name":"Health Percentage",
-			"category":"defensive"
-		},
-		"healthOnKill":{
-			"name":"Health On Kill",
-			"category":"defensive"
-		},
-		"healthRegeneration":{
-			"name":"Health Regeneration",
-			"category":"defensive"
-		},
-		"protectionFromElites":{
-			"name":"Protection From Elites",
-			"category":"defensive"
-		},
-		"hazardProtection":{
-			"name":"Hazard Protection",
-			"category":"defensive"
-		},
-		"bleedResistance":{
-			"name":"Bleed Resistance",
-			"category":"defensive"
-		},
-		"blindDeafResistance":{
-			"name":"Blind/Deaf Resistance",
-			"category":"defensive"
-		},
-		"burnResistance":{
-			"name":"Burn Resistance",
-			"category":"defensive"
-		},
-		"disorientResistance":{
-			"name":"Disorient Resistance",
-			"category":"defensive"
-		},
-		"disruptResistance":{
-			"name":"Disrupt Resistance",
-			"category":"defensive"
-		},
-		"ensnareResistance":{
-			"name":"Ensnare Resistance",
-			"category":"defensive"
-		},
-		"explosiveResistance":{
-			"name":"Explosive Resistance",
-			"category":"defensive"
-		},
-		"poisonResistance":{
-			"name":"Poison Resistance",
-			"category":"defensive"
-		},
-		"shockResistance":{
-			"name":"Shock Resistance",
-			"category":"defensive"
-		},
-		"skillTier ":{
-			"name":"Skill Power",
-			"category":"utility"
-		},
-		"skillHaste":{
-			"name":"Skill Haste",
-			"category":"utility"
-		},
-		"extraIncomingHealing":{
-			"name":"Extra Incoming Healing",
-			"category":"defensive"
-		},
-		"extraOutgoingHealing":{
-			"name":"Extra Outgoing Healing",
-			"category":"utility"
-		},
-		"bleedDamage":{
-			"name":"Bleed Damage",
-			"category":"utility"
-		},
-		"burnDamage":{
-			"name":"Burn Damage",
-			"category":"utility"
-		},
-		"bleedDuration":{
-			"name":"Bleed Duration",
-			"category":"defensive"
-		},
-		"blindDeafDuration":{
-			"name":"Blind/Deaf Duration",
-			"category":"defensive"
-		},
-		"burnDuration":{
-			"name":"Burn Duration",
-			"category":"defensive"
-		},
-		"disorientDuration":{
-			"name":"Disorient Duration",
-			"category":"defensive"
-		},
-		"disruptDuration":{
-			"name":"Disrupt Duration",
-			"category":"defensive"
-		},
-		"ensnareDuration":{
-			"name":"Ensnare Duration",
-			"category":"defensive"
-		},
-		"shockDuration":{
-			"name":"Shock Duration",
-			"category":"defensive"
-		},
-		"skillProxyHealth":{
-			"name":"Skill Proxy Health",
-			"category":"defensive"
-		},
-		"statusEffects":{
-			"name":"Status Effects",
-			"category":"utility"
-		},
-		"swapSpeed":{
-			"name":"Swap Speed",
-			"category":"weapon"
-		}
-	}
+    "Attribute": {
+        "damage": {
+            "name": "Damage",
+            "category": "weapon"
+        },
+        "magSize": {
+            "name": "Mag Size",
+            "category": "weapon"
+        },
+        "magSizeBonus": {
+            "name": "Mag Size Bonus",
+            "category": "weapon"
+        },
+        "reloadSpeed": {
+            "name": "Reload Speed",
+            "category": "weapon"
+        },
+        "reloadSpeedBonus": {
+            "name": "Reload Speed Bonus",
+            "category": "weapon"
+        },
+        "rpm": {
+            "name": "RPM",
+            "category": "weapon"
+        },
+        "rpmBonus": {
+            "name": "Fire Rate Bonus",
+            "category": "weapon"
+        },
+        "accuracy": {
+            "name": "Accuracy",
+            "category": "weapon"
+        },
+        "accuracyBonus": {
+            "name": "Accuracy Bonus",
+            "category": "weapon"
+        },
+        "weaponHandling": {
+            "name": "Weapon Handling",
+            "category": "weapon"
+        },
+        "optimalRange": {
+            "name": "Optimal Range",
+            "category": "weapon"
+        },
+        "optimalRangeBonus": {
+            "name": "Optimal Range Bonus",
+            "category": "weapon"
+        },
+        "allWeaponDamageBonus": {
+            "name": "All Weapon Damage Bonus",
+            "category": "offence"
+        },
+        "headShotDamage": {
+            "name": "Head Shot Damage",
+            "category": "offence"
+        },
+        "criticalHitChance": {
+            "name": "Critical Hit Chance",
+            "category": "offence"
+        },
+        "criticalHitDamage": {
+            "name": "Critical Hit Damage",
+            "category": "offence"
+        },
+        "damageToArmor": {
+            "name": "Damage to Armor",
+            "category": "offence"
+        },
+        "damageToHealth": {
+            "name": "Damage to Health",
+            "category": "offence"
+        },
+        "damageToOutOfCover": {
+            "name": "Damage to Out Of Cover",
+            "category": "offence"
+        },
+        "assaultRifleDamageBonus": {
+            "name": "Assault Rifle Damage Bonus",
+            "category": "offence"
+        },
+        "lmgDamageBonus": {
+            "name": "LMG Damage Bonus",
+            "category": "offence"
+        },
+        "smgDamageBonus": {
+            "name": "SMG Damage Bonus",
+            "category": "offence"
+        },
+        "marksmanRifleDamageBonus": {
+            "name": "Marksman Rifle Damage Bonus",
+            "category": "offence"
+        },
+        "shotgunDamageBonus": {
+            "name": "Shotgun Damage Bonus",
+            "category": "offence"
+        },
+        "pistolDamageBonus": {
+            "name": "Pistol Damage Bonus",
+            "category": "offence"
+        },
+        "rifleDamageBonus": {
+            "name": "Rifle Damage Bonus",
+            "category": "offence"
+        },
+        "armor": {
+            "name": "Armor",
+            "category": "defence"
+        },
+        "armorOnKill": {
+            "name": "Armor On Kill",
+            "category": "defence"
+        },
+        "armorRegeneration": {
+            "name": "Armor Regeneration",
+            "category": "defence"
+        },
+        "health": {
+            "name": "Health",
+            "category": "defence"
+        },
+        "healthOnKill": {
+            "name": "Health On Kill",
+            "category": "defence"
+        },
+        "healthRegeneration": {
+            "name": "Health Regeneration",
+            "category": "defence"
+        },
+        "protectionFromElites": {
+            "name": "Protection From Elites",
+            "category": "defence"
+        },
+        "hazardProtection": {
+            "name": "Hazard Protection",
+            "category": "defence"
+        },
+        "bleedResistance": {
+            "name": "Bleed Resistance",
+            "category": "defence"
+        },
+        "blindDeafResistance": {
+            "name": "Blind/Deaf Resistance",
+            "category": "defence"
+        },
+        "burnResistance": {
+            "name": "Burn Resistance",
+            "category": "defence"
+        },
+        "disorientResistance": {
+            "name": "Disorient Resistance",
+            "category": "defence"
+        },
+        "disruptResistance": {
+            "name": "Disrupt Resistance",
+            "category": "defence"
+        },
+        "ensnareResistance": {
+            "name": "Ensnare Resistance",
+            "category": "defence"
+        },
+        "explosiveResistance": {
+            "name": "Explosive Resistance",
+            "category": "defence"
+        },
+        "poisonResistance": {
+            "name": "Poison Resistance",
+            "category": "defence"
+        },
+        "shockResistance": {
+            "name": "Shock Resistance",
+            "category": "defence"
+        },
+        "skillTier": {
+            "name": "Skill Power",
+            "category": "utility"
+        },
+        "skillHaste": {
+            "name": "Skill Haste",
+            "category": "utility"
+        },
+        "incomingHealing": {
+            "name": "Incoming Rapairs",
+            "category": "defence"
+        },
+        "outgoingHealing": {
+            "name": "Rapair Skills",
+            "category": "utility"
+        },
+        "bleedDamage": {
+            "name": "Bleed Damage",
+            "category": "utility"
+        },
+        "burnDamage": {
+            "name": "Burn Damage",
+            "category": "utility"
+        },
+        "bleedDuration": {
+            "name": "Bleed Duration",
+            "category": "defence"
+        },
+        "blindDeafDuration": {
+            "name": "Blind/Deaf Duration",
+            "category": "defence"
+        },
+        "burnDuration": {
+            "name": "Burn Duration",
+            "category": "defence"
+        },
+        "disorientDuration": {
+            "name": "Disorient Duration",
+            "category": "defence"
+        },
+        "disruptDuration": {
+            "name": "Disrupt Duration",
+            "category": "defence"
+        },
+        "ensnareDuration": {
+            "name": "Ensnare Duration",
+            "category": "defence"
+        },
+        "shockDuration": {
+            "name": "Shock Duration",
+            "category": "defence"
+        },
+        "skillProxyHealth": {
+            "name": "Skill Proxy Health",
+            "category": "defence"
+        },
+        "statusEffects": {
+            "name": "Status Effects",
+            "category": "utility"
+        },
+        "swapSpeed": {
+            "name": "Swap Speed",
+            "category": "weapon"
+        }
+    }
 }
