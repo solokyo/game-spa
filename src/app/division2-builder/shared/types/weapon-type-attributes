@@ -1,0 +1,56 @@
+{
+    "weaponTypeAttributes": [
+        {
+            "attribute": "damageToArmor",
+            "value": 0.06
+        },
+        {
+            "attribute": "criticalHitChance",
+            "value": 0.095
+        },
+        {
+            "attribute": "criticalHitDamage",
+            "value": 0.1
+        },
+        {
+            "attribute": "damageToHealth",
+            "value": 0.095
+        },
+        {
+            "attribute": "damageToTargetOutOfCover",
+            "value": 0.1
+        },
+        {
+            "attribute": "headshotDamage",
+            "value": 0.1
+        },
+        {
+            "attribute": "reloadSpeedBonus",
+            "value": 0.12
+        },
+        {
+            "attribute": "stability",
+            "value": 0.12
+        },
+        {
+            "attribute": "accuracy",
+            "value": 0.12
+        },
+        {
+            "attribute": "optimalRange",
+            "value": 0.24
+        },
+        {
+            "attribute": "magSize",
+            "value": 0.125
+        },
+        {
+            "attribute": "rpmBonus",
+            "value": 0.05
+        },
+        {
+            "attribute": "swapSpeed",
+            "value": 0.15
+        }
+    ]
+}
