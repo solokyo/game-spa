@@ -28,6 +28,14 @@
             "name": "Fire Rate Bonus",
             "category": "weapon"
         },
+        "stability": {
+            "name": "Stability",
+            "category": "weapon"
+        },
+        "stabilityBonus": {
+            "name": "Stability Bonus",
+            "category": "weapon"
+        },
         "accuracy": {
             "name": "Accuracy",
             "category": "weapon"
