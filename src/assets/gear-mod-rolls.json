@@ -4,7 +4,17 @@
             "category": "offence",
             "availableRolls": [
                 {
-                    "attribute": "",
+                    "attribute": "criticalHitChance",
+                    "min": 0,
+                    "max": 0
+                },
+                {
+                    "attribute": "criticalHitDamage",
+                    "min": 0,
+                    "max": 0
+                },
+                {
+                    "attribute": "headshotDamage",
                     "min": 0,
                     "max": 0
                 }
@@ -14,7 +24,67 @@
             "category": "defence",
             "availableRolls": [
                 {
-                    "attribute": "",
+                    "attribute": "armorOnkill",
+                    "min": 0,
+                    "max": 0
+                },
+                {
+                    "attribute": "healthOnkill",
+                    "min": 0,
+                    "max": 0
+                },
+                {
+                    "attribute": "protectionFromElits",
+                    "min": 0,
+                    "max": 0
+                },
+                {
+                    "attribute": "incomingHealing",
+                    "min": 0,
+                    "max": 0
+                },
+                {
+                    "attribute": "bleedResistance",
+                    "min": 0,
+                    "max": 0
+                },
+                {
+                    "attribute": "blindDeafResistance",
+                    "min": 0,
+                    "max": 0
+                },
+                {
+                    "attribute": "burnResistance",
+                    "min": 0,
+                    "max": 0
+                },
+                {
+                    "attribute": "disorientResistance",
+                    "min": 0,
+                    "max": 0
+                },
+                {
+                    "attribute": "disruptResistance",
+                    "min": 0,
+                    "max": 0
+                },
+                {
+                    "attribute": "ensnareResistance",
+                    "min": 0,
+                    "max": 0
+                },
+                {
+                    "attribute": "explosiveResistance",
+                    "min": 0,
+                    "max": 0
+                },
+                {
+                    "attribute": "poisonResistance",
+                    "min": 0,
+                    "max": 0
+                },
+                {
+                    "attribute": "shockResistance",
                     "min": 0,
                     "max": 0
                 }
@@ -24,7 +94,17 @@
             "category": "utility",
             "availableRolls": [
                 {
-                    "attribute": "",
+                    "attribute": "outgoingHealing",
+                    "min": 0,
+                    "max": 0
+                },
+                {
+                    "attribute": "skillDuration",
+                    "min": 0,
+                    "max": 0
+                },
+                {
+                    "attribute": "skillHeast",
                     "min": 0,
                     "max": 0
                 }
