@@ -1,375 +1,174 @@
 {
     "weaponTalents": [
         {
-            "category": "active",
-            "name": "Boomerang",
-            "requirementsDescription": "5 or More Offense",
-            "bonusDescription": "Critical Hits have a 50% chance to return the bullet to the magazine, if a bullet is returned to the magazine the next shot has 50% increased Damage. Buff lasts for 10 seconds. Buff is lost on reload, weapon swap, or exiting combat.",
+            "name": "Breadbasket",
+            "description": "Landing body shots adds a stack of bonus +35% headshot damage to the next headshot for 10s. Max stack is 3.",
+            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+        },
+        {
+            "name": "Killer",
+            "description": "Killing an enemy with a critical hit grants 40% critical hit damage for 10s.",
+            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+        },
+        {
+            "name": "Preservation",
+            "description": "Killing a Target repairs 10% armor over 5 seconds. Headshot kills improve the repair by an additional 10%.",
+            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+        },
+        {
+            "name": "Optimist",
+            "description": "Weapon damage is increased by 3% for every 10% ammo missing from the magazine.",
+            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+        },
+        {
+            "name": "Strained",
+            "description": "Gain 10% critical hit damage for every 0.5s you are firing. Stacks up to 5 times.",
+            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+        },
+        {
+            "name": "Close & Personal",
+            "description": "Kills a target within 7m grants +30% weapon damage for 10s.",
+            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+        },
+        {
+            "name": "Fast Hands",
+            "description": "Critical hits add a stack of 4% reload speed bonus. Max stack is 40%.",
+            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+        },
+        {
+            "name": "Sadist",
+            "description": "Deal +20% weapon damage to bleeding enemies. After 4 kills, applies bleed to the next enemy you hit.",
+            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+        },
+        {
+            "name": "Vindictive",
+            "description": "Killing an enemy with a status effect applied grants you and all allies in 15m 15% critical hit chance and 15% critical hit damage for 20s.",
+            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+        },
+        {
+            "name": "Ranger",
+            "description": "Amplifies weapon damage by 2% for every 5m you are away from your target.",
+            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+        },
+        {
+            "name": "Steady Handed",
+            "description": "Hits grant a stack of +1% Accuracy and Stability. At 100 stacks, consumes them to refill the magazine.",
+            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+        },
+        {
+            "name": "Spike",
+            "description": "Headshots grant +20% skill damage for 8s.",
+            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+        },
+        {
+            "name": "Eyeless",
+            "description": "Deal +20% weapon damage to blinded enemies. After 4 kills, applies blind to the next enemy you hit.",
+            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+        },
+        {
+            "name": "Ignited",
+            "description": "Deal +20% weapon damage to burning enemies. After 4 kills, applies burning to the next enemy you hit.",
+            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+        },
+        {
+            "name": "Perpetuation",
+            "description": "Headshots grant +50% status effect damage and duration to the next status effect you apply. Cooldown: 20s.",
+            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+        },
+        {
+            "name": "Reformation",
+            "description": "Headshots grant +30 skill repair for 8s.",
+            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+        },
+        {
+            "name": "Rifleman",
+            "description": "Landing headshots adds a stack of bonus +10 weapon damage for 5s. Max stack is 5. Additional headshots refresh the duration.",
             "availableOn": ["rifle"]
         },
         {
-            "category": "active",
-            "name": "Breadbasket",
-            "requirementsDescription": "5 or More Offense",
-            "bonusDescription": "Body shots increase the next Headshot's Damage by 50% for 10 seconds, stacks up to 3 times. Buff is lost on miss, reload, weapon swap, or when the player exits combat.",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+            "name": "Boomerang",
+            "description": "Critical hits have a 50% chance to return the bullet to the magazine. If a bullet is returned to the magazine the next shot has +40% increased damage.",
+            "availableOn": ["rifle"]
         },
         {
-            "category": "active",
-            "name": "Close & Personal",
-            "requirementsDescription": "5 or More Offense",
-            "bonusDescription": "Kills within 7m increase weapon damage by 50% for the next 10 seconds. Kills refresh the buffs duration.",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "active",
-            "name": "Eyeless",
-            "requirementsDescription": "No requirement",
-            "bonusDescription": "Deal 30% increased damage enemies affected by Blind.",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "active",
-            "name": "Fast Hands",
-            "requirementsDescription": "No requirement",
-            "bonusDescription": "Each Critical Hit increases the Reload Speed for this weapon by 5%. Stacks up to 30 times. Buff is lost on weapon swap or when player is out of combat.",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "active",
-            "name": "Finisher",
-            "requirementsDescription": "4 or Less Utility",
-            "bonusDescription": "Killing a target that is downed with this weapon increases the Critical Hit Chance and Critical Hit Damage of the next weapon you swap to within 10 seconds by 30% for 15 seconds.",
-            "availableOn": ["pistol"]
-        },
-        {
-            "category": "active",
-            "name": "First Blood",
-            "requirementsDescription": "Requires a Scope with 8x magnification or higher",
-            "bonusDescription": "The first shot from a full magazine has 100% increased body damage. Reloading from an empty magazine resets this buff.",
-            "availableOn": ["marksmanRifle"]
-        },
-        {
-            "category": "active",
-            "name": "Frenzy",
-            "requirementsDescription": "4 or Less Defense",
-            "bonusDescription": "For every 10 bullets in magazine capacity, gain +3% rate of fire and +3% weapon damage for 5s when reloading from empty.",
-            "availableOn": ["lmg"]
-        },
-        {
-            "category": "active",
-            "name": "Ignited",
-            "requirementsDescription": "No requirement",
-            "bonusDescription": "Deal 30% increased damage to enemies affected by Burning.",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "active",
-            "name": "Killer",
-            "requirementsDescription": "5 or More Offense",
-            "bonusDescription": "Killing an enemy with a critical hit grants 50% critical hit damage for 15s",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "active",
             "name": "Lucky Shot",
-            "requirementsDescription": "No requirement",
-            "bonusDescription": "Missed shots while in cover have a 100% chance to return the bullet to the magazine. Magazine capacity is increased by 20% of the base magazine size, this stacks with Extended Magazine.",
+            "description": "Magazine capacity is increased by 20%. Missed shot from cover have a 100% chance to return to the magazine.",
             "availableOn": ["marksmanRifle","pistol","rifle"]
         },
         {
-            "category": "active",
+            "name": "Near sighted",
+            "description": "Receive +80% stability at the cost of -35% optimal range",
+            "availableOn": ["assaultRifle"]
+        },
+        {
+            "name": "On Empty",
+            "description": "Reloading from empty grants +30 weapon handling for 10s.",
+            "availableOn": ["assaultRifle"]
+        },
+        {
             "name": "Measured",
-            "requirementsDescription": "No requirement",
-            "bonusDescription": "The top half of the magazine grants +20% rate of fire and -15% weapon damage,The bottom half of the magazine granges -20% rate of fire and +30% Weapon Damage.",
+            "description": "The top half of the magazine grants 20% rate of fire and -30% weapon damage. The bottom half of the magazine has -20% rate of fire and 30% total Weapon Damage.",
             "availableOn": ["assaultRifle","lmg","smg"]
         },
         {
-            "category": "active",
+            "name": "Overflowing",
+            "description": "Every 3 reloads from empty increases your base magazine capacity by 100%.",
+            "availableOn": ["assaultRifle"]
+        },
+        {
             "name": "Naked",
-            "requirementsDescription": "Requires a Scope with 8x magnification or higher",
-            "bonusDescription": "Headshot Damage is increased by 40% while you have no armor.",
+            "description": "Hitting an enemy with no armor grants +50% headshot damage for 5s.",
             "availableOn": ["marksmanRifle"]
         },
         {
-            "category": "active",
-            "name": "Near Sighted",
-            "requirementsDescription": "4 or Less Utility",
-            "bonusDescription": "Recieve 80% Stability at the cost of -35% optimal range",
-            "availableOn": ["assaultRifle"]
+            "name": "First Blood",
+            "description": "If scoped, your first shot fired from out of combat or after fully reloading from empty deals headshot damage to any part of the body hit. REQUIRES: Requires a Scope with 8x magnification or higher",
+            "availableOn": ["marksmanRifle"]
         },
         {
-            "category": "active",
-            "name": "On Empty",
-            "requirementsDescription": "4 or More Defense",
-            "bonusDescription": "After fully reloading, this weapon has increased handling for 10 seconds. Buff persists through reload. The buff is lost when swapping weapons or exiting combat.",
-            "availableOn": ["assaultRifle"]
+            "name": "pummel",
+            "description": "3 consecutive kills refills the magazine and grants +40% weapon damage for 10s.",
+            "availableOn": ["shotgun"]
         },
         {
-            "category": "active",
-            "name": "Optimist",
-            "requirementsDescription": "5 or Less Offense",
-            "bonusDescription": "Weapon damage is increased by 3% for every 10% ammo missing from the magazine",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+            "name": "Pumped Up",
+            "description": "Reloading grants +1% weapon damage for 10s. Stacks up to 25 times.",
+            "availableOn": ["shotgun"]
         },
         {
-            "category": "active",
             "name": "Outsider",
-            "requirementsDescription": "No requirement",
-            "bonusDescription": "After killing an enemy, gain 100% optimal range and 100% accuracy for 10s.",
+            "description": "After killing an enemy, gain 100% optimal range and +100% accuracy for 10s.",
             "availableOn": ["smg"]
         },
         {
-            "category": "active",
-            "name": "Perpetuation",
-            "requirementsDescription": "5 or More Utility",
-            "bonusDescription": "Headshot kills grant +5% Skill Duration for 10s.",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+            "name": "Unwavering",
+            "description": "Swapping to this weapon grants +300 weapon handling for 5s. Kills refresh the buff. Swapping away disables this from all weapons for 5s.",
+            "availableOn": ["smg"]
         },
         {
-            "category": "active",
-            "name": "Premeditated",
-            "requirementsDescription": "4 or Less Utility",
-            "bonusDescription": "Weapon Damage is increased for every shell loaded up to a total of 25%, if all shells are reloaded then weapon damage is increased by an additional 10%. Buff lasts for 10 seconds. Damage increase is greater when the magazine capacity is lower. Swapping the weapon or reloading again resets the buff.",
-            "availableOn": ["shotgun"]
-        },
-        {
-            "category": "active",
-            "name": "Preservation",
-            "requirementsDescription": "7 or More Defense",
-            "bonusDescription": "Killing a Target repairs your armor by 10% of your maximum armor over 5 seconds. If the kill was from a headshot, the repair is 20% of your maximum armor over 5 seconds.",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "active",
-            "name": "Pummel",
-            "requirementsDescription": "4 or More Offense",
-            "bonusDescription": "After 3 consecutive kills with body shots, your magazine is refilled and weapon damage is increased by 40% for 10 seconds. This can be extended up to 20 seconds. Buff is lost when swapping weapons.",
-            "availableOn": ["shotgun"]
-        },
-        {
-            "category": "active",
-            "name": "Ranger",
-            "requirementsDescription": "No requirement",
-            "bonusDescription": "Weapon Damage is increased by 2% for every 5m you are from your target.",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "active",
-            "name": "Reformation",
-            "requirementsDescription": "9 or More Utility",
-            "bonusDescription": "Headshot kills increase Skill Repair and Healing by 150% for 25s",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "active",
-            "name": "Rifleman",
-            "requirementsDescription": "4 or Less Defense",
-            "bonusDescription": "Headshots increase weapon damage by 10% for 5 seconds, this buff can stack 5 times. Once at max stacks each Headshot refreshes the duration of the buff. Non-Headshots remove this bonus.",
-            "availableOn": ["rifle"]
-        },
-        {
-            "category": "active",
-            "name": "Sadist",
-            "requirementsDescription": "No requirement",
-            "bonusDescription": "Deal 30% increased damage to Status Effected enemies.",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "active",
-            "name": "Salvage",
-            "requirementsDescription": "No requirement",
-            "bonusDescription": "Killing a target has a 50% chance to refill the magazine.",
-            "availableOn": ["pistol"]
-        },
-        {
-            "category": "active",
-            "name": "Spike",
-            "requirementsDescription": "5 or More Utility",
-            "bonusDescription": "Headshot kills grant +35% Skill Damage for 20s",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "active",
-            "name": "Steady Handed",
-            "requirementsDescription": "5 or Less Offense",
-            "bonusDescription": "Landing shots increases weapon handling by 3%, stacks up to 10 times. Shots have a 5% to consume the stack and refills your magazine. 15s cd",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "active",
-            "name": "Strained",
-            "requirementsDescription": "No requirement",
-            "bonusDescription": "Critical Hit Damage is increased by 5% for every 10% of your base maxmimum armor that is missing.",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "active",
             "name": "Unhinged",
-            "requirementsDescription": "No requirement",
-            "bonusDescription": "Receive 20% weapon damage at the cost of -25% weapon handling",
+            "description": "Grants +15% weapon damage at the cost of -25% Stability and -25% Accuracy.",
             "availableOn": ["lmg"]
         },
         {
-            "category": "active",
-            "name": "Unwavering",
-            "requirementsDescription": "4 or Less Defense",
-            "bonusDescription": "Swapping to this weapon increases Weapon Stability by 300% for 5 seconds. Kills while this buff is active refreshes the duration of the buff. Swapping weapons disables this buff for 5 seconds.",
-            "availableOn": ["smg"]
+            "name": "Frenzy",
+            "description": "For every 10 bullets in the magazine capacity, gain +3% rate of fire and +3% weapon damage for 5s when reloading from empty.",
+            "availableOn": ["lmg"]
         },
         {
-            "category": "active",
-            "name": "Vindictive",
-            "requirementsDescription": "4 or Less Offense",
-            "bonusDescription": "Killing an enemy with a status affect applied grants all group members within 15m 20% critical strike chance and critical damage for 20s",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+            "name": "Overwhelm",
+            "description": "Suppressing an enemy, that is not currently suppressed, grants +10% weapon damage for 12s. Max stack is 4.",
+            "availableOn": ["lmg"]
         },
         {
-            "category": "weaponHanlding",
-            "name": "Accurate",
-            "requirementsDescription": "No requirement",
-            "bonusDescription": "Accuracy increased by 15%",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+            "name": "Salvage",
+            "description": "Killing a target has a +70% chance to refill the magazine.",
+            "availableOn": ["pistol"]
         },
         {
-            "category": "weaponHanlding",
-            "name": "Allegro",
-            "requirementsDescription": "No requirement",
-            "bonusDescription": "Rate of Fire increased by 10%",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "weaponHanlding",
-            "name": "Distance",
-            "requirementsDescription": "No requirement",
-            "bonusDescription": "Optimal Range increased by 15%",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "weaponHanlding",
-            "name": "Extra",
-            "requirementsDescription": "No requirement",
-            "bonusDescription": "Magazine Capacity increased by 20%",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","pistol","rifle"]
-        },
-        {
-            "category": "weaponHanlding",
-            "name": "Jazz Hands",
-            "requirementsDescription": "No requirement",
-            "bonusDescription": "Reload Speed increased by 10%",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "weaponHanlding",
-            "name": "Optimized",
-            "requirementsDescription": "No requirement",
-            "bonusDescription": "Weapon Handling increased by 15%",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "weaponHanlding",
-            "name": "Stable",
-            "requirementsDescription": "No requirement",
-            "bonusDescription": "Stability increased by 15%",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "passive",
-            "name": "Cannon",
-            "requirementsDescription": "Equipped",
-            "bonusDescription": "While this weapon is equipped the players throwing distance is increased by 10%",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "passive",
-            "name": "Double Duty",
-            "requirementsDescription": "Holstered",
-            "bonusDescription": "While holstered, reloading from empty gives you 20% of your magazine back as free ammo. Can occur once every 30s",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","rifle"]
-        },
-        {
-            "category": "passive",
-            "name": "Everlasting",
-            "requirementsDescription": "Holstered",
-            "bonusDescription": "While holstered, this weapon regenerates ammo while in cover.",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","rifle"]
-        },
-        {
-            "category": "passive",
-            "name": "Greased",
-            "requirementsDescription": "Holstered",
-            "bonusDescription": "While holstered, this weapon tucks away and increases weapon swap speed.",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "passive",
-            "name": "In Rhythm",
-            "requirementsDescription": "Equipped",
-            "bonusDescription": "While equipped, enemy kills have a 5% chance to refresh active skill cooldowns. This can only happen once every 60 seconds.",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "passive",
-            "name": "Overlap",
-            "requirementsDescription": "Holstered",
-            "bonusDescription": "While holstered, this weapons handling talent is applied to the currently active weapon. If the active weapon is an LMG, that weapon gets +5% reload speed. If the active weapon is an SMG, that weapon gets +5% accuracy. If the active weapon is an AR, that weapon gets +5% stability. If the active weapon is a Shotgun, that weapon gets +5% rate of fire. If the active weapon is a Rifle, that weapon gets +5% optimal range. If the active weapon is an MMR, that weapon gets +5% magazine size. If the active weapon is a Pistol, that weapon gets +5% handling.",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "passive",
-            "name": "Protected Deploy",
-            "requirementsDescription": "Equipped",
-            "bonusDescription": "While equipped, this weapon grants 10% bonus armor while deploying a skill",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "passive",
-            "name": "Protected Reload",
-            "requirementsDescription": "Equipped",
-            "bonusDescription": "Players receive 10% bonus armor while reloading",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "passive",
-            "name": "ReCharged",
-            "requirementsDescription": "Equipped",
-            "bonusDescription": "While at full armour skills have 25% increased duration and ammo",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "passive",
-            "name": "Rooted",
-            "requirementsDescription": "Equipped",
-            "bonusDescription": "While equipped and in cover, all skill damage and healing is increased by 25% for 10s. Buff is lost when exiting cover. Can occur once per 60s",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "passive",
-            "name": "Stop, Drop, and Roll",
-            "requirementsDescription": "Equipped",
-            "bonusDescription": "While equipped rolling removes on fire, bleed, and toxic status effects.  Can only happen once every 60 seconds.",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "passive",
-            "name": "Transmission",
-            "requirementsDescription": "Holstered",
-            "bonusDescription": "While holstered, shock status effects have a chance to transfer to nearby enemies.",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "passive",
-            "name": "Waskly",
-            "requirementsDescription": "Holstered",
-            "bonusDescription": "While holstered, you are able to resist multiple ensnare attempts.",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
-        },
-        {
-            "category": "passive",
-            "name": "Zen",
-            "requirementsDescription": "Equipped",
-            "bonusDescription": "Sitting in cover for 3 seconds removes any active blind or disorient status effects.",
-            "availableOn": ["assaultRifle","lmg","smg","marksmanRifle","shotgun","pistol","rifle"]
+            "name": "Finisher",
+            "description": "Swapping from this weapon within 10s of killing an enemy grants 30% critical hit chance and critical hit damge for 15s.",
+            "availableOn": ["pistol"]
         }
     ]
 }
