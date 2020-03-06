@@ -150,4 +150,14 @@ gears
         Hazard Protection 6.6% 10%
         Health 4965 18935
         Explosive Resistance 6.6% 10%
+-----------------------------------------------
+
+function weaponAttributeFilter(weaponType: any) {
+  let filtered=weaponAttributes.filter(each => {
+    return !weaponType.bonus.some(foo => {
+      return foo.attribute === each.attribute;
+    });
+  });
+  console.log(filtered);
+}
 
