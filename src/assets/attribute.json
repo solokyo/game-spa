@@ -56,6 +56,10 @@
             "name": "Optimal Range Bonus",
             "category": "weapon"
         },
+        "ammoCapacity": {
+            "name": "Ammo Capacity",
+            "category": "weapon"
+        },
         "allWeaponDamageBonus": {
             "name": "All Weapon Damage Bonus",
             "category": "offence"
@@ -112,6 +116,10 @@
             "name": "Rifle Damage Bonus",
             "category": "offence"
         },
+        "explosiveDamage": {
+            "name": "Explosive Damage",
+            "category": "offence"
+        },
         "armor": {
             "name": "Armor",
             "category": "defence"
@@ -144,6 +152,10 @@
             "name": "Hazard Protection",
             "category": "defence"
         },
+        "pulseResistance": {
+            "name": "Pulse Resistance",
+            "category": "defence"
+        },
         "bleedResistance": {
             "name": "Bleed Resistance",
             "category": "defence"
@@ -156,8 +168,8 @@
             "name": "Burn Resistance",
             "category": "defence"
         },
-        "disorientResistance": {
-            "name": "Disorient Resistance",
+        "confuseResistance": {
+            "name": "Confuse Resistance",
             "category": "defence"
         },
         "disruptResistance": {
