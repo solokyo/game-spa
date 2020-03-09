@@ -1,0 +1,960 @@
+{
+    "gearSetBonus": {
+        "airaldiHoldings": {
+            "name": "Airaldi Holdings",
+            "category":"brand",
+            "coreAttribute": "offence",
+            "modCategory":"offence",
+            "pieceBonus": [
+                {
+                    "discription": "+10.0% Marksman Rifle Damage",
+                    "bonus": [
+                        {
+                            "attribute":"marksmanRifleDamageBonus",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "discription": "+10.0% Headshot Damage",
+                    "bonus": [
+                        {
+                            "attribute":"headshotDamage",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "discription": "+5.0% Damage to Armor",
+                    "bonus": [
+                        {
+                            "attribute":"damageToArmor",
+                            "value": 0.05
+                        }
+                    ]
+                }
+            ]
+        },
+        "douglasHarding": {
+            "name": "Douglas & Harding",
+            "category":"brand",
+            "coreAttribute": "offence",
+            "modCategory":"offence",
+            "pieceBonus": [
+                {
+                    "discription": "+20.0% Pistol Damage",
+                    "bonus": [
+                        {
+                            "attribute":"pistolDamageBonus",
+                            "value": 0.2
+                        }
+                    ]
+                },
+                {
+                    "discription": "+10.0% Stability",
+                    "bonus": [
+                        {
+                            "attribute":"stabilityBonus",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "discription": "+10.0% Accuracy",
+                    "bonus": [
+                        {
+                            "attribute":"accuracyBonus",
+                            "value": 0.1
+                        }
+                    ]
+                }
+            ]
+        },
+        "fenrisGroupAB": {
+            "name": "Fenris Group AB",
+            "category":"brand",
+            "coreAttribute": "offence",
+            "modCategory":"offence",
+            "pieceBonus": [
+                {
+                    "discription": "+10.0% Assault Rifle Damage",
+                    "bonus": [
+                        {
+                            "attribute":"assaultRifleDamageBonus",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "discription": "+10.0% Reload Speed",
+                    "bonus": [
+                        {
+                            "attribute":"reloadSpeedBonus",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "discription": "",
+                    "bonus": [
+                        {
+                            "attribute":"stabilityBonus",
+                            "value": 0.1
+                        }
+                    ]
+                }
+            ]
+        },
+        "overlordArmaments": {
+            "name": "Overlord Armaments",
+            "category":"brand",
+            "coreAttribute": "offence",
+            "modCategory":"offence",
+            "pieceBonus": [
+                {
+                    "discription": "+10.0% Rifle Damage",
+                    "bonus": [
+                        {
+                            "attribute":"rifleDamageBonus",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "discription": "+10.0% Accuracy",
+                    "bonus": [
+                        {
+                            "attribute":"accuracyBonus",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "discription": "+10.0% Weapon Handling",
+                    "bonus": [
+                        {
+                            "attribute":"weaponHandling",
+                            "value": 0.1
+                        }
+                    ]
+                }
+            ]
+        },
+        "petrovDefenseGroup": {
+            "name": "Petrov Defense Group",
+            "category":"brand",
+            "coreAttribute": "offence",
+            "modCategory":"offence",
+            "pieceBonus": [
+                {
+                    "discription": "+10.0% LMG Damage",
+                    "bonus": [
+                        {
+                            "attribute":"lmgDamageBonus",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "discription": "+10.0% Weapon Handling",
+                    "bonus": [
+                        {
+                            "attribute":"weaponHandling",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "discription": "+20.0% Ammo Capacity",
+                    "bonus": [
+                        {
+                            "attribute":"ammoCapacity",
+                            "value": 0.2
+                        }
+                    ]
+                }
+            ]
+        },
+        "providenceDefense": {
+            "name": "Providence Defense",
+            "category":"brand",
+            "coreAttribute": "offence",
+            "modCategory":"offence",
+            "pieceBonus": [
+                {
+                    "discription": "+10.0% Headshot Damage",
+                    "bonus": [
+                        {
+                            "attribute":"headshotDamage",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "discription": "+10.0% Critical Hit Chance",
+                    "bonus": [
+                        {
+                            "attribute":"criticalHitChance",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "discription": "+15.0% Critical Hit Damage",
+                    "bonus": [
+                        {
+                            "attribute":"criticalHitDamage",
+                            "value": 0.15
+                        }
+                    ]
+                }
+            ]
+        },
+        "sokolovConcern": {
+            "name": "Sokolov Concern",
+            "category":"brand",
+            "coreAttribute": "offence",
+            "modCategory":"offence",
+            "pieceBonus": [
+                {
+                    "discription": "+10.0% SMG Damage",
+                    "bonus": [
+                        {
+                            "attribute":"smgDamageBonus",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "discription": "+15.0% Critical Hit Damage",
+                    "bonus": [
+                        {
+                            "attribute":"criticalHitDamage",
+                            "value": 0.15
+                        }
+                    ]
+                },
+                {
+                    "discription": "+10.0% Critical Hit Chance",
+                    "bonus": [
+                        {
+                            "attribute":"criticalHitChance",
+                            "value": 0.1
+                        }
+                    ]
+                }
+            ]
+        },
+        "alpsSummitArmament": {
+            "name": "Alps Summit Armament",
+            "category":"brand",
+            "coreAttribute": "utility",
+            "modCategory":"utility",
+            "pieceBonus": [
+                {
+                    "discription": "+15.0% Repair-skills",
+                    "bonus": [
+                        {
+                            "attribute":"outgoingHealing",
+                            "value": 0.15
+                        }
+                    ]
+                },
+                {
+                    "discription": "+20.0% Skill Duration",
+                    "bonus": [
+                        {
+                            "attribute":"skillDuration",
+                            "value": 0.2
+                        }
+                    ]
+                },
+                {
+                    "discription": "+10.0% Skill Haste",
+                    "bonus": [
+                        {
+                            "attribute":"skillHaste",
+                            "value": 0.1
+                        }
+                    ]
+                }
+            ]
+        },
+        "chinaLightIndustriesCorporation": {
+            "name": "China Light Industries Corporation",
+            "category":"brand",
+            "coreAttribute": "utility",
+            "modCategory":"utility",
+            "pieceBonus": [
+                {
+                    "discription": "+15.0% Explosives Damage",
+                    "bonus": [
+                        {
+                            "attribute":"explosivesDamage",
+                            "value": 0.15
+                        }
+                    ]
+                },
+                {
+                    "discription": "+10.0% Skill Haste",
+                    "bonus": [
+                        {
+                            "attribute":"skillHaste",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "discription": "+10.0% Status Effects",
+                    "bonus": [
+                        {
+                            "attribute":"statusEffects",
+                            "value": 0.1
+                        }
+                    ]
+                }
+            ]
+        },
+        "murakamiIndustries": {
+            "name": "Murakami Industries",
+            "category":"brand",
+            "coreAttribute": "utility",
+            "modCategory":"utility",
+            "pieceBonus": [
+                {
+                    "discription": "+20.0% Skill Duration",
+                    "bonus": [
+                        {
+                            "attribute":"skillDuration",
+                            "value": 0.2
+                        }
+                    ]
+                },
+                {
+                    "discription": "+15.0% Repair-Skills",
+                    "bonus": [
+                        {
+                            "attribute":"outgoingHealing",
+                            "value": 0.15
+                        }
+                    ]
+                },
+                {
+                    "discription": "+10.0% Skill Duration",
+                    "bonus": [
+                        {
+                            "attribute":"skillDuration",
+                            "value": 0.1
+                        }
+                    ]
+                }
+            ]
+        },
+        "richterKaiserGmbH": {
+            "name": "Richter & Kaiser GmbH",
+            "category":"brand",
+            "coreAttribute": "utility",
+            "modCategory":"defence",
+            "pieceBonus": [
+                {
+                    "discription": "+15.0% Incoming Repairs",
+                    "bonus": [
+                        {
+                            "attribute":"incomingHealing",
+                            "value": 0.5
+                        }
+                    ]
+                },
+                {
+                    "discription": "+10.0% Explosive Resistance",
+                    "bonus": [
+                        {
+                            "attribute":"explosiveResistance",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "discription": "+15.0% Repairs-skills",
+                    "bonus": [
+                        {
+                            "attribute":"outgoingHealing",
+                            "value": 0.15
+                        }
+                    ]
+                }
+            ]
+        },
+        "wyvernWear": {
+            "name": "Wyvern Wear",
+            "category":"brand",
+            "coreAttribute": "utility",
+            "modCategory":"utility",
+            "pieceBonus": [
+                {
+                    "discription": "+10.0% Skill Damage",
+                    "bonus": [
+                        {
+                            "attribute":"skillDamage",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "discription": "+10.0% Status Effects",
+                    "bonus": [
+                        {
+                            "attribute":"statusEffects",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "discription": "+20.0% Skill Duration",
+                    "bonus": [
+                        {
+                            "attribute":"skillDuration",
+                            "value": 0.2
+                        }
+                    ]
+                }
+            ]
+        },
+        "five11": {
+            "name": "5.11",
+            "category":"brand",
+            "coreAttribute": "utility",
+            "modCategory":"defence",
+            "pieceBonus": [
+                {
+                    "discription": "+10.0% Health",
+                    "bonus": [
+                        {
+                            "attribute":"healthBonus",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "discription": "+15.0% Incoming Repairs",
+                    "bonus": [
+                        {
+                            "attribute":"incomingHealing",
+                            "value": 0.15
+                        }
+                    ]
+                },
+                {
+                    "discription": "+10.0% Hazard Protection",
+                    "bonus": [
+                        {
+                            "attribute":"hazardProtection",
+                            "value": 0.1
+                        }
+                    ]
+                }
+            ]
+        },
+        "Badger Tuff": {
+            "name": "",
+            "category":"brand",
+            "coreAttribute": "defence",
+            "modCategory":"offence",
+            "pieceBonus": [
+                {
+                    "discription": "+10.0% Shotgun Damage",
+                    "bonus": [
+                        {
+                            "attribute":"shotgunDamageBonus",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "discription": "+5.0% Total Armor",
+                    "bonus": [
+                        {
+                            "attribute":"armorBonus",
+                            "value": 0.05
+                        }
+                    ]
+                },
+                {
+                    "discription": "+10.0% Armor % on Kill",
+                    "bonus": [
+                        {
+                            "attribute":"armorOnKill",
+                            "value": 0.1
+                        }
+                    ]
+                }
+            ]
+        },
+        "gilaGuard": {
+            "name": "Gila Guard",
+            "category":"brand",
+            "coreAttribute": "defence",
+            "modCategory":"defence",
+            "pieceBonus": [
+                {
+                    "discription": "+5.0% Total Armor",
+                    "bonus": [
+                        {
+                            "attribute":"armorBonus",
+                            "value": 0.05
+                        }
+                    ]
+                },
+                {
+                    "discription": "+10.0% Health",
+                    "bonus": [
+                        {
+                            "attribute":"healthBonus",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "discription": "+1.0% Armor Regeneration",
+                    "bonus": [
+                        {
+                            "attribute":"armorRegenerationBonus",
+                            "value": 0.01
+                        }
+                    ]
+                }
+            ]
+        },
+        "yaahlGear": {
+            "name": "Yaahl Gear",
+            "category":"brand",
+            "coreAttribute": "defence",
+            "modCategory":"offence",
+            "pieceBonus": [
+                {
+                    "discription": "+10.0% Hazard Protection",
+                    "bonus": [
+                        {
+                            "attribute":"hazardProtection",
+                            "value": 0.1
+                        }
+                    ]
+                },
+                {
+                    "discription": "+5.0% Weapon Damage",
+                    "bonus": [
+                        {
+                            "attribute":"allweaponDamageBonus",
+                            "value": 0.05
+                        }
+                    ]
+                },
+                {
+                    "discription": "+40.0% Pulse Resistance",
+                    "bonus": [
+                        {
+                            "attribute":"pulseResistance",
+                            "value": 0.4
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "hanaUCorporation": {
+        "name": "Hana-U Corporation",
+        "category":"brand",
+        "coreAttribute": "utility",
+        "modCategory":"utility",
+        "pieceBonus": [
+            {
+                "discription": "+10.0% Skill Haste",
+                "bonus": [
+                    {
+                        "attribute":"skillHaste",
+                        "value": 0.1
+                    }
+                ]
+            },
+            {
+                "discription": "+10.0% Skill Damage",
+                "bonus": [
+                    {
+                        "attribute":"skillDamage",
+                        "value": 0.1
+                    }
+                ]
+            },
+            {
+                "discription": "+5.0% Weapon Damage",
+                "bonus": [
+                    {
+                        "attribute":"allweaponDamageBonus",
+                        "value": 0.05
+                    }
+                ]
+            }
+        ]
+    },
+    "ceskaVyrobaSro": {
+        "name": "Ceska Vyroba s.r.o.",
+        "category":"brand",
+        "coreAttribute": "offence",
+        "modCategory":"offence",
+        "pieceBonus": [
+            {
+                "discription": "+10.0% Critical Hit Chance",
+                "bonus": [
+                    {
+                        "attribute":"criticalHitChance",
+                        "value": 0.1
+                    }
+                ]
+            },
+            {
+                "discription": "+10.0% Hazard Protection",
+                "bonus": [
+                    {
+                        "attribute":"hazardProtection",
+                        "value": 0.1
+                    }
+                ]
+            },
+            {
+                "discription": "+10.0% Health",
+                "bonus": [
+                    {
+                        "attribute":"healthBonus",
+                        "value": 0.1
+                    }
+                ]
+            }
+        ]
+    },
+    "grupoSombraSA": {
+        "name": "Grupo Sombra S.A.",
+        "category":"brand",
+        "coreAttribute": "offence",
+        "modCategory":"offence",
+        "pieceBonus": [
+            {
+                "discription": "+15.0% Critical Hit Damage",
+                "bonus": [
+                    {
+                        "attribute":"criticalHitDamage",
+                        "value": 0.15
+                    }
+                ]
+            },
+            {
+                "discription": "+15.0% Explosive Damage",
+                "bonus": [
+                    {
+                        "attribute":"explosiveDamage",
+                        "value": 0.15
+                    }
+                ]
+            },
+            {
+                "discription": "+10.0% Headshot Damage",
+                "bonus": [
+                    {
+                        "attribute":"headshotDamage",
+                        "value": 0.1
+                    }
+                ]
+            }
+        ]
+    },
+    "golanGearLtd": {
+        "name": "Golan Gear Ltd",
+        "category":"brand",
+        "coreAttribute": "defence",
+        "modCategory":"utility",
+        "pieceBonus": [
+            {
+                "discription": "+10.0% Status Effects",
+                "bonus": [
+                    {
+                        "attribute":"statusEffects",
+                        "value": 0.1
+                    }
+                ]
+            },
+            {
+                "discription": "+1.0% Armor Regenration",
+                "bonus": [
+                    {
+                        "attribute":"armorRegenrationBonus",
+                        "value": 0.01
+                    }
+                ]
+            },
+            {
+                "discription": "+5.0% Total Armor",
+                "bonus": [
+                    {
+                        "attribute":"armorBonus",
+                        "value": 0.05
+                    }
+                ]
+            }
+        ]
+    },
+    "truePatriot": {
+        "name": "True Patriot",
+        "category":"set",
+        "coreAttribute": "defence",
+        "modCategory":"defence",
+        "pieceBonus": [
+            {},
+            {
+                "discription": "+30.0% Ammo Capacity",
+                "bonus": [
+                    {
+                        "attribute":"ammoCapacity",
+                        "value": 0.3
+                    }
+                ]
+            },
+            {
+                "discription": "+30.0% Magazine Size",
+                "bonus": [
+                    {
+                        "attribute":"magSizeBonus",
+                        "value": 0.1
+                    }
+                ]
+            },
+            {
+                "name": "Red, White, and Blue",
+                "discription": "Every 2s, enemies you shoot receive a stacking debuff of Red, White and Blue.\nRed: Amplifies the enemy’s damage taken by 8%.\nWhite: Shooting the enemy repairs you and your allies’ armor by 5% once every second\nBlue: Decreases the enemy’s damage dealt by 8%.\nFull Flag: Enemies that die while under the effect of all 3 debuffs create a 5m explosion, dealing damage equal to their total health and armor. (Explosion damage reduced on Named enemy daths.)"
+            }
+        ]
+    },
+    "ongoingDirective": {
+        "name": "Ongoing Directive",
+        "category":"set",
+        "coreAttribute": "offence",
+        "modCategory":"defence",
+        "pieceBonus": [
+            {},
+            {
+                "discription": "+15% Status Effects",
+                "bonus": [
+                    {
+                        "attribute":"statusEffects",
+                        "value": 0.15
+                    }
+                ]
+            },
+            {
+                "discription": "+20% Reload Speed",
+                "bonus": [
+                    {
+                        "attribute":"reloadSpeedBonus",
+                        "value": 0.2
+                    }
+                ]
+            },
+            {
+                "name": " Rules of Engagement",
+                "discription": "Killing a status affected enemy drops Hollow-Point Ammo.\nHollow-Point Ammo amplifies weapon damage by 20% and applies bleed on hit."
+            }
+        ]
+    },
+    "hardwired": {
+        "name": "Hardwired",
+        "category":"set",
+        "coreAttribute": "utility",
+        "modCategory":"utility",
+        "pieceBonus": [
+            {},
+            {
+                "discription": "+15% Skill Haste",
+                "bonus": [
+                    {
+                        "attribute":"skillHaste",
+                        "value": 0.15
+                    }
+                ]
+            },
+            {
+                "discription": "+15% Repair-Skills\n+15% Skill Damage",
+                "bonus": [
+                    {
+                        "attribute":"outgoingHealing",
+                        "value": 0.15
+                    },
+                    {
+                        "attribute":"skillDamage",
+                        "value": 0.15
+                    }
+                ]
+            },
+            {
+                "name":"Feedback Loop",
+                "discription": "Whenever you use or cancel a skill, your other skill is automatically refreshed and increases total skill damage and repair by 10% for 20 seconds. This can occur at most once per 20 seconds."
+            }
+        ]
+    },
+    "negotiatorsDilemma": {
+        "name": "Negotiator’s Dilemma",
+        "category":"set",
+        "coreAttribute": "offence",
+        "modCategory":"defence",
+        "pieceBonus": [
+            {},
+            {
+                "discription": "+15% Critical Hit Chance",
+                "bonus": [
+                    {
+                        "attribute":"criticalHitChance",
+                        "value": 0.15
+                    }
+                ]
+            },
+            {
+                "discription": "+20% Critical Hit Damage",
+                "bonus": [
+                    {
+                        "attribute":"criticalHitDamage",
+                        "value": 0.2
+                    }
+                ]
+            },
+            {
+                "name": "Hostile Negotiations",
+                "discription": "Critical hits mark enemies for 20s, up to 3 marks total.\nWhen you critically hit a marked enemy, all other marked enemies take 60% of the damage dealt.\nWhenever a marked enemy dies, gain +2% critical hit damage, stacking up to 20 times, or until combat ends."
+            }
+        ]
+    },
+    "tipOfTheSpear": {
+        "name": "Tip of the Spear",
+        "category":"set",
+        "coreAttribute": "offence",
+        "modCategory":"offence",
+        "pieceBonus": [
+            {},
+            {
+                "discription": "+10% Signature Weapon Damage",
+                "bonus": [
+                    {
+                        "attribute":"signatureWeaponDamage",
+                        "value": 0.1
+                    }
+                ]
+            },
+            {
+                "discription": "+10% Weapon Damage",
+                "bonus": [
+                    {
+                        "attribute":"allWeaponDamageBonus",
+                        "value": 0.1
+                    }
+                ]
+            },
+            {
+                "name": "Aggressive Recon",
+                "discription": "Specialization weapon kills, increase total weapon damage by 20% for 60s.\nAutomatically generate specialization ammo every 60s."
+            }
+        ]
+    },
+    "a8": {
+        "name": "Aces & Eights",
+        "category":"set",
+        "coreAttribute": "offence",
+        "modCategory":"offence",
+        "pieceBonus": [
+            {},
+            {
+                "discription": "+15% Marksman Rifle Damage",
+                "bonus": [
+                    {
+                        "attribute":"marksmanRifleDamageBonus",
+                        "value": 0.15
+                    }
+                ]
+            },
+            {
+                "discription": "+20% Headshot Damage",
+                "bonus": [
+                    {
+                        "attribute":"headshotDamage",
+                        "value": 0.2
+                    }
+                ]
+            },
+            {
+                "name": "Dead Man’s Hand",
+                "discription": "Flip a card when landing shots with a Marksman Rifle.\nAfter 5 cards are flipped, the damage of your next shot is amplified by 30%.\nMore shots are enhanced the better the hand revealed.\nFour of a Kind: 4 shots\nFull House: 3 shots\nAces and Eights: 2 shots"
+            }
+        ]
+    },
+    "systemCorruption": {
+        "name": "System Corruption",
+        "category":"set",
+        "coreAttribute": "defence",
+        "modCategory":"defence",
+        "pieceBonus": [
+            {},
+            {
+                "discription": "+15% Armor % on Kill",
+                "bonus": [
+                    {
+                        "attribute":"armorOnKill",
+                        "value": 0.15
+                    }
+                ]
+            },
+            {
+                "discription": "+40% Disrupt Resistance\n+40% Pulse Resistance",
+                "bonus": [
+                    {
+                        "attribute":"disruptResistance",
+                        "value": 0.4
+                    },
+                    {
+                        "attribute":"pulseResistance",
+                        "value": 0.4
+                    }
+                ]
+            },
+            {
+                "name": "Hackstep Protocol",
+                "discription": "Replaces armor kits with an instant, infinite-use ability on a 20s cooldown that grants 50% bonus armor and hides your nameplate for 5 seconds."
+            }
+        ]
+    },
+    "striker": {
+        "name": "Striker",
+        "category":"set",
+        "coreAttribute": "offence",
+        "modCategory":"offence",
+        "pieceBonus": [
+            {},
+            {
+                "discription": "+15% Weapon Handling",
+                "bonus": [
+                    {
+                        "attribute":"weaponHandling",
+                        "value": 0.15
+                    }
+                ]
+            },
+            {
+                "discription": "+15% Rate of Fire",
+                "bonus": [
+                    {
+                        "attribute":"rpmBonus",
+                        "value": 0.15
+                    }
+                ]
+            },
+            {
+                "name": "Striker's Gamble",
+                "discription": "Weapon hits amplify total weapon damage by 0.5%, stacking up to 50 times.\n1 stack is lost each second\n3 stacks are lost every time you miss"
+            }
+        ]
+    }
+}
