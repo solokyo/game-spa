@@ -124,16 +124,32 @@
             "name": "Armor",
             "category": "defence"
         },
+        "armorBonus": {
+            "name": "% Armor Bonus",
+            "category": "defence"
+        },
         "armorOnKill": {
             "name": "Armor On Kill",
+            "category": "defence"
+        },
+        "armorOnKillBonus": {
+            "name": "% Armor On Kill",
             "category": "defence"
         },
         "armorRegeneration": {
             "name": "Armor Regeneration",
             "category": "defence"
         },
+        "armorRegenerationBonus": {
+            "name": "% Armor Regeneration",
+            "category": "defence"
+        },
         "health": {
             "name": "Health",
+            "category": "defence"
+        },
+        "healthBonus": {
+            "name": "% Health Bonus",
             "category": "defence"
         },
         "healthOnKill": {
@@ -193,11 +209,19 @@
             "category": "defence"
         },
         "skillTier": {
-            "name": "Skill Power",
+            "name": "Skill Tier",
+            "category": "utility"
+        },
+        "skillDuration": {
+            "name": "Skill Duration",
             "category": "utility"
         },
         "skillHaste": {
             "name": "Skill Haste",
+            "category": "utility"
+        },
+        "skillDamage": {
+            "name": "Skill Damage",
             "category": "utility"
         },
         "incomingHealing": {
@@ -254,6 +278,10 @@
         },
         "swapSpeed": {
             "name": "Swap Speed",
+            "category": "weapon"
+        },
+        "signatureWeaponDamage": {
+            "name": "Signature WeaponDamage",
             "category": "weapon"
         }
     }

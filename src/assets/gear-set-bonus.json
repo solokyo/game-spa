@@ -95,7 +95,7 @@
                     ]
                 },
                 {
-                    "discription": "",
+                    "discription": "+10.0% Stability",
                     "bonus": [
                         {
                             "attribute":"stabilityBonus",
@@ -290,7 +290,7 @@
                     "discription": "+15.0% Explosives Damage",
                     "bonus": [
                         {
-                            "attribute":"explosivesDamage",
+                            "attribute":"explosiveDamage",
                             "value": 0.15
                         }
                     ]
@@ -455,8 +455,8 @@
                 }
             ]
         },
-        "Badger Tuff": {
-            "name": "",
+        "badgerTuff": {
+            "name": "Badger Tuff",
             "category":"brand",
             "coreAttribute": "defence",
             "modCategory":"offence",
@@ -544,7 +544,7 @@
                     "discription": "+5.0% Weapon Damage",
                     "bonus": [
                         {
-                            "attribute":"allweaponDamageBonus",
+                            "attribute":"allWeaponDamageBonus",
                             "value": 0.05
                         }
                     ]
@@ -589,7 +589,7 @@
                 "discription": "+5.0% Weapon Damage",
                 "bonus": [
                     {
-                        "attribute":"allweaponDamageBonus",
+                        "attribute":"allWeaponDamageBonus",
                         "value": 0.05
                     }
                 ]
