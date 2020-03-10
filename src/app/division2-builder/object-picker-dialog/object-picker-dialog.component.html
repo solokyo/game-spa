@@ -1,0 +1,9 @@
+<p>object-picker-dialog works!</p>
+<div>
+    <table>
+        <tr *ngFor="let type of data | keyvalue">
+            <th>{{ type.key }}</th>
+            <td *ngFor="let weapon of type.value">{{weapon.name}}</td>
+        </tr>
+    </table>
+</div>
