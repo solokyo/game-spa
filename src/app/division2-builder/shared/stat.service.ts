@@ -1,16 +1,18 @@
 import { Injectable } from '@angular/core';
+import { DataService } from './data.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class StatService {
-  stats;
-  constructor() {
-    this.stats = {};
-  }
-
-  getStats(){
-    return this.stats;
+  stats: any;
+  constructor(
+    private dataService: DataService
+  ) {
+    this.dataService.getStable('statBoardInit','/assets/data.json').subscribe(data => {
+      this.stats = data;
+      console.log(this.stats);
+    });
   }
 
   sum(obj) {

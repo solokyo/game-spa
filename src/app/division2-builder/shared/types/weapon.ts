@@ -5,10 +5,10 @@ import { WeaponMod } from './weapon-mod';
 export interface Weapon {
     name: string;
     variant: string;
-    type: WeaponType;
-    category: 'primary'|'sidearm';
+    type: string;
+    category: string;
     bonus: Array<{ attribute: string, value: number }>;
     talent?: WeaponTalent;
-    avaliableMods: Array<{slot:string, type: string}>;
+    avaliableMods?: Array<{slot:string, type: string}>;
     mods?: Array<WeaponMod>;
 }
