@@ -1,9 +1,22 @@
-<p>object-picker-dialog works!</p>
-<div>
-    <table>
-        <tr *ngFor="let type of data | keyvalue">
-            <th>{{ type.key }}</th>
-            <td *ngFor="let weapon of type.value">{{weapon.name}}</td>
-        </tr>
-    </table>
+<!--
+     Todo: 
+        * Filt and show less attributes
+        * 
+-->
+<h1 mat-dialog-title>Select a object</h1>
+<div mat-dialog-content>
+    <mat-tab-group  animationDuration="500ms">
+        <mat-tab *ngFor="let type of data | keyvalue" label="{{type.key}}">
+            <div *ngFor="let weapon of type.value" [mat-dialog-close]="weapon">
+                <div>
+                    <span>{{weapon.name}}</span>
+                </div>
+                <div >
+                    <span *ngFor="let each of weapon.bonus">
+                        {{each.attribute}}: {{each.value}}
+                    </span>
+                </div>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
 </div>

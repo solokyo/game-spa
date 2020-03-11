@@ -1,1 +1,4 @@
 <p>stat-board works!</p>
+<div *ngFor="let stat of stats | keyvalue">
+    {{ stat.key }} : {{stat.value}}
+</div>

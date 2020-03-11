@@ -5,7 +5,7 @@ import { WeaponMod } from './weapon-mod';
 export interface Weapon {
     name: string;
     variant: string;
-    type: string;
+    type: string | WeaponType;
     category: string;
     bonus: Array<{ attribute: string, value: number }>;
     talent?: WeaponTalent;
