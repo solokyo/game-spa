@@ -13,15 +13,17 @@ import { WeaponType } from '../shared/types/weapon-type';
   styleUrls: ['./weapon-selector.component.css']
 })
 export class WeaponSelectorComponent implements OnInit {
-  weaponSlot;
-  @Output() weapon: Weapon;
+  weaponSlot: Array<{name: string, category: string}>;
+  @Output() selectedWeapons: Array<Weapon>;
   weapons: Array<Weapon>;
   weaponTypes: Array<WeaponType>;
   constructor(
     public dialog: MatDialog,
     private dataService: DataService,
     private utilService: UtilService
-  ) { }
+  ) { 
+    this.selectedWeapons = new Array(3);
+  }
 
   ngOnInit(): void {
     this.dataService.getStable('weaponSlot', '/assets/data.json').subscribe(data => {
@@ -33,23 +35,19 @@ export class WeaponSelectorComponent implements OnInit {
     this.dataService.getStable('weapons', '/assets/weapons.json').subscribe(data => {
       this.weapons = data;
     });
-    // console.log(this.weapons);
   }
 
   selectWeapon(key: string): void {
-    console.log(this.weapons);
-    
     const dialogRef = this.dialog.open(ObjectPickerDialogComponent, {
       data: this.utilService.groupBy(this.weapons.filter(weapon => { return weapon.category === key }), 'type')
     });
 
     dialogRef.afterClosed().subscribe(weapon => {
       if (weapon) {
-        this.weapon = weapon;
-        this.weapon.type = this.weaponTypes.find(type => { return type.name === this.weapon.type });
+        let foo = {...weapon};
+        foo.type = this.weaponTypes.find(type => { return type.name === foo.type });
+        this.selectedWeapons[index] = foo;
       }
-      console.log(this.weapon);
     });
   }
-
 }
