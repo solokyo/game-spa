@@ -1,10 +1,14 @@
 <div>
-    <div *ngFor="let slot of weaponSlot">
-        <div>{{ slot.name }}</div>
-        <div (click)="selectWeapon(slot.key)">
-            <div *ngIf="!this.weapon">Select a weapon</div>
-            <div *ngIf="this.weapon">
-                {{ weapon.name }}
+    <div *ngFor="let slot of weaponSlot; let i = index">
+        <div>
+            <span>{{ slot.name }}</span>
+            <span><button mat-button (click)="setEquippedWeapon(selectedWeapons[i])">Equip this</button></span>
+        </div>
+        <div (click)="selectWeapon(slot.category, i)">
+            <div *ngIf="!selectedWeapons[i]">Select a weapon</div>
+            <div *ngIf="selectedWeapons[i]">
+                <span>{{ selectedWeapons[i].name }}</span>
+
             </div>
         </div>
     </div>

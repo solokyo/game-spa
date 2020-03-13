@@ -7,14 +7,15 @@ import { StatService } from '../shared/stat.service';
   styleUrls: ['./stat-board.component.css']
 })
 export class StatBoardComponent implements OnInit {
-  stats
+  stats: any;
   constructor(
     private dataService: DataService,
     private statService: StatService
   ) { 
-    //this.statService.getStats().subscribe(data => {this.stats = data});
-    this.dataService.getStable('statBoardInit','/assets/data.json').subscribe(data => {this.stats = data});
-    console.log(this.stats);
+    this.statService.getStats().subscribe(data => {
+      this.stats = data;
+      console.log(data);
+    });
   }
 
   ngOnInit(): void {
