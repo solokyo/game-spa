@@ -162,6 +162,15 @@ function weaponAttributeFilter(weaponType: any) {
 }
 
 -----------------------------------------------
+groupBy(objects: Array<any>, key: string): Array<Array<any>> {
+  return objects.reduce((rv, obj) => {
+    (rv[obj[key]] = rv[obj[key]] || []).push(obj);
+    return rv;
+  }, {});
+};
+-----------------------------------------------
 TU8 gear sets 
 https://www.reddit.com/r/thedivision/wiki/thedivision2/guides/equipment/brands
 https://www.reddit.com/r/thedivision/wiki/thedivision2/guides/equipment/gearset
+
+装备主属性可以替换,考虑加入替换功能

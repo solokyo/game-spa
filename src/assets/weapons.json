@@ -1,0 +1,112 @@
+{
+    "weapons": [
+        {
+            "name": "Police Mk17 Replica",
+            "variant": "Mk17",
+            "type": "rifle",
+            "category": "primary",
+            "bonus": [
+                {
+                    "attribute": "damage",
+                    "value": 131600
+                },
+                {
+                    "attribute": "rpm",
+                    "value": 275
+                },
+                {
+                    "attribute": "magSize",
+                    "value": 20
+                },
+                {
+                    "attribute": "optimalRange",
+                    "value": 50
+                },
+                {
+                    "attribute": "headshotDamage",
+                    "value": 0.6
+                }
+            ]
+        },
+        {
+            "name": "Classic M44 Carbine",
+            "variant": "M44",
+            "type": "marksmanRifle",
+            "category": "primary",
+            "bonus": [
+                {
+                    "attribute": "damage",
+                    "value": 376100
+                },
+                {
+                    "attribute": "rpm",
+                    "value": 55
+                },
+                {
+                    "attribute": "magSize",
+                    "value": 5
+                },
+                {
+                    "attribute": "optimalRange",
+                    "value": 60
+                }
+            ]
+        },
+        {
+            "name": "Carbine 7",
+            "variant": "MC7",
+            "type": "assaultRifle",
+            "category": "primary",
+            "bonus": [
+                {
+                    "attribute": "damage",
+                    "value": 43300
+                },
+                {
+                    "attribute": "rpm",
+                    "value": 790
+                },
+                {
+                    "attribute": "magSize",
+                    "value": 30
+                },
+                {
+                    "attribute": "optimalRange",
+                    "value": 27
+                },
+                {
+                    "attribute": "headshotDamage",
+                    "value": 0.55
+                }
+            ]
+        },
+        {
+            "name": "G36 C",
+            "variant": "G36",
+            "type": "assaultRifle",
+            "category": "primary",
+            "bonus": [
+                {
+                    "attribute": "damage",
+                    "value": 44700
+                },
+                {
+                    "attribute": "rpm",
+                    "value": 750
+                },
+                {
+                    "attribute": "magSize",
+                    "value": 30
+                },
+                {
+                    "attribute": "optimalRange",
+                    "value": 32
+                },
+                {
+                    "attribute": "headshotDamage",
+                    "value": 0.55
+                }
+            ]
+        }
+    ]
+}
