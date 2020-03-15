@@ -565,7 +565,7 @@
         "name": "Hana-U Corporation",
         "category":"brand",
         "coreAttribute": "utility",
-        "modCategory":"utility",
+        "modCategory":"offence",
         "pieceBonus": [
             {
                 "discription": "+10.0% Skill Haste",
@@ -600,7 +600,7 @@
         "name": "Ceska Vyroba s.r.o.",
         "category":"brand",
         "coreAttribute": "offence",
-        "modCategory":"offence",
+        "modCategory":"defence",
         "pieceBonus": [
             {
                 "discription": "+10.0% Critical Hit Chance",
@@ -635,7 +635,7 @@
         "name": "Grupo Sombra S.A.",
         "category":"brand",
         "coreAttribute": "offence",
-        "modCategory":"offence",
+        "modCategory":"utility",
         "pieceBonus": [
             {
                 "discription": "+15.0% Critical Hit Damage",
