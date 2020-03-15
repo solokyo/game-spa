@@ -3,20 +3,38 @@
         * Filt and show less attributes
         * 
 -->
-<h1 mat-dialog-title>Select a object</h1>
-<div mat-dialog-content>
-    <mat-tab-group  animationDuration="500ms">
-        <mat-tab *ngFor="let type of data | keyvalue" label="{{type.key}}">
-            <div *ngFor="let weapon of type.value" [mat-dialog-close]="weapon">
-                <div>
-                    <span>{{weapon.name}}</span>
-                </div>
-                <div >
-                    <span *ngFor="let each of weapon.bonus">
-                        {{each.attribute}}: {{each.value}}
-                    </span>
-                </div>
-            </div>
-        </mat-tab>
-    </mat-tab-group>
+
+<div [ngSwitch]="data.key">
+    <div *ngSwitchCase="'weapon'">
+        <ng-container *ngTemplateOutlet="weaponTemplate"></ng-container>
+    </div>
+    <!-- . . . -->
+
+    <div *ngSwitchDefault>
+        <ng-container *ngTemplateOutlet="defaultTemplate"></ng-container>
+    </div>
 </div>
+
+<ng-template #weaponTemplate>
+    <h1 mat-dialog-title>Select a weapon</h1>
+    <div mat-dialog-content>
+        <mat-tab-group animationDuration="500ms">
+            <mat-tab *ngFor="let type of data.value | keyvalue" label="{{type.key}}">
+                <div *ngFor="let weapon of type.value" [mat-dialog-close]="weapon">
+                    <div>
+                        <span>{{weapon.name}}</span>
+                    </div>
+                    <div>
+                        <span *ngFor="let each of weapon.bonus">
+                            {{each.attribute}}: {{each.value}}
+                        </span>
+                    </div>
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</ng-template>
+
+<ng-template #defaultTemplate>
+    defaultTemplate used
+</ng-template>
