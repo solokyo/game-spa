@@ -7,13 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Division2BuilderComponent } from './division2-builder.component';
 import { StatBoardComponent } from './stat-board/stat-board.component';
 import { WeaponSelectorComponent } from './weapon-selector/weapon-selector.component';
-import { TalentSelectorComponent } from './talent-selector/talent-selector.component';
+import { WeaponTalentSelectorComponent } from './weapon-talent-selector/weapon-talent-selector.component';
 import { ObjectPickerDialogComponent } from './object-picker-dialog/object-picker-dialog.component';
+import { WeaponModSelectorComponent } from './weapon-mod-selector/weapon-mod-selector.component';
 
 
 
 @NgModule({
-  declarations: [Division2BuilderComponent, StatBoardComponent, WeaponSelectorComponent, TalentSelectorComponent, ObjectPickerDialogComponent],
+  declarations: [Division2BuilderComponent, StatBoardComponent, WeaponSelectorComponent, ObjectPickerDialogComponent, WeaponTalentSelectorComponent, WeaponModSelectorComponent],
   imports: [
     CommonModule, HttpClientModule,MaterialModule,BrowserAnimationsModule
   ],
