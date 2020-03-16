@@ -26,6 +26,12 @@
                     "attribute": "headshotDamage",
                     "value": 0.6
                 }
+            ],
+            "avaliableMods": [
+                {"slot" :"optic", "type":"long"},
+                {"slot" :"magazine", "type":"7.62"},
+                {"slot" :"muzzle", "type":"7.62"},
+                {"slot" :"underbarrel", "type":"long"}
             ]
         },
         {
@@ -78,6 +84,12 @@
                     "attribute": "headshotDamage",
                     "value": 0.55
                 }
+            ],
+            "avaliableMods": [
+                {"slot" :"optic", "type":"long"},
+                {"slot" :"magazine", "type":"mmr"},
+                {"slot" :"muzzle", "type":"7.62"},
+                {"slot" :"underbarrel", "type":"short"}
             ]
         },
         {
@@ -106,6 +118,12 @@
                     "attribute": "headshotDamage",
                     "value": 0.55
                 }
+            ],
+            "avaliableMods": [
+                {"slot" :"optic", "type":"long"},
+                {"slot" :"magazine", "type":"5.56"},
+                {"slot" :"muzzle", "type":"5.56"},
+                {"slot" :"underbarrel", "type":"long"}
             ]
         }
     ]
