@@ -42,7 +42,7 @@ export class WeaponSelectorComponent implements OnInit {
 
   selectWeapon(key: string, index: string): void {
     const dialogRef = this.dialog.open(ObjectPickerDialogComponent, {
-      data: this.utilService.groupBy(this.weapons.filter(weapon => { return weapon.category === key }), 'type')
+      data: {key:'weapon', value: this.utilService.groupBy(this.weapons.filter(weapon => { return weapon.category === key }), 'type')}
     });
 
     dialogRef.afterClosed().subscribe(weapon => {

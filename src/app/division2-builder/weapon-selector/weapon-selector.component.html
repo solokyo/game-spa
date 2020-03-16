@@ -4,11 +4,15 @@
             <span>{{ slot.name }}</span>
             <span><button mat-button (click)="setEquippedWeapon(selectedWeapons[i])">Equip this</button></span>
         </div>
-        <div (click)="selectWeapon(slot.category, i)">
-            <div *ngIf="!selectedWeapons[i]">Select a weapon</div>
+        <div>
+            <div *ngIf="!selectedWeapons[i]" (click)="selectWeapon(slot.category, i)">Select a weapon</div>
             <div *ngIf="selectedWeapons[i]">
-                <span>{{ selectedWeapons[i].name }}</span>
-
+                <div (click)="selectWeapon(slot.category, i)">
+                    <span>{{ selectedWeapons[i].name }}</span>
+                    <!-- Icon, display other attributes -->
+                </div>
+                <d2b-weapon-talent-selector [weapon]=selectedWeapons[i]></d2b-weapon-talent-selector>
+                <d2b-weapon-mod-selector [weapon]=selectedWeapons[i]></d2b-weapon-mod-selector>
             </div>
         </div>
     </div>

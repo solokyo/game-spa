@@ -1,25 +1,47 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Weapon } from '../shared/types/weapon';
-import { WeaponTalent } from '../shared/types/weapon-talent';
-import { DataService } from '../shared/data.service';
-
+import { Component, OnInit, Input } from "@angular/core";
+import { DataService } from "../shared/data.service";
+import { MatDialog } from '@angular/material/dialog';
+import { ObjectPickerDialogComponent } from '../object-picker-dialog/object-picker-dialog.component';
 @Component({
-  selector: 'd2b-weapon-talent-selector',
-  templateUrl: './weapon-talent-selector.component.html',
-  styleUrls: ['./weapon-talent-selector.component.css']
+  selector: "d2b-weapon-talent-selector",
+  templateUrl: "./weapon-talent-selector.component.html",
+  styleUrls: ["./weapon-talent-selector.component.css"]
 })
 export class WeaponTalentSelectorComponent implements OnInit {
-  @Input() weapon: Weapon;
-  weaponTalents: Array<WeaponTalent>;
+  @Input() weapon;
+  weaponTalents;
   constructor(
-    private dataService: DataService,
+    public dialog: MatDialog,
+    private dataService: DataService
   ) {
-    this.dataService.getStable('weaponTalents', '/assets/weapon-talents.json').subscribe(
-      data => { this.weaponTalents = data; }
-    );
+    
+    this.dataService.getStable("weaponTalents", "/assets/weapon-talents.json").subscribe(data => {
+        this.weaponTalents = data;
+    });
   }
 
-  ngOnInit(): void {
-  }
+  selectWeaponTalent():void {
+    const dialogRef = this.dialog.open(ObjectPickerDialogComponent, {
+      width: '720px',
+      data: {key:'weaponTalent',value: this.weaponTalents.filter(talent=>{
+        for (let i = 0; i < talent.availableOn.length; i++) {
+          if (talent.availableOn[i] === this.weapon.type.name) {
+              return true;
+          }
+        }
+        return false;
+      })}
+    });
 
+    dialogRef.afterClosed().subscribe(talent => {
+      console.log(talent);
+      if (talent) {
+        this.weapon.talent = talent;
+      }
+      console.log(this.weapon);
+    });
+  }
+  ngOnInit() {
+    console.log(this.weapon);
+  }
 }
