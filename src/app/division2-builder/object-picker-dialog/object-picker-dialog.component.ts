@@ -10,14 +10,13 @@ import { WeaponSelectorComponent } from '../weapon-selector/weapon-selector.comp
 export class ObjectPickerDialogComponent implements OnInit {
 
   constructor(
-    public dialogRef: MatDialogRef<WeaponSelectorComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: { [propName: string]: any[]; }
+    public dialogRef: MatDialogRef<any>,
+    @Inject(MAT_DIALOG_DATA) public data: { key: string, value: { [propName: string]: any[]; } }
 
   ) { }
 
   ngOnInit(): void {
     console.log(this.data);
-    
   }
 
 }

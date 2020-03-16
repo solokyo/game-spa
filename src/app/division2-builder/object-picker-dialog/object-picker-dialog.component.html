@@ -8,6 +8,12 @@
     <div *ngSwitchCase="'weapon'">
         <ng-container *ngTemplateOutlet="weaponTemplate"></ng-container>
     </div>
+    <div *ngSwitchCase="'weaponTalent'">
+        <ng-container *ngTemplateOutlet="weaponTalentTemplate"></ng-container>
+    </div>
+    <div *ngSwitchCase="'weaponMod'">
+        <ng-container *ngTemplateOutlet="weaponModTemplate"></ng-container>
+    </div>
     <!-- . . . -->
 
     <div *ngSwitchDefault>
@@ -33,6 +39,29 @@
             </mat-tab>
         </mat-tab-group>
     </div>
+</ng-template>
+
+<ng-template #weaponTalentTemplate>
+    <h1 mat-dialog-title>Select a talent</h1>
+    <mat-grid-list mat-dialog-content cols="4" rowHeight="3:2">
+        <div *ngFor="let talent of data.value" [mat-dialog-close]="talent">
+            <mat-grid-tile>{{talent.name}}</mat-grid-tile>
+            <!-- <p>{{talent.description}}</p> -->
+        </div>
+    </mat-grid-list>
+</ng-template>
+
+<ng-template #weaponModTemplate>
+    <h1 mat-dialog-title>Select a mod</h1>
+    <div mat-dialog-content>
+        <mat-grid-list cols="4" rowHeight="3:2">
+            <div *ngFor="let mod of data.value" [mat-dialog-close]="mod">
+                <mat-grid-tile>{{mod.name}}</mat-grid-tile>
+                <!-- <p>{{talent.description}}</p> -->
+            </div>
+        </mat-grid-list>
+    </div>
+
 </ng-template>
 
 <ng-template #defaultTemplate>
