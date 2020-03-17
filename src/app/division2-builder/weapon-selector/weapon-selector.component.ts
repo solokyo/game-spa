@@ -19,6 +19,8 @@ export class WeaponSelectorComponent implements OnInit {
   @Output() equippedWeapon: Weapon;
   weapons: Array<Weapon>;
   weaponTypes: Array<WeaponType>;
+  // selectable 'secondary' attributes for weapon
+  weaponAttributes: any;
   constructor(
     public dialog: MatDialog,
     private dataService: DataService,
@@ -38,11 +40,14 @@ export class WeaponSelectorComponent implements OnInit {
     this.dataService.getStable('weapons', '/assets/weapons.json').subscribe(data => {
       this.weapons = data;
     });
+    this.dataService.getStable('weaponAttributes', '/assets/weapon-attributes.json').subscribe(data => {
+      this.weaponAttributes = data;
+    });
   }
 
-  selectWeapon(key: string, index: string): void {
+  selectWeapon(key: string, index: number): void {
     const dialogRef = this.dialog.open(ObjectPickerDialogComponent, {
-      data: {key:'weapon', value: this.utilService.groupBy(this.weapons.filter(weapon => { return weapon.category === key }), 'type')}
+      data: { key: 'weapon', value: this.utilService.groupBy(this.weapons.filter(weapon => { return weapon.category === key }), 'type') }
     });
 
     dialogRef.afterClosed().subscribe(weapon => {
@@ -55,7 +60,35 @@ export class WeaponSelectorComponent implements OnInit {
     // this.statService.setEquippedWeapon(this.selectedWeapons[0]);
   }
 
-  setEquippedWeapon(equippedWeapon: Weapon): void{
+  selectWeaponAttribute(weaponType: WeaponType, index: number): void {
+    const dialogRef = this.dialog.open(ObjectPickerDialogComponent, {
+      data: {
+        key: 'attribute', value: this.weaponAttributes.filter(each => {
+          return !weaponType.bonus.some(foo => {
+            return foo.attribute === each.attribute;
+          });
+        })
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(weaponAttribute => {
+      if (weaponAttribute) {
+        this.updateOrPush(this.selectedWeapons[index].mods, weaponAttribute, weaponAttribute.attribute);
+      }
+    });
+  }
+
+  private updateOrPush(arr:Array<any>, obj:any, key:string) {
+    const index = arr.findIndex((e) => e[key] === obj[key]);
+
+    if (index === -1) {
+        arr.push(obj);
+    } else {
+        arr[index] = obj;
+    }
+}
+
+  setEquippedWeapon(equippedWeapon: Weapon): void {
     this.equippedWeapon = equippedWeapon;
     this.statService.setEquippedWeapon(this.equippedWeapon);
   }
