@@ -1,5 +1,5 @@
 {
-    "weaponTypeAttributes": [
+    "weaponAttributes": [
         {
             "attribute": "damageToArmor",
             "value": 0.06
@@ -29,11 +29,11 @@
             "value": 0.12
         },
         {
-            "attribute": "stability",
+            "attribute": "stabilityBonus",
             "value": 0.12
         },
         {
-            "attribute": "accuracy",
+            "attribute": "accuracyBonus",
             "value": 0.12
         },
         {
