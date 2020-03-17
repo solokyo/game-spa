@@ -11,6 +11,8 @@
                     <span>{{ selectedWeapons[i].name }}</span>
                     <!-- Icon, display other attributes -->
                 </div>
+                <div *ngIf="!secondaryAttribute" (click)="selectWeaponAttribute(selectedWeapons[i].type, i)">Select second attribute</div>
+                <div *ngIf="secondaryAttribute" (click)="selectWeaponAttribute(selectedWeapons[i].type, i)">{{secondaryAttribute.attribute}}</div>
                 <d2b-weapon-talent-selector [weapon]=selectedWeapons[i]></d2b-weapon-talent-selector>
                 <d2b-weapon-mod-selector [weapon]=selectedWeapons[i]></d2b-weapon-mod-selector>
             </div>

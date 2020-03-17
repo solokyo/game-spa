@@ -21,6 +21,7 @@ export class WeaponSelectorComponent implements OnInit {
   weaponTypes: Array<WeaponType>;
   // selectable 'secondary' attributes for weapon
   weaponAttributes: any;
+  secondaryAttribute: any;
   constructor(
     public dialog: MatDialog,
     private dataService: DataService,
@@ -73,14 +74,17 @@ export class WeaponSelectorComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(weaponAttribute => {
       if (weaponAttribute) {
-        this.updateOrPush(this.selectedWeapons[index].mods, weaponAttribute, weaponAttribute.attribute);
+        this.secondaryAttribute = weaponAttribute;
+        this.updateOrPush(this.selectedWeapons[index].bonus, weaponAttribute, weaponAttribute.attribute);
       }
+      console.log(this.selectedWeapons[index]);
     });
+    
+    
   }
 
   private updateOrPush(arr:Array<any>, obj:any, key:string) {
     const index = arr.findIndex((e) => e[key] === obj[key]);
-
     if (index === -1) {
         arr.push(obj);
     } else {

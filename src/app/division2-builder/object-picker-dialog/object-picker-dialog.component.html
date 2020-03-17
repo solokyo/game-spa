@@ -14,6 +14,9 @@
     <div *ngSwitchCase="'weaponMod'">
         <ng-container *ngTemplateOutlet="weaponModTemplate"></ng-container>
     </div>
+    <div *ngSwitchCase="'attribute'">
+        <ng-container *ngTemplateOutlet="attributeTemplate"></ng-container>
+    </div>
     <!-- . . . -->
 
     <div *ngSwitchDefault>
@@ -61,7 +64,17 @@
             </div>
         </mat-grid-list>
     </div>
+</ng-template>
 
+<ng-template #attributeTemplate>
+    <h1 mat-dialog-title>Select a attribute</h1>
+    <div mat-dialog-content>
+            <div *ngFor="let attribute of data.value" [mat-dialog-close]="attribute">
+                <span>{{attribute.attribute}}</span>
+                <span>: {{attribute.value | percent}}</span>
+                <!-- <p>{{talent.description}}</p> -->
+            </div>
+    </div>
 </ng-template>
 
 <ng-template #defaultTemplate>
