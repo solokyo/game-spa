@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from "@angular/core";
 import { DataService } from "../shared/data.service";
 import { MatDialog } from '@angular/material/dialog';
 import { ObjectPickerDialogComponent } from '../object-picker-dialog/object-picker-dialog.component';
+import { WeaponTalent } from '../shared/types/weapon-talent';
 @Component({
   selector: "d2b-weapon-talent-selector",
   templateUrl: "./weapon-talent-selector.component.html",
@@ -9,7 +10,7 @@ import { ObjectPickerDialogComponent } from '../object-picker-dialog/object-pick
 })
 export class WeaponTalentSelectorComponent implements OnInit {
   @Input() weapon;
-  weaponTalents;
+  weaponTalents: Array<WeaponTalent>;
   constructor(
     public dialog: MatDialog,
     private dataService: DataService
@@ -37,11 +38,10 @@ export class WeaponTalentSelectorComponent implements OnInit {
       console.log(talent);
       if (talent) {
         this.weapon.talent = talent;
+
       }
-      console.log(this.weapon);
     });
   }
   ngOnInit() {
-    console.log(this.weapon);
   }
 }

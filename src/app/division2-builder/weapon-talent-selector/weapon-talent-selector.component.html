@@ -1,1 +1,13 @@
-<div (click)="selectWeaponTalent()">Select a talent</div>
+<div *ngIf="weapon.rarity==='exotic'||weapon.rarity==='named';then displayTalentTemplate else selectTalentTemplate"></div>
+
+<ng-template #selectTalentTemplate>
+    <div *ngIf="!weapon.talent" (click)="selectWeaponTalent()">Select a talent</div>
+    <div *ngIf="weapon.talent" (click)="selectWeaponTalent()">
+        <span>{{weapon.talent.name}}</span>
+        <span>{{weapon.talent.description}}</span>
+    </div>
+</ng-template>
+
+<ng-template #displayTalentTemplate>
+    displayModTemplate used
+</ng-template>
