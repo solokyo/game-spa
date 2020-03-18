@@ -33,4 +33,19 @@ export class UtilService {
           return rv;
       }, []);
   } 
+
+  /**
+   * Search through given array by key, push object into array if not match, replace object if match.
+   * @param arr 
+   * @param obj 
+   * @param key 
+   */
+  updateOrPush(arr: Array<any>, obj: any, key: string) {
+    const index = arr.findIndex((e) => e[key] === obj[key]);    
+    if (index === -1) {
+      arr.push(obj);
+    } else {
+      arr[index] = obj;
+    }
+  }
 }

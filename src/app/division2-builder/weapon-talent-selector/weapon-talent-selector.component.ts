@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit, Input, EventEmitter, Output } from "@angular/core";
 import { DataService } from "../shared/data.service";
 import { MatDialog } from '@angular/material/dialog';
 import { ObjectPickerDialogComponent } from '../object-picker-dialog/object-picker-dialog.component';
@@ -11,6 +11,7 @@ import { WeaponTalent } from '../shared/types/weapon-talent';
 export class WeaponTalentSelectorComponent implements OnInit {
   @Input() weapon;
   weaponTalents: Array<WeaponTalent>;
+  @Output() updated = new EventEmitter<boolean>();
   constructor(
     public dialog: MatDialog,
     private dataService: DataService
@@ -38,10 +39,10 @@ export class WeaponTalentSelectorComponent implements OnInit {
       console.log(talent);
       if (talent) {
         this.weapon.talent = talent;
-
+        this.updated.emit(talent);
       }
     });
   }
-  ngOnInit() {
-  }
+
+  ngOnInit() {}
 }

@@ -25,9 +25,16 @@ export class StatService {
     return this.stats$.asObservable();
   }
 
-  setEquippedWeapon(equippedWeapon: Weapon): void {
-    this.equippedWeapon = equippedWeapon;
-    this.updateStats();
+  // setEquippedWeapon(equippedWeapon: Weapon): void {
+  //   this.equippedWeapon = equippedWeapon;
+  //   this.updateStats();
+  // }
+
+  setEquippedWeapon(equippedWeapon$: BehaviorSubject<Weapon>): void {
+    equippedWeapon$.subscribe(equippedWeapon=>{
+      this.equippedWeapon = equippedWeapon;
+      this.updateStats();
+    })
   }
 
   // Get a copy from initial stats then bind all object that contains attributes together and do sum.

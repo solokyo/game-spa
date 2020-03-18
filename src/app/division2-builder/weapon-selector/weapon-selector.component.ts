@@ -7,6 +7,7 @@ import { UtilService } from '../shared/util.service';
 import { StatService } from '../shared/stat.service'
 import { Weapon } from '../shared/types/weapon';
 import { WeaponType } from '../shared/types/weapon-type';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'd2b-weapon-selector',
@@ -22,12 +23,14 @@ export class WeaponSelectorComponent implements OnInit {
   // selectable 'secondary' attributes for weapon
   weaponAttributes: any;
   secondaryAttribute: any;
+  equippedWeapon$: BehaviorSubject<Weapon>;
   constructor(
     public dialog: MatDialog,
     private dataService: DataService,
     private utilService: UtilService,
     private statService: StatService
   ) {
+    this.equippedWeapon$ = new BehaviorSubject<Weapon>(this.equippedWeapon);
     this.selectedWeapons = new Array(3);
   }
 
@@ -44,6 +47,7 @@ export class WeaponSelectorComponent implements OnInit {
     this.dataService.getStable('weaponAttributes', '/assets/weapon-attributes.json').subscribe(data => {
       this.weaponAttributes = data;
     });
+    this.statService.setEquippedWeapon(this.equippedWeapon$);
   }
 
   selectWeapon(key: string, index: number): void {
@@ -51,11 +55,17 @@ export class WeaponSelectorComponent implements OnInit {
       data: { key: 'weapon', value: this.utilService.groupBy(this.weapons.filter(weapon => { return weapon.category === key }), 'type') }
     });
 
-    dialogRef.afterClosed().subscribe(weapon => {
+    dialogRef.afterClosed().subscribe((weapon: Weapon) => {
       if (weapon) {
         let foo = { ...weapon };
+        if (!foo.mods) {
+          foo.mods = new Array();
+        }
         foo.type = this.weaponTypes.find(type => { return type.name === foo.type });
         this.selectedWeapons[index] = foo;
+        // reset secondary attribute
+        this.secondaryAttribute = null;
+        this.setEquippedWeapon(this.selectedWeapons[index]);
       }
     });
     // this.statService.setEquippedWeapon(this.selectedWeapons[0]);
@@ -75,25 +85,22 @@ export class WeaponSelectorComponent implements OnInit {
     dialogRef.afterClosed().subscribe(weaponAttribute => {
       if (weaponAttribute) {
         this.secondaryAttribute = weaponAttribute;
-        this.updateOrPush(this.selectedWeapons[index].bonus, weaponAttribute, weaponAttribute.attribute);
+        // TODO: try to be more elegant
+        this.selectedWeapons[index]['secondaryAttribute'] = { 'bonus': [this.secondaryAttribute] };
+        this.setEquippedWeapon(this.selectedWeapons[index]);
       }
-      console.log(this.selectedWeapons[index]);
     });
-    
-    
   }
 
-  private updateOrPush(arr:Array<any>, obj:any, key:string) {
-    const index = arr.findIndex((e) => e[key] === obj[key]);
-    if (index === -1) {
-        arr.push(obj);
-    } else {
-        arr[index] = obj;
-    }
-}
+
+
+  updateEquippedWeapon() {
+    this.equippedWeapon$.next(this.equippedWeapon);
+  }
 
   setEquippedWeapon(equippedWeapon: Weapon): void {
     this.equippedWeapon = equippedWeapon;
-    this.statService.setEquippedWeapon(this.equippedWeapon);
+    this.updateEquippedWeapon();
+    // this.statService.setEquippedWeapon(this.equippedWeapon);
   }
 }

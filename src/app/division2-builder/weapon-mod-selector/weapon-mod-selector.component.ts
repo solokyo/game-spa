@@ -26,6 +26,8 @@ export class WeaponModSelectorComponent implements OnInit {
   }
 
   selectWeaponMod(avaliableMod: any): void {
+    console.log(this.weapon);
+    
     const dialogRef = this.dialog.open(ObjectPickerDialogComponent, {
       width: '1080px',
       data: {
@@ -38,7 +40,7 @@ export class WeaponModSelectorComponent implements OnInit {
     dialogRef.afterClosed().subscribe(mod => {
       console.log(mod);
       if (mod) {
-        this.weapon.mods.push(mod);
+        this.weapon.mods?.push(mod);
       }
       console.log(this.weapon);
     });
