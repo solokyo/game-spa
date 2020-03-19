@@ -1,9 +1,10 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Weapon } from '../shared/types/weapon';
 import { WeaponMod } from '../shared/types/weapon-mod';
 import { DataService } from '../shared/data.service';
 import { MatDialog } from '@angular/material/dialog';
 import { ObjectPickerDialogComponent } from '../object-picker-dialog/object-picker-dialog.component';
+import { UtilService } from '../shared/util.service';
 
 @Component({
   selector: 'd2b-weapon-mod-selector',
@@ -12,9 +13,11 @@ import { ObjectPickerDialogComponent } from '../object-picker-dialog/object-pick
 })
 export class WeaponModSelectorComponent implements OnInit {
   @Input() weapon: Weapon;
+  @Output() updated = new EventEmitter<boolean>();
   weaponMods: Array<WeaponMod>;
   constructor(
     public dialog: MatDialog,
+    private utilService: UtilService,
     private dataService: DataService
   ) {
     this.dataService.getStable('weaponMods', '/assets/weapon-mods.json').subscribe(data => {
@@ -40,7 +43,8 @@ export class WeaponModSelectorComponent implements OnInit {
     dialogRef.afterClosed().subscribe(mod => {
       console.log(mod);
       if (mod) {
-        this.weapon.mods?.push(mod);
+        this.utilService.updateOrPush(this.weapon.mods,mod,mod.slot);
+        this.updated.emit(mod);
       }
       console.log(this.weapon);
     });
