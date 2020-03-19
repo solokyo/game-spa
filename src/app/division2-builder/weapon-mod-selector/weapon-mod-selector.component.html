@@ -1,12 +1,23 @@
 <div *ngIf="weapon.rarity==='exotic';then displayModTemplate else selectModTemplate"></div>
 
 <ng-template #selectModTemplate>
-    selectModTemplate used
-    <div *ngFor="let avaliableMod of weapon.avaliableMods" (click)="selectWeaponMod(avaliableMod)">
+    <div *ngFor="let avaliableMod of weapon.avaliableMods;" (click)="selectWeaponMod(avaliableMod)">
         {{avaliableMod.slot}}
+        <!-- <div *ngIf="isSelected(avaliableMod)"> -->
+        <div *ngIf="isSelected(avaliableMod)">
+            {{isSelected(avaliableMod).name}}
+        </div>
     </div>
 </ng-template>
 
 <ng-template #displayModTemplate>
-    displayModTemplate used
+    <div>
+        <div *ngFor="let mod of weapon.mods">
+            <p>{{mod.name}}</p>
+            <ng-container *ngFor="let each of mod.bonus">
+                <span>{{each.attribute}}</span>
+                <span>{{each.value | percent:'.2'}}</span>
+            </ng-container>
+        </div>
+    </div>
 </ng-template>

@@ -28,10 +28,22 @@
                 }
             ],
             "avaliableMods": [
-                {"slot" :"optic", "type":"long"},
-                {"slot" :"magazine", "type":"7.62"},
-                {"slot" :"muzzle", "type":"7.62"},
-                {"slot" :"underbarrel", "type":"long"}
+                {
+                    "slot": "optic",
+                    "type": "long"
+                },
+                {
+                    "slot": "magazine",
+                    "type": "7.62"
+                },
+                {
+                    "slot": "muzzle",
+                    "type": "7.62"
+                },
+                {
+                    "slot": "underbarrel",
+                    "type": "long"
+                }
             ]
         },
         {
@@ -58,10 +70,22 @@
                 }
             ],
             "avaliableMods": [
-                {"slot" :"optic", "type":"long"},
-                {"slot" :"magazine", "type":"mmr"},
-                {"slot" :"muzzle", "type":"7.62"},
-                {"slot" :"underbarrel", "type":"short"}
+                {
+                    "slot": "optic",
+                    "type": "long"
+                },
+                {
+                    "slot": "magazine",
+                    "type": "mmr"
+                },
+                {
+                    "slot": "muzzle",
+                    "type": "7.62"
+                },
+                {
+                    "slot": "underbarrel",
+                    "type": "short"
+                }
             ]
         },
         {
@@ -92,10 +116,22 @@
                 }
             ],
             "avaliableMods": [
-                {"slot" :"optic", "type":"long"},
-                {"slot" :"magazine", "type":"5.56"},
-                {"slot" :"muzzle", "type":"5.56"},
-                {"slot" :"underbarrel", "type":"long"}
+                {
+                    "slot": "optic",
+                    "type": "long"
+                },
+                {
+                    "slot": "magazine",
+                    "type": "5.56"
+                },
+                {
+                    "slot": "muzzle",
+                    "type": "5.56"
+                },
+                {
+                    "slot": "underbarrel",
+                    "type": "long"
+                }
             ]
         },
         {
@@ -126,10 +162,87 @@
                 }
             ],
             "avaliableMods": [
-                {"slot" :"optic", "type":"long"},
-                {"slot" :"magazine", "type":"5.56"},
-                {"slot" :"muzzle", "type":"5.56"},
-                {"slot" :"underbarrel", "type":"long"}
+                {
+                    "slot": "optic",
+                    "type": "long"
+                },
+                {
+                    "slot": "magazine",
+                    "type": "5.56"
+                },
+                {
+                    "slot": "muzzle",
+                    "type": "5.56"
+                },
+                {
+                    "slot": "underbarrel",
+                    "type": "long"
+                }
+            ]
+        },
+        {
+            "name": "Pestilence",
+            "variant": "M60",
+            "type": "lmg",
+            "category": "primary",
+            "rarity": "exotic",
+            "bonus": [
+                {
+                    "attribute": "damage",
+                    "value": 44700
+                },
+                {
+                    "attribute": "rpm",
+                    "value": 750
+                },
+                {
+                    "attribute": "magSize",
+                    "value": 30
+                },
+                {
+                    "attribute": "optimalRange",
+                    "value": 32
+                },
+                {
+                    "attribute": "headshotDamage",
+                    "value": 0.55
+                }
+            ],
+            "talent": {
+                "name": "Plague of the Outcasts",
+                "description": "exotic weapon talent description."
+            },
+            "mods": [
+                {
+                    "slot": "magazine",
+                    "name": "exotic mag",
+                    "bonus":[
+                        {
+                            "attribute":"rpmBonus",
+                            "value":0.1
+                        }
+                    ]
+                },
+                {
+                    "slot": "muzzle",
+                    "name": "exotic muzzle",
+                    "bonus":[
+                        {
+                            "attribute": "weaponHandling",
+                            "value":0.15
+                        }
+                    ]
+                },
+                {
+                    "slot": "underbarrel",
+                    "name": "exotic under",
+                    "bonus":[
+                        {
+                            "attribute": "stabilityBonus",
+                            "value":0.2
+                        }
+                    ]
+                }
             ]
         }
     ]

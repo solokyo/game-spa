@@ -71,7 +71,7 @@
     <div mat-dialog-content>
             <div *ngFor="let attribute of data.value" [mat-dialog-close]="attribute">
                 <span>{{attribute.attribute}}</span>
-                <span>: {{attribute.value | percent}}</span>
+                <span>: {{attribute.value | percent:'.2'}}</span>
                 <!-- <p>{{talent.description}}</p> -->
             </div>
     </div>

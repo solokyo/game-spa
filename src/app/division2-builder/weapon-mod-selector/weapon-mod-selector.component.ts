@@ -25,12 +25,11 @@ export class WeaponModSelectorComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { console.log(this.weapon); }
 
   selectWeaponMod(avaliableMod: any): void {
     console.log(this.weapon);
-    
+
     const dialogRef = this.dialog.open(ObjectPickerDialogComponent, {
       width: '1080px',
       data: {
@@ -43,11 +42,15 @@ export class WeaponModSelectorComponent implements OnInit {
     dialogRef.afterClosed().subscribe(mod => {
       console.log(mod);
       if (mod) {
-        this.utilService.updateOrPush(this.weapon.mods,mod,mod.slot);
+        this.utilService.updateOrPush(this.weapon.mods, mod, mod.slot);
         this.updated.emit(mod);
       }
       console.log(this.weapon);
     });
   }
 
+  isSelected(avaliableMod: { slot: string, type: string }) {
+    let index = this.weapon.mods.findIndex(mod => { return mod.slot === avaliableMod.slot });
+    return index === -1 ? null : this.weapon.mods[index];
+  }
 }
