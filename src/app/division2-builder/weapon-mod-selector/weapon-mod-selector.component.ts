@@ -42,7 +42,7 @@ export class WeaponModSelectorComponent implements OnInit {
     dialogRef.afterClosed().subscribe(mod => {
       console.log(mod);
       if (mod) {
-        this.utilService.updateOrPush(this.weapon.mods, mod, mod.slot);
+        this.utilService.updateOrPush(this.weapon.mods, mod, 'slot');
         this.updated.emit(mod);
       }
       console.log(this.weapon);

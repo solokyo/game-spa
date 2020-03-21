@@ -3,7 +3,7 @@
 <ng-template #selectModTemplate>
     <div *ngFor="let avaliableMod of weapon.avaliableMods;" (click)="selectWeaponMod(avaliableMod)">
         {{avaliableMod.slot}}
-        <!-- <div *ngIf="isSelected(avaliableMod)"> -->
+        <div *ngIf="isSelected(avaliableMod)"></div>
         <div *ngIf="isSelected(avaliableMod)">
             {{isSelected(avaliableMod).name}}
         </div>

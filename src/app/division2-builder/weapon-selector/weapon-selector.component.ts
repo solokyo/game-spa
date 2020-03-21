@@ -44,9 +44,6 @@ export class WeaponSelectorComponent implements OnInit {
     this.dataService.getStable('weapons', '/assets/weapons.json').subscribe(data => {
       this.weapons = data;
     });
-    this.dataService.getStable('weaponAttributes', '/assets/weapon-attributes.json').subscribe(data => {
-      this.weaponAttributes = data;
-    });
     this.statService.setEquippedWeapon(this.equippedWeapon$);
   }
 
@@ -71,26 +68,6 @@ export class WeaponSelectorComponent implements OnInit {
     // this.statService.setEquippedWeapon(this.selectedWeapons[0]);
   }
 
-  selectWeaponAttribute(weaponType: WeaponType, index: number): void {
-    const dialogRef = this.dialog.open(ObjectPickerDialogComponent, {
-      data: {
-        key: 'attribute', value: this.weaponAttributes.filter(each => {
-          return !weaponType.bonus.some(foo => {
-            return foo.attribute === each.attribute;
-          });
-        })
-      }
-    });
-
-    dialogRef.afterClosed().subscribe(weaponAttribute => {
-      if (weaponAttribute) {
-        this.secondaryAttribute = weaponAttribute;
-        // TODO: try to be more elegant
-        this.selectedWeapons[index]['secondaryAttribute'] = { 'bonus': [this.secondaryAttribute] };
-        this.setEquippedWeapon(this.selectedWeapons[index]);
-      }
-    });
-  }
 
 
 

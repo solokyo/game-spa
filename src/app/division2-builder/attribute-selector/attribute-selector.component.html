@@ -1,1 +1,4 @@
-<p>attribute-selector works!</p>
+<div *ngIf="!weapon.hasOwnProperty('secondaryAttribute')" (click)="selectWeaponAttribute(weapon.type)">Select second
+    attribute</div>
+<div *ngIf="weapon.hasOwnProperty('secondaryAttribute')" (click)="selectWeaponAttribute(weapon.type)">
+    {{secondaryAttribute.attribute}}</div>

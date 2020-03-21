@@ -8,6 +8,7 @@ export interface Weapon {
     type: string | WeaponType;
     category: string;
     bonus: Array<{ attribute: string, value: number }>;
+    secondaryAttribute?:{bonus: Array<{ attribute: string, value: number }>};
     rarity?: string;
     talent?: WeaponTalent;
     avaliableMods?: Array<{slot:string, type: string}>;
