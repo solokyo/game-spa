@@ -1,0 +1,52 @@
+{
+    "gearAttributes": [
+        {
+            "attribute": "weaponHandling",
+            "value": 0.14
+        },
+        {
+            "attribute": "criticalHitChance",
+            "value": 0.06
+        },
+        {
+            "attribute": "criticalHitDamage",
+            "value": 0.12
+        },
+        {
+            "attribute": "headshotDamage",
+            "value": 0.1
+        },
+        {
+            "attribute": "skillDamage",
+            "value": 0.1
+        },
+        {
+            "attribute": "outgoingHealing",
+            "value": 0.2
+        },
+        {
+            "attribute": "skillHaste",
+            "value": 0.12
+        },
+        {
+            "attribute": "statusEffects",
+            "value": 0.1
+        },
+        {
+            "attribute": "armorRegeneration",
+            "value": 4925
+        },
+        {
+            "attribute": "hazardProtection",
+            "value": 0.1
+        },
+        {
+            "attribute": "health",
+            "value": 18935
+        },
+        {
+            "attribute": "explosiveResistance",
+            "value": 0.1
+        }
+    ]
+}

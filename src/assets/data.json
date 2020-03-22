@@ -13,7 +13,62 @@
             "category": "sidearm"
         }
     ],
-
+    "gearSlots": [
+        {
+            "slot": "Mask",
+            "bonus": [
+                {
+                    "attribute": "armor",
+                    "value": 80297
+                }
+            ]
+        },
+        {
+            "slot": "Chest",
+            "bonus": [
+                {
+                    "attribute": "armor",
+                    "value": 157961
+                }
+            ]
+        },
+        {
+            "slot": "Holster",
+            "bonus": [
+                {
+                    "attribute": "armor",
+                    "value": 111889
+                }
+            ]
+        },
+        {
+            "slot": "Backpack",
+            "bonus": [
+                {
+                    "attribute": "armor",
+                    "value": 130844
+                }
+            ]
+        },
+        {
+            "slot": "Gloves",
+            "bonus": [
+                {
+                    "attribute": "armor",
+                    "value": 80297
+                }
+            ]
+        },
+        {
+            "slot": "Kneepads",
+            "bonus": [
+                {
+                    "attribute": "armor",
+                    "value": 98726
+                }
+            ]
+        }
+    ],
     "statBoardInit": {
         "damage": 0,
         "magSize": 0,

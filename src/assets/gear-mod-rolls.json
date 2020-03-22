@@ -5,18 +5,15 @@
             "availableRolls": [
                 {
                     "attribute": "criticalHitChance",
-                    "min": 0,
-                    "max": 0
+                    "value": 0.06
                 },
                 {
                     "attribute": "criticalHitDamage",
-                    "min": 0,
-                    "max": 0
+                    "value": 0.12
                 },
                 {
                     "attribute": "headshotDamage",
-                    "min": 0,
-                    "max": 0
+                    "value": 0.1
                 }
             ]
         },
@@ -25,68 +22,35 @@
             "availableRolls": [
                 {
                     "attribute": "armorOnkill",
-                    "min": 0,
-                    "max": 0
-                },
-                {
-                    "attribute": "healthOnkill",
-                    "min": 0,
-                    "max": 0
+                    "value": 18935
                 },
                 {
                     "attribute": "protectionFromElits",
-                    "min": 0,
-                    "max": 0
+                    "value": 0.13
                 },
                 {
                     "attribute": "incomingHealing",
-                    "min": 0,
-                    "max": 0
+                    "value": 0.2
                 },
                 {
                     "attribute": "bleedResistance",
-                    "min": 0,
-                    "max": 0
+                    "value": 0.1
                 },
                 {
                     "attribute": "blindDeafResistance",
-                    "min": 0,
-                    "max": 0
+                    "value": 0.1
                 },
                 {
                     "attribute": "burnResistance",
-                    "min": 0,
-                    "max": 0
-                },
-                {
-                    "attribute": "disorientResistance",
-                    "min": 0,
-                    "max": 0
+                    "value": 0.1
                 },
                 {
                     "attribute": "disruptResistance",
-                    "min": 0,
-                    "max": 0
-                },
-                {
-                    "attribute": "ensnareResistance",
-                    "min": 0,
-                    "max": 0
-                },
-                {
-                    "attribute": "explosiveResistance",
-                    "min": 0,
-                    "max": 0
-                },
-                {
-                    "attribute": "poisonResistance",
-                    "min": 0,
-                    "max": 0
+                    "value": 0.1
                 },
                 {
                     "attribute": "shockResistance",
-                    "min": 0,
-                    "max": 0
+                    "value": 0.1
                 }
             ]
         },
@@ -95,18 +59,15 @@
             "availableRolls": [
                 {
                     "attribute": "outgoingHealing",
-                    "min": 0,
-                    "max": 0
+                    "value": 0.2
                 },
                 {
                     "attribute": "skillDuration",
-                    "min": 0,
-                    "max": 0
+                    "value": 0.12
                 },
                 {
                     "attribute": "skillHeast",
-                    "min": 0,
-                    "max": 0
+                    "value": 0.1
                 }
             ]
         }
