@@ -84,8 +84,8 @@
             "name": "Damage to Health",
             "category": "offence"
         },
-        "damageToOutOfCover": {
-            "name": "Damage to Out Of Cover",
+        "damageToTargetOutOfCover": {
+            "name": "Damage to Target Out Of Cover",
             "category": "offence"
         },
         "assaultRifleDamageBonus": {

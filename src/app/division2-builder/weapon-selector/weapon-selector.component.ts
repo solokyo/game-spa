@@ -49,7 +49,7 @@ export class WeaponSelectorComponent implements OnInit {
 
   selectWeapon(key: string, index: number): void {
     const dialogRef = this.dialog.open(ObjectPickerDialogComponent, {
-      data: { key: 'weapon', value: this.utilService.groupBy(this.weapons.filter(weapon => { return weapon.category === key }), 'type') }
+      data: { key: 'weapon', value: this.groupBy(this.weapons.filter(weapon => { return weapon.category === key }), 'type') }
     });
 
     dialogRef.afterClosed().subscribe((weapon: Weapon) => {
@@ -58,7 +58,15 @@ export class WeaponSelectorComponent implements OnInit {
         if (!foo.mods) {
           foo.mods = new Array();
         }
-        foo.type = this.weaponTypes.find(type => { return type.name === foo.type });
+        /**
+         * weapon type holds general core attributes of weapon.
+         * when a weapon were selected, will assign a WeaponType object to weaponType. 
+         * Some special weapons have their own core attribute (e.g. Withe Death have 137% headshot damage)
+         * and it's weaponType will defined in weapon.json as an object.
+         */
+        if (typeof foo.type === "string") {
+          foo.type = this.weaponTypes.find(type => { return type.name === foo.type });
+        }
         this.selectedWeapons[index] = foo;
         // reset secondary attribute
         this.secondaryAttribute = null;
@@ -67,9 +75,6 @@ export class WeaponSelectorComponent implements OnInit {
     });
     // this.statService.setEquippedWeapon(this.selectedWeapons[0]);
   }
-
-
-
 
   updateEquippedWeapon() {
     this.equippedWeapon$.next(this.equippedWeapon);
@@ -80,4 +85,13 @@ export class WeaponSelectorComponent implements OnInit {
     this.updateEquippedWeapon();
     // this.statService.setEquippedWeapon(this.equippedWeapon);
   }
+
+  private groupBy(xs: Array<any>, key: string): ({ [propName: string]: Array<any> }) {
+    return xs.reduce(function (rv, x) {
+      let foo = {...x}
+      foo.type = typeof foo.type === "string" ? foo.type : foo.type.name;
+      (rv[foo[key]] = rv[foo[key]] || []).push(x);
+      return rv;
+    }, {});
+  };
 }

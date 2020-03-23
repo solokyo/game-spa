@@ -21,7 +21,7 @@
 					"value": 0.15
 				},
 				{
-					"attribute": "damageToOutOfCover",
+					"attribute": "damageToTargetOutOfCover",
 					"value": 0.12
 				}
 			]

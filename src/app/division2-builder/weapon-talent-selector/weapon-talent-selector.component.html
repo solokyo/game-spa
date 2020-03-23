@@ -1,4 +1,4 @@
-<div *ngIf="weapon.rarity==='exotic'||weapon.rarity==='named';then displayTalentTemplate else selectTalentTemplate"></div>
+<div *ngIf="weapon.talent;then displayTalentTemplate else selectTalentTemplate"></div>
 
 <ng-template #selectTalentTemplate>
     <div *ngIf="!weapon.talent" (click)="selectWeaponTalent()">Select a talent</div>
