@@ -4,13 +4,12 @@ import { WeaponType } from '../shared/types/weapon-type';
 import { ObjectPickerDialogComponent } from '../object-picker-dialog/object-picker-dialog.component';
 import { MatDialog } from '@angular/material/dialog';
 import { DataService } from '../shared/data.service';
-
 @Component({
-  selector: 'd2b-attribute-selector',
-  templateUrl: './attribute-selector.component.html',
-  styleUrls: ['./attribute-selector.component.css']
+  selector: 'd2b-weapon-attribute-selector',
+  templateUrl: './weapon-attribute-selector.component.html',
+  styleUrls: ['./weapon-attribute-selector.component.css']
 })
-export class AttributeSelectorComponent implements OnInit {
+export class WeaponAttributeSelectorComponent implements OnInit {
   @Input() weapon: Weapon;
   @Output() updated = new EventEmitter<boolean>();
   weaponAttributes: any;
