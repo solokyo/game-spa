@@ -1,0 +1,29 @@
+{
+    "gears": [
+        {
+            "type": "Mask",
+            "brand": "Gila Guard",
+            "name": "Nightwatcher",
+            "rarity": "named",
+            "secondaryAttribute": {
+                "bonus": [
+                    {
+                        "attribute": "Pulse Haste",
+                        "category": "utility",
+                        "value": 1
+                    }
+                ]
+            }
+        },
+        {
+            "type": "Backpack",
+            "brand": "Providence Defense",
+            "name": "The Gift",
+            "rarity": "named",
+            "talent": {
+                "name": "Perfect Vigilance",
+                "description": "Increases total weapon damage by 30%. Taking damage disables this buff for 4s."
+            }
+        }
+    ]
+}

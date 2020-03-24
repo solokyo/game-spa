@@ -12,11 +12,12 @@ import { ObjectPickerDialogComponent } from './object-picker-dialog/object-picke
 import { WeaponModSelectorComponent } from './weapon-mod-selector/weapon-mod-selector.component';
 import { GearSelectorComponent } from './gear-selector/gear-selector.component';
 import { WeaponAttributeSelectorComponent } from './weapon-attribute-selector/weapon-attribute-selector.component';
+import { GearPickerDialogComponent } from './gear-picker-dialog/gear-picker-dialog.component';
 
 
 
 @NgModule({
-  declarations: [Division2BuilderComponent, StatBoardComponent, WeaponSelectorComponent, ObjectPickerDialogComponent, WeaponTalentSelectorComponent, WeaponModSelectorComponent, GearSelectorComponent, WeaponAttributeSelectorComponent],
+  declarations: [Division2BuilderComponent, StatBoardComponent, WeaponSelectorComponent, ObjectPickerDialogComponent, WeaponTalentSelectorComponent, WeaponModSelectorComponent, GearSelectorComponent, WeaponAttributeSelectorComponent, GearPickerDialogComponent],
   imports: [
     CommonModule, HttpClientModule, MaterialModule, BrowserAnimationsModule
   ],

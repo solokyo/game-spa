@@ -17,9 +17,6 @@
     <div *ngSwitchCase="'attribute'">
         <ng-container *ngTemplateOutlet="attributeTemplate"></ng-container>
     </div>
-    <div *ngSwitchCase="'brand'">
-        <ng-container *ngTemplateOutlet="brandTemplate"></ng-container>
-    </div>
     <!-- . . . -->
 
     <div *ngSwitchDefault>
@@ -77,56 +74,6 @@
             <span>: {{attribute.value | percent:'.2'}}</span>
             <!-- <p>{{talent.description}}</p> -->
         </div>
-    </div>
-</ng-template>
-
-<ng-template #brandTemplate>
-    <h1 mat-dialog-title>Gear</h1>
-    <div mat-dialog-content>
-        <!-- <div *ngFor="let brand of data.value" [mat-dialog-close]="brand">
-            <div>
-                <span>{{brand.name}}</span>
-                <p *ngFor="let each of brand.pieceBonus; let i = index">
-                    <ng-container *ngIf="each.description">
-                        <span>{{i + 1}}/{{brand.pieceBonus.length}}:</span>
-                        <span>{{each.description}}</span>
-                    </ng-container>
-
-                </p>
-            </div>
-        </div> -->
-        <mat-horizontal-stepper [linear]=1 linear #stepper>
-            <mat-step [optional]=0>
-                <!-- <form [formGroup]="firstFormGroup"> -->
-                <ng-template matStepLabel>Select a brand / gearset</ng-template>
-                <!-- <mat-form-field>
-                  <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
-                </mat-form-field> -->
-                <div *ngFor="let brand of data.value">
-                    <button mat-button matStepperNext (click)="set(brand)">
-                        <div>
-                            <span>{{brand.name}}</span>
-                            <p *ngFor="let each of brand.pieceBonus; let i = index">
-                                <ng-container *ngIf="each.description">
-                                    <span>{{i + 1}}/{{brand.pieceBonus.length}}:</span>
-                                    <span>{{each.description}}</span>
-                                </ng-container>
-
-                            </p>
-                        </div>
-                    </button>
-                </div>
-                <!-- </form> -->
-            </mat-step>
-            <mat-step [stepControl]="selectedBrand"  [optional]=0>
-                <ng-template matStepLabel>Select a gear</ng-template>
-
-                <div>{{selectedBrand?.name}}</div>
-                <div>
-                    <button mat-button matStepperPrevious>Back</button>
-                </div>
-            </mat-step>
-        </mat-horizontal-stepper>
     </div>
 </ng-template>
 

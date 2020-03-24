@@ -1,0 +1,60 @@
+<h1 mat-dialog-title>Gear</h1>
+<div mat-dialog-content>
+    <!-- <div *ngFor="let brand of data.value" [mat-dialog-close]="brand">
+            <div>
+                <span>{{brand.name}}</span>
+                <p *ngFor="let each of brand.pieceBonus; let i = index">
+                    <ng-container *ngIf="each.description">
+                        <span>{{i + 1}}/{{brand.pieceBonus.length}}:</span>
+                        <span>{{each.description}}</span>
+                    </ng-container>
+
+                </p>
+            </div>
+        </div> -->
+    <mat-horizontal-stepper [linear]=true linear #stepper>
+        <mat-step [optional]=false>
+            <!-- <form [formGroup]="firstFormGroup"> -->
+            <ng-template matStepLabel>Select a brand / gearset</ng-template>
+            <!-- <mat-form-field>
+                  <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+                </mat-form-field> -->
+            <div *ngFor="let brand of data.brands">
+                <button mat-button matStepperNext (click)="nextStep(brand, data.type)">
+                    <div>
+                        <span>{{brand.name}}</span>
+                        <p *ngFor="let each of brand.pieceBonus; let i = index">
+                            <ng-container *ngIf="each.description">
+                                <span>{{i + 1}}/{{brand.pieceBonus.length}}:</span>
+                                <span>{{each.description}}</span>
+                            </ng-container>
+
+                        </p>
+                    </div>
+                </button>
+            </div>
+            <!-- </form> -->
+        </mat-step>
+        <mat-step [stepControl]="selectedBrand" [optional]=false>
+            <ng-template matStepLabel>Select a gear</ng-template>
+
+            <div [mat-dialog-close]="selectedBrand">{{selectedBrand?.name}}</div>
+            <div *ngFor="let gear of filtedGears" [mat-dialog-close]="gear">
+                <p>{{gear.name}}</p>
+
+                <ng-container *ngIf="gear.talent">
+                    <p>{{gear.talent.name}}</p>
+                    <p>{{gear.talent.description}}</p>
+                </ng-container>
+                <ng-container *ngIf="gear.secondaryAttribute">
+                    <span>{{gear.secondaryAttribute.bonus[0].attribute}}</span>
+                    <span>{{gear.secondaryAttribute.bonus[0].value | percent:'.2'}}</span>
+                </ng-container>
+
+            </div>
+            <div>
+                <button mat-button matStepperPrevious>Back</button>
+            </div>
+        </mat-step>
+    </mat-horizontal-stepper>
+</div>

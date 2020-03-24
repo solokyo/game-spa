@@ -6,6 +6,7 @@ import { DataService } from '../shared/data.service';
 import { UtilService } from '../shared/util.service';
 import { StatService } from '../shared/stat.service'
 import { Gear } from '../shared/types/gear';
+import { GearPickerDialogComponent } from '../gear-picker-dialog/gear-picker-dialog.component';
 @Component({
   selector: 'd2b-gear-selector',
   templateUrl: './gear-selector.component.html',
@@ -34,9 +35,9 @@ export class GearSelectorComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  selectBrand(){
-    const dialogRef = this.dialog.open(ObjectPickerDialogComponent, {
-      data: { key: 'brand', value: this.brands}
+  selectBrand(slotType:string){
+    const dialogRef = this.dialog.open(GearPickerDialogComponent, {
+      data: { brands:this.brands, type: slotType}
     });
 
     dialogRef.afterClosed().subscribe((brand: any) => {
