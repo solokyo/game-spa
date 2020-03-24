@@ -173,4 +173,25 @@ TU8 gear sets
 https://www.reddit.com/r/thedivision/wiki/thedivision2/guides/equipment/brands
 https://www.reddit.com/r/thedivision/wiki/thedivision2/guides/equipment/gearset
 
-装备主属性可以替换,考虑加入替换功能
+
+gears:
+
+recalibration on mod color and core attribute color is available.
+a gear can only recalibrate one tag(core,second,modslot color)
+brand and exotic gear have 2 secondary attribute, gearset only have 1.
+named gear may have unique attribute or talent that not in pool.
+only chest and backpack have talent, except exotic gear. every piece of 
+exotic gear have at least one talent.
+although in this app, talents will only display it's description.
+
+gear = {
+  name: just a name
+  category:brand/named/gearset/exotic
+  brand/set bonus:
+    brand/named:[0..2], gearset:[1..3],exotic:undefined
+  coreAttr:
+  secondaryAttr: gearset have 1, others have 2. Named gear may have unique attribute.
+  talent(s):
+  basic armor:constant value for each gear slot.
+  mod: mask, chest, backpack have 1 mod slot.
+}

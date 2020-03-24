@@ -1,7 +1,13 @@
+import { GearTalent } from './gear-talent';
+
 export interface Gear{
-    slot: string;
+    type: string;
     name: string;
     // category: 'set' | 'brand' | 'exotic';
     category: string;
-    bonus: any;
+    bonus: Array<{ attribute: string, value: number }>;
+    brand: string;
+    coreAttribute: any;
+    talent?: GearTalent;
+    mod?: any;
 }

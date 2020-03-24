@@ -17,7 +17,7 @@
 			"name": "lmg",
 			"bonus": [
 				{
-					"attribute": "lmgRifleDamageBonus",
+					"attribute": "lmgDamageBonus",
 					"value": 0.15
 				},
 				{

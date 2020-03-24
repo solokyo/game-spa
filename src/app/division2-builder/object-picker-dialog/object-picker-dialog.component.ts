@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, Input } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { WeaponSelectorComponent } from '../weapon-selector/weapon-selector.component'
 
@@ -8,7 +8,7 @@ import { WeaponSelectorComponent } from '../weapon-selector/weapon-selector.comp
   styleUrls: ['./object-picker-dialog.component.css']
 })
 export class ObjectPickerDialogComponent implements OnInit {
-
+  @Input()selectedBrand: any;
   constructor(
     public dialogRef: MatDialogRef<any>,
     @Inject(MAT_DIALOG_DATA) public data: { key: string, value: { [propName: string]: any[]; } }
@@ -18,5 +18,7 @@ export class ObjectPickerDialogComponent implements OnInit {
   ngOnInit(): void {
     console.log(this.data);
   }
-
+  set(brand: any): void {
+    this.selectedBrand = brand;
+  }
 }
