@@ -24,6 +24,29 @@
                 "name": "Perfect Vigilance",
                 "description": "Increases total weapon damage by 30%. Taking damage disables this buff for 4s."
             }
+        },
+        {
+            "type": "Chest",
+            "brand": null,
+            "name": "'Tardigrade' Armor System",
+            "rarity": "exotic",
+            "talent": {
+                "name": "Ablative Nano-Plating",
+                "description": "exotic talent description"
+            },
+            "coreAttribute": "defense",
+            "secondaryAttribute":{
+                "bonus":[
+                    {
+                        "attribute": "explosiveResistance",
+                        "value":0.1
+                    },
+                    {
+                        "attribute": "armorRegeneration",
+                        "value":4925
+                    }
+                ]
+            }
         }
     ]
 }

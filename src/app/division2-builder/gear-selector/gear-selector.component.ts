@@ -1,6 +1,5 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { ObjectPickerDialogComponent } from '../object-picker-dialog/object-picker-dialog.component'
 
 import { DataService } from '../shared/data.service';
 import { UtilService } from '../shared/util.service';
@@ -16,6 +15,7 @@ export class GearSelectorComponent implements OnInit {
   gearSlots: Array<any>;
   gears: Array<Gear>;
   brands: Array<any>;
+  selectedGears: Array<Gear> = new Array<Gear>(6);
   constructor(
     public dialog: MatDialog,
     private dataService: DataService,
@@ -24,7 +24,7 @@ export class GearSelectorComponent implements OnInit {
   ) {
     this.dataService.getStable('gearSlots', '/assets/data.json').subscribe(data => {
       this.gearSlots = data;
-      this.gears = new Array<Gear>(this.gearSlots.length);
+      this.selectedGears = new Array<Gear>(this.gearSlots.length);
     });
 
     this.dataService.getStable('gearSetBonus', '/assets/gear-set-bonus.json').subscribe(data => {
@@ -35,13 +35,14 @@ export class GearSelectorComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  selectBrand(slotType:string){
+  selectBrand(slotType: string, index: number) {
     const dialogRef = this.dialog.open(GearPickerDialogComponent, {
-      data: { brands:this.brands, type: slotType}
+      data: { brands: this.brands, type: slotType }
     });
 
-    dialogRef.afterClosed().subscribe((brand: any) => {
-
+    dialogRef.afterClosed().subscribe((gear: any) => {
+      console.log(gear);
+      this.selectedGears[index] = {...gear};
     });
   }
 }

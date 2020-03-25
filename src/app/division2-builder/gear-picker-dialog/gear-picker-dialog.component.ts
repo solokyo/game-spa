@@ -18,8 +18,8 @@ export class GearPickerDialogComponent implements OnInit, OnDestroy {
     public dialogRef: MatDialogRef<any>,
     @Inject(MAT_DIALOG_DATA) public data: any,
     private dataService: DataService,
-  ) { 
-    this.gearsSubscription = this.dataService.getStable('gears','/assets/gears.json').subscribe(data=>{
+  ) {
+    this.gearsSubscription = this.dataService.getStable('gears', '/assets/gears.json').subscribe(data => {
       this.gears = data;
     })
   }
@@ -28,10 +28,16 @@ export class GearPickerDialogComponent implements OnInit, OnDestroy {
     console.log(this.data);
   }
   nextStep(brand: any, gearType: string): void {
-    
+
     this.selectedBrand = brand;
-    this.filtedGears = this.gears.filter(gear=>{
+    this.filtedGears = this.gears.filter(gear => {
       return gear.brand === brand.name && gear.type === gearType;
+    });
+  }
+
+  selectExotic(gearType: string): void {
+    this.filtedGears = this.gears.filter(gear => {
+      return gear?.rarity === 'exotic' && gear.type === gearType;
     });
   }
   ngOnDestroy(): void {

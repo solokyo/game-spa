@@ -1,3 +1,10 @@
-<div *ngFor="let slot of gearSlots">
-    <div (click)="selectBrand(slot.slot)">{{slot.slot}}</div>
+<div *ngFor="let slot of gearSlots;let i = index">
+    <div *ngIf="!selectedGears[i]" (click)="selectBrand(slot.slot,i)">{{slot.slot}}</div>
+    <div *ngIf="selectedGears[i]">
+        
+    </div>
+    <ng-container *ngIf="selectedGears[i];then display else select"></ng-container>
 </div>
+
+<ng-template #display></ng-template>
+<ng-template #select></ng-template>

@@ -13,29 +13,33 @@
             </div>
         </div> -->
     <mat-horizontal-stepper [linear]=true linear #stepper>
-        <mat-step [optional]=false>
-            <!-- <form [formGroup]="firstFormGroup"> -->
+        <mat-step [optional]="false">
             <ng-template matStepLabel>Select a brand / gearset</ng-template>
-            <!-- <mat-form-field>
-                  <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
-                </mat-form-field> -->
-            <div *ngFor="let brand of data.brands">
-                <button mat-button matStepperNext (click)="nextStep(brand, data.type)">
+            <ng-container *ngFor="let brand of data.brands">
+                <div >
+                    <button mat-button matStepperNext (click)="nextStep(brand, data.type)">
+                        <div>
+                            <span>{{brand.name}}</span>
+                            <p *ngFor="let each of brand.pieceBonus; let i = index">
+                                <ng-container *ngIf="each.description">
+                                    <span>{{i + 1}}/{{brand.pieceBonus.length}}:</span>
+                                    <span>{{each.description}}</span>
+                                </ng-container>
+                            </p>
+                        </div>
+                    </button>
+                </div>
+            </ng-container>
+            <div >
+                <button mat-button matStepperNext (click)="selectExotic(data.type)">
                     <div>
-                        <span>{{brand.name}}</span>
-                        <p *ngFor="let each of brand.pieceBonus; let i = index">
-                            <ng-container *ngIf="each.description">
-                                <span>{{i + 1}}/{{brand.pieceBonus.length}}:</span>
-                                <span>{{each.description}}</span>
-                            </ng-container>
-
-                        </p>
+                        <span>Exotic</span>
                     </div>
                 </button>
             </div>
-            <!-- </form> -->
+
         </mat-step>
-        <mat-step [stepControl]="selectedBrand" [optional]=false>
+        <mat-step [optional]="false">
             <ng-template matStepLabel>Select a gear</ng-template>
 
             <div [mat-dialog-close]="selectedBrand">{{selectedBrand?.name}}</div>
@@ -47,8 +51,10 @@
                     <p>{{gear.talent.description}}</p>
                 </ng-container>
                 <ng-container *ngIf="gear.secondaryAttribute">
-                    <span>{{gear.secondaryAttribute.bonus[0].attribute}}</span>
-                    <span>{{gear.secondaryAttribute.bonus[0].value | percent:'.2'}}</span>
+                    <div *ngFor="let each of gear.secondaryAttribute.bonus">
+                        <span>{{each.attribute}}</span>
+                        <span>{{each.value | percent:'.2'}}</span>
+                    </div>
                 </ng-container>
 
             </div>
