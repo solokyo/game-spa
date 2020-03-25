@@ -186,6 +186,14 @@
             "type": "lmg",
             "category": "primary",
             "rarity": "exotic",
+            "secondaryAttribute": {
+                "bonus": [
+                    {
+                        "attribute": "criticalHitChance",
+                        "value": 0.1
+                    }
+                ]
+            },
             "bonus": [
                 {
                     "attribute": "damage",
@@ -216,30 +224,30 @@
                 {
                     "slot": "magazine",
                     "name": "exotic mag",
-                    "bonus":[
+                    "bonus": [
                         {
-                            "attribute":"rpmBonus",
-                            "value":0.1
+                            "attribute": "rpmBonus",
+                            "value": 0.1
                         }
                     ]
                 },
                 {
                     "slot": "muzzle",
                     "name": "exotic muzzle",
-                    "bonus":[
+                    "bonus": [
                         {
                             "attribute": "weaponHandling",
-                            "value":0.15
+                            "value": 0.15
                         }
                     ]
                 },
                 {
                     "slot": "underbarrel",
                     "name": "exotic under",
-                    "bonus":[
+                    "bonus": [
                         {
                             "attribute": "stabilityBonus",
-                            "value":0.2
+                            "value": 0.2
                         }
                     ]
                 }

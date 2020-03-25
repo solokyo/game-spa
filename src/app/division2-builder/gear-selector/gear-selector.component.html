@@ -1,7 +1,10 @@
 <div *ngFor="let slot of gearSlots;let i = index">
     <div *ngIf="!selectedGears[i]" (click)="selectBrand(slot.slot,i)">{{slot.slot}}</div>
     <div *ngIf="selectedGears[i]">
-        
+        <!-- TODO:
+            display known things, gear name, icon, core attribute and etc.
+            make selectable, recalibratable things work.
+        -->
     </div>
     <ng-container *ngIf="selectedGears[i];then display else select"></ng-container>
 </div>
