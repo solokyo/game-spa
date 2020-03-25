@@ -23,8 +23,7 @@ export class WeaponAttributeSelectorComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   selectWeaponAttribute(weaponType: any): void {
     const dialogRef = this.dialog.open(ObjectPickerDialogComponent, {

@@ -1,6 +1,18 @@
-<div *ngIf="!weapon.hasOwnProperty('secondaryAttribute')" (click)="selectWeaponAttribute(weapon.type)">Select second
-    attribute</div>
-<div *ngIf="weapon.hasOwnProperty('secondaryAttribute')" (click)="selectWeaponAttribute(weapon.type)">
-    <span>{{secondaryAttribute.attribute}}</span>
-    <span>{{secondaryAttribute.value | percent:'.2'}}</span>
-</div>
+<!-- The secondary weapon attribute of exotic weapon is pre-defined and can't be recalibrated -->
+<div *ngIf="weapon?.rarity === 'exotic'; then display else select"></div>
+
+<ng-template #select>
+    <div *ngIf="!weapon.hasOwnProperty('secondaryAttribute')" (click)="selectWeaponAttribute(weapon.type)">Select second
+        attribute</div>
+    <div *ngIf="weapon.hasOwnProperty('secondaryAttribute')" (click)="selectWeaponAttribute(weapon.type)">
+        <span>{{secondaryAttribute.attribute}}</span>
+        <span>{{secondaryAttribute.value | percent:'.2'}}</span>
+    </div>
+</ng-template>
+
+<ng-template #display>
+    <div>
+        <span>{{weapon.secondaryAttribute.bonus[0].attribute}}</span>
+        <span>{{weapon.secondaryAttribute.bonus[0].value | percent:'.2'}}</span>
+    </div>
+</ng-template>
