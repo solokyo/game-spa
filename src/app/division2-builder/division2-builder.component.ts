@@ -7,10 +7,14 @@ import { DataService } from './shared/data.service';
   styleUrls: ['./division2-builder.component.css']
 })
 export class Division2BuilderComponent implements OnInit {
-  weaponSlot;
+  weaponSlots: Array<{ name: string, category: string }>;
   constructor(
-    
-  ) { }
+    private dataService: DataService,
+  ) { 
+    this.dataService.getStable('weaponSlot', '/assets/data.json').subscribe(data => {
+      this.weaponSlots = data;
+    });
+  }
 
   ngOnInit(): void {}
 

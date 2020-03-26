@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ObjectPickerDialogComponent } from '../object-picker-dialog/object-picker-dialog.component'
 
@@ -15,40 +15,29 @@ import { BehaviorSubject } from 'rxjs';
   styleUrls: ['./weapon-selector.component.css']
 })
 export class WeaponSelectorComponent implements OnInit {
-  weaponSlot: Array<{ name: string, category: string }>;
-  selectedWeapons: Array<Weapon>;
-  @Output() equippedWeapon: Weapon;
+  @Input() slot: { name: string, category: string };
   weapons: Array<Weapon>;
   weaponTypes: Array<WeaponType>;
-  // selectable 'secondary' attributes for weapon
-  weaponAttributes: any;
   secondaryAttribute: any;
-  equippedWeapon$: BehaviorSubject<Weapon>;
+  selectedWeapon: Weapon;
   isTalentSelectable: Boolean;
   constructor(
     public dialog: MatDialog,
     private dataService: DataService,
     private utilService: UtilService,
     private statService: StatService
-  ) {
-    this.equippedWeapon$ = new BehaviorSubject<Weapon>(this.equippedWeapon);
-    this.selectedWeapons = new Array(3);
-  }
+  ) {}
 
   ngOnInit(): void {
-    this.dataService.getStable('weaponSlot', '/assets/data.json').subscribe(data => {
-      this.weaponSlot = data;
-    });
     this.dataService.getStable('weaponTypes', '/assets/weapon-types.json').subscribe(data => {
       this.weaponTypes = data;
     });
     this.dataService.getStable('weapons', '/assets/weapons.json').subscribe(data => {
       this.weapons = data;
     });
-    this.statService.setEquippedWeapon(this.equippedWeapon$);
   }
 
-  selectWeapon(key: string, index: number): void {
+  selectWeapon(key: string): void {
     const dialogRef = this.dialog.open(ObjectPickerDialogComponent, {
       data: { key: 'weapon', value: this.groupBy(this.weapons.filter(weapon => { return weapon.category === key }), 'type') }
     });
@@ -69,28 +58,19 @@ export class WeaponSelectorComponent implements OnInit {
           foo.type = this.weaponTypes.find(type => { return type.name === foo.type });
         }
         this.isTalentSelectable = weapon.talent === undefined;
-        this.selectedWeapons[index] = foo;
-        // reset secondary attribute
-        this.secondaryAttribute = null;
-        this.setEquippedWeapon(this.selectedWeapons[index]);
+        this.selectedWeapon = foo;
+        this.updateEquippedWeapon();
       }
     });
-    // this.statService.setEquippedWeapon(this.selectedWeapons[0]);
   }
 
   updateEquippedWeapon() {
-    this.equippedWeapon$.next(this.equippedWeapon);
-  }
-
-  setEquippedWeapon(equippedWeapon: Weapon): void {
-    this.equippedWeapon = equippedWeapon;
-    this.updateEquippedWeapon();
-    // this.statService.setEquippedWeapon(this.equippedWeapon);
+    this.statService.updateEquippedWeapon(this.selectedWeapon);
   }
 
   private groupBy(xs: Array<any>, key: string): ({ [propName: string]: Array<any> }) {
     return xs.reduce(function (rv, x) {
-      let foo = {...x}
+      let foo = {...x};
       foo.type = typeof foo.type === "string" ? foo.type : foo.type.name;
       (rv[foo[key]] = rv[foo[key]] || []).push(x);
       return rv;

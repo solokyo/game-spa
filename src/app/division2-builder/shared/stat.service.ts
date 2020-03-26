@@ -10,7 +10,9 @@ export class StatService {
   initialStats: any;
   stats: any;
   stats$: BehaviorSubject<any>;
+  equippedWeapon$: BehaviorSubject<Weapon>;
   equippedWeapon: Weapon;
+
   constructor(
     private dataService: DataService
   ) {
@@ -18,6 +20,10 @@ export class StatService {
     this.dataService.getStable('statBoardInit', '/assets/data.json').subscribe(data => {
       this.initialStats = data;
       this.updateStats();
+    });
+    this.equippedWeapon$ = new BehaviorSubject<Weapon>(null);
+    this.equippedWeapon$.subscribe(data=>{
+      this.equippedWeapon = data;
     });
   }
 
@@ -30,11 +36,16 @@ export class StatService {
   //   this.updateStats();
   // }
 
-  setEquippedWeapon(equippedWeapon$: BehaviorSubject<Weapon>): void {
-    equippedWeapon$.subscribe(equippedWeapon=>{
-      this.equippedWeapon = equippedWeapon;
-      this.updateStats();
-    })
+  // setEquippedWeapon(equippedWeapon$: BehaviorSubject<Weapon>): void {
+  //   equippedWeapon$.subscribe(equippedWeapon=>{
+  //     this.equippedWeapon = equippedWeapon;
+  //     this.updateStats();
+  //   })
+  // }
+
+  updateEquippedWeapon(equippedWeapon: Weapon):void {
+    this.equippedWeapon$.next(equippedWeapon);
+    this.updateStats();
   }
 
   // Get a copy from initial stats then bind all object that contains attributes together and do sum.

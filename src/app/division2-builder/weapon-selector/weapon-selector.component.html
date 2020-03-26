@@ -1,20 +1,21 @@
 <div>
-    <div *ngFor="let slot of weaponSlot; let i = index">
-        <div>
-            <span>{{ slot.name }}</span>
-            <span><button mat-button (click)="setEquippedWeapon(selectedWeapons[i])">Equip this</button></span>
-        </div>
-        <div>
-            <div *ngIf="!selectedWeapons[i]" (click)="selectWeapon(slot.category, i)">Select a weapon</div>
-            <div *ngIf="selectedWeapons[i]">
-                <div (click)="selectWeapon(slot.category, i)">
-                    <span>{{ selectedWeapons[i].name }}</span>
-                    <!-- Icon, display other attributes -->
-                </div>
-                <d2b-weapon-attribute-selector  (updated)="updateEquippedWeapon()" [weapon]="selectedWeapons[i]"></d2b-weapon-attribute-selector>
-                <d2b-weapon-talent-selector  (updated)="updateEquippedWeapon()" [isTalentSelectable]="isTalentSelectable" [weapon]="selectedWeapons[i]"></d2b-weapon-talent-selector>
-                <d2b-weapon-mod-selector (updated)="updateEquippedWeapon()" [weapon]="selectedWeapons[i]"></d2b-weapon-mod-selector>
+    <div>
+        <span>{{ slot.name }}</span>
+        <span><button mat-button (click)="updateEquippedWeapon()">Equip this</button></span>
+    </div>
+    <div>
+        <div *ngIf="!selectedWeapon" (click)="selectWeapon(slot.category)">Select a weapon</div>
+        <div *ngIf="selectedWeapon">
+            <div (click)="selectWeapon(slot.category, i)">
+                <span>{{ selectedWeapon.name }}</span>
+                <!-- Icon, display other attributes -->
             </div>
+            <d2b-weapon-attribute-selector (updated)="updateEquippedWeapon()" [weapon]="selectedWeapon">
+            </d2b-weapon-attribute-selector>
+            <d2b-weapon-talent-selector (updated)="updateEquippedWeapon()" [isTalentSelectable]="isTalentSelectable"
+                [weapon]="selectedWeapon"></d2b-weapon-talent-selector>
+            <d2b-weapon-mod-selector (updated)="updateEquippedWeapon()" [weapon]="selectedWeapon">
+            </d2b-weapon-mod-selector>
         </div>
     </div>
 </div>

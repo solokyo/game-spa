@@ -7,8 +7,10 @@
             description
         </mat-panel-description>
     </mat-expansion-panel-header>
-
-    <d2b-weapon-selector></d2b-weapon-selector>
+    <ng-container *ngFor="let slot of weaponSlots">
+        <d2b-weapon-selector [slot]="slot"></d2b-weapon-selector>
+    </ng-container>
+    
 </mat-expansion-panel>
 
 <mat-divider></mat-divider>
