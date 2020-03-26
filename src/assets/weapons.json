@@ -307,6 +307,53 @@
                     "type": "long"
                 }
             ]
+        },
+        {
+            "name": "Dark Winter",
+            "variant": "Vector",
+            "rarity": "named",
+            "type": "smg", 
+            "category": "primary",
+            "bonus": [
+                {
+                    "attribute": "damage",
+                    "value": 35259
+                },
+                {
+                    "attribute": "rpm",
+                    "value": 1200
+                },
+                {
+                    "attribute": "magSize",
+                    "value": 25
+                },
+                {
+                    "attribute": "optimalRange",
+                    "value": 25
+                }
+            ],
+            "talent":{
+                "name":"Perfect Killer",
+                "description": "Killing an enemy gain 50% critical hit damage for 10s."
+            },
+            "avaliableMods": [
+                {
+                    "slot": "optic",
+                    "type": "long"
+                },
+                {
+                    "slot": "magazine",
+                    "type": ".45"
+                },
+                {
+                    "slot": "muzzle",
+                    "type": ".45"
+                },
+                {
+                    "slot": "underbarrel",
+                    "type": "short"
+                }
+            ]
         }
     ]
 }

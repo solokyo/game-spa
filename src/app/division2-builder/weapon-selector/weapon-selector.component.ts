@@ -24,6 +24,7 @@ export class WeaponSelectorComponent implements OnInit {
   weaponAttributes: any;
   secondaryAttribute: any;
   equippedWeapon$: BehaviorSubject<Weapon>;
+  isTalentSelectable: Boolean;
   constructor(
     public dialog: MatDialog,
     private dataService: DataService,
@@ -67,6 +68,7 @@ export class WeaponSelectorComponent implements OnInit {
         if (typeof foo.type === "string") {
           foo.type = this.weaponTypes.find(type => { return type.name === foo.type });
         }
+        this.isTalentSelectable = weapon.talent === undefined;
         this.selectedWeapons[index] = foo;
         // reset secondary attribute
         this.secondaryAttribute = null;

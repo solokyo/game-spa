@@ -3,6 +3,7 @@ import { DataService } from "../shared/data.service";
 import { MatDialog } from '@angular/material/dialog';
 import { ObjectPickerDialogComponent } from '../object-picker-dialog/object-picker-dialog.component';
 import { WeaponTalent } from '../shared/types/weapon-talent';
+import { Weapon } from '../shared/types/weapon';
 @Component({
   selector: "d2b-weapon-talent-selector",
   templateUrl: "./weapon-talent-selector.component.html",
@@ -10,8 +11,10 @@ import { WeaponTalent } from '../shared/types/weapon-talent';
 })
 export class WeaponTalentSelectorComponent implements OnInit {
   @Input() weapon;
-  weaponTalents: Array<WeaponTalent>;
+  @Input() isTalentSelectable;
   @Output() updated = new EventEmitter<boolean>();
+  weaponTalents: Array<WeaponTalent>;
+  selectable:boolean;
   constructor(
     public dialog: MatDialog,
     private dataService: DataService
@@ -21,6 +24,8 @@ export class WeaponTalentSelectorComponent implements OnInit {
         this.weaponTalents = data;
     });
   }
+
+  ngOnInit() { }
 
   selectWeaponTalent():void {
     const dialogRef = this.dialog.open(ObjectPickerDialogComponent, {
@@ -43,6 +48,4 @@ export class WeaponTalentSelectorComponent implements OnInit {
       }
     });
   }
-
-  ngOnInit() {}
 }

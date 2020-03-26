@@ -1,4 +1,4 @@
-<div *ngIf="weapon.talent;then displayTalentTemplate else selectTalentTemplate"></div>
+<div *ngIf="isTalentSelectable;then selectTalentTemplate else displayTalentTemplate"></div>
 
 <ng-template #selectTalentTemplate>
     <div *ngIf="!weapon.talent" (click)="selectWeaponTalent()">Select a talent</div>
