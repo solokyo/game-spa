@@ -24,7 +24,9 @@
             description
         </mat-panel-description>
     </mat-expansion-panel-header>
-
-    <d2b-gear-selector></d2b-gear-selector>
+    <ng-container *ngFor="let slot of gearSlots">
+        <d2b-gear-selector [slot]="slot"></d2b-gear-selector> 
+    </ng-container>
+    <!-- <d2b-gear-selector></d2b-gear-selector> -->
 </mat-expansion-panel>
 <d2b-stat-board></d2b-stat-board>

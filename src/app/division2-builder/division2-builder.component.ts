@@ -8,14 +8,18 @@ import { DataService } from './shared/data.service';
 })
 export class Division2BuilderComponent implements OnInit {
   weaponSlots: Array<{ name: string, category: string }>;
+  gearSlots: Array<any>;
   constructor(
     private dataService: DataService,
-  ) { 
-    this.dataService.getStable('weaponSlot', '/assets/data.json').subscribe(data => {
+  ) {
+    this.dataService.getStable('weaponSlots', '/assets/data.json').subscribe(data => {
       this.weaponSlots = data;
+    });
+    this.dataService.getStable('gearSlots', '/assets/data.json').subscribe(data => {
+      this.gearSlots = data;
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
 }

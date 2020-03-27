@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { DataService } from './data.service';
 import { Weapon } from './types/weapon';
 import { Observable, of, BehaviorSubject } from 'rxjs';
+import { Gear } from './types/gear';
+import { UtilService } from './util.service';
 
 @Injectable({
   providedIn: 'root'
@@ -12,46 +14,56 @@ export class StatService {
   stats$: BehaviorSubject<any>;
   equippedWeapon$: BehaviorSubject<Weapon>;
   equippedWeapon: Weapon;
+  equippedGears$: BehaviorSubject<Gear>;
+  equippedGears: Array<Gear>;
 
   constructor(
-    private dataService: DataService
+    private dataService: DataService,
+    private utilService: UtilService,
   ) {
+    this.equippedGears = new Array<Gear>();
+
     this.stats$ = new BehaviorSubject('');
     this.dataService.getStable('statBoardInit', '/assets/data.json').subscribe(data => {
       this.initialStats = data;
       this.updateStats();
     });
+
     this.equippedWeapon$ = new BehaviorSubject<Weapon>(null);
-    this.equippedWeapon$.subscribe(data=>{
+    this.equippedWeapon$.subscribe(data => {
       this.equippedWeapon = data;
     });
+
+    this.equippedGears$ = new BehaviorSubject<Gear>(null);
+    this.equippedGears$.subscribe(data => {
+      if(data){
+        this.equippedGears = this.utilService.updateOrPush(this.equippedGears, data, 'type');
+        console.log(this.equippedGears);
+      }
+    });
+
   }
 
   getStats(): Observable<any> {
     return this.stats$.asObservable();
   }
 
-  // setEquippedWeapon(equippedWeapon: Weapon): void {
-  //   this.equippedWeapon = equippedWeapon;
-  //   this.updateStats();
-  // }
-
-  // setEquippedWeapon(equippedWeapon$: BehaviorSubject<Weapon>): void {
-  //   equippedWeapon$.subscribe(equippedWeapon=>{
-  //     this.equippedWeapon = equippedWeapon;
-  //     this.updateStats();
-  //   })
-  // }
-
-  updateEquippedWeapon(equippedWeapon: Weapon):void {
+  updateEquippedWeapon(equippedWeapon: Weapon): void {
     this.equippedWeapon$.next(equippedWeapon);
+    this.updateStats();
+  }
+
+  updateEquippedGear(equippedGear: Gear): void {
+    console.log(equippedGear);
+    
+    this.equippedGears$.next(equippedGear);
     this.updateStats();
   }
 
   // Get a copy from initial stats then bind all object that contains attributes together and do sum.
   updateStats(): void {
     this.stats = { ...this.initialStats };
-    this.sum({ ...this.equippedWeapon, });// ...gearSetsBouns, ...gears, ...specialization
+    this.sum({ ...this.equippedWeapon, ...this.equippedGears });// ...gearSetsBouns, ...gears, ...specialization
     this.stats$.next(this.stats);
   }
 

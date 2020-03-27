@@ -6,7 +6,7 @@
     <div>
         <div *ngIf="!selectedWeapon" (click)="selectWeapon(slot.category)">Select a weapon</div>
         <div *ngIf="selectedWeapon">
-            <div (click)="selectWeapon(slot.category, i)">
+            <div (click)="selectWeapon(slot.category)">
                 <span>{{ selectedWeapon.name }}</span>
                 <!-- Icon, display other attributes -->
             </div>

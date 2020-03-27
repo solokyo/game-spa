@@ -40,12 +40,13 @@ export class UtilService {
    * @param obj 
    * @param key 
    */
-  updateOrPush(arr: Array<any>, obj: any, key: string) {
+  updateOrPush(arr: Array<any>, obj: any, key: string):Array<any> {
     const index = arr.findIndex((e) => e[key] === obj[key]);    
     if (index === -1) {
       arr.push(obj);
     } else {
       arr[index] = obj;
     }
+    return arr;
   }
 }

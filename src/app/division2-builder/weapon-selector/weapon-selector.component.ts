@@ -7,7 +7,6 @@ import { UtilService } from '../shared/util.service';
 import { StatService } from '../shared/stat.service'
 import { Weapon } from '../shared/types/weapon';
 import { WeaponType } from '../shared/types/weapon-type';
-import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'd2b-weapon-selector',
