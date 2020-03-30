@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-gear-attribute-selector',
+  selector: 'd2b-gear-attribute-selector',
   templateUrl: './gear-attribute-selector.component.html',
   styleUrls: ['./gear-attribute-selector.component.css']
 })

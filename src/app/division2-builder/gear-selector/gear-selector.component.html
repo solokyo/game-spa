@@ -18,6 +18,11 @@
             <span>{{ selectedGear.name }}</span>
             <!-- Icon, display other attributes -->
         </div>
+        <d2b-gear-attribute-selector></d2b-gear-attribute-selector>
+        <!-- If backpack && chest -->
+        <d2b-gear-talent-selector></d2b-gear-attribute-selector>
+        <!-- If backpack && chest && mask -->
+        <d2b-gear-mod-selector></d2b-gear-attribute-selector>
     </div>
     <ng-container *ngIf="selectedGear;then display else select"></ng-container>
 </div>

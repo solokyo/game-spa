@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-gear-talent-selector',
+  selector: 'd2b-gear-talent-selector',
   templateUrl: './gear-talent-selector.component.html',
   styleUrls: ['./gear-talent-selector.component.css']
 })
