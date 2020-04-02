@@ -16,6 +16,7 @@
     "gearSlots": [
         {
             "slot": "Mask",
+            "icon": "/assets/images/mask.png",
             "bonus": [
                 {
                     "attribute": "armor",
@@ -25,6 +26,7 @@
         },
         {
             "slot": "Chest",
+            "icon": "/assets/images/chest.png",
             "bonus": [
                 {
                     "attribute": "armor",
@@ -34,6 +36,7 @@
         },
         {
             "slot": "Holster",
+            "icon": "/assets/images/holster.png",
             "bonus": [
                 {
                     "attribute": "armor",
@@ -43,6 +46,7 @@
         },
         {
             "slot": "Backpack",
+            "icon": "/assets/images/backpack.png",
             "bonus": [
                 {
                     "attribute": "armor",
@@ -52,6 +56,7 @@
         },
         {
             "slot": "Gloves",
+            "icon": "/assets/images/gloves.png",
             "bonus": [
                 {
                     "attribute": "armor",
@@ -61,6 +66,7 @@
         },
         {
             "slot": "Kneepads",
+            "icon": "/assets/images/kneepads.png",
             "bonus": [
                 {
                     "attribute": "armor",

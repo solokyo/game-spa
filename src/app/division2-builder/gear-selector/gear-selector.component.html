@@ -3,7 +3,9 @@
     <div>
         <span>{{slot.slot}}</span>
     </div>
-    <div *ngIf="!selectedGear" (click)="selectBrand(slot.slot)">{{slot.slot}}</div>
+    <div *ngIf="!selectedGear" (click)="selectBrand(slot.slot)">{{slot.slot}}
+        <img [src]="slot.icon">
+    </div>
     <div *ngIf="selectedGear">
         <!-- TODO:
             display known things, gear name, icon, core attribute and etc.

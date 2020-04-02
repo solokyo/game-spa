@@ -6,14 +6,14 @@ import { UtilService } from '../shared/util.service';
 import { StatService } from '../shared/stat.service'
 import { Gear } from '../shared/types/gear';
 import { GearPickerDialogComponent } from '../gear-picker-dialog/gear-picker-dialog.component';
-import { isBuffer } from 'util';
+
 @Component({
   selector: 'd2b-gear-selector',
   templateUrl: './gear-selector.component.html',
   styleUrls: ['./gear-selector.component.css']
 })
 export class GearSelectorComponent implements OnInit {
-  @Input() slot: {slot:string, bonus:[{attribute:string,value:number}]};
+  @Input() slot: { slot: string, icon: string, bonus: [{ attribute: string, value: number }] };
   gears: Array<Gear>;
   brands: Array<any>;
   selectedGear: Gear;
@@ -38,7 +38,7 @@ export class GearSelectorComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe((gear: any) => {
       if (gear) {
-        let foo:Gear = {...gear};
+        let foo: Gear = { ...gear };
         foo.type = this.slot.slot;
         foo.bonus = this.slot.bonus;
 

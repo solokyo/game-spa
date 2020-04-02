@@ -18,7 +18,7 @@ export class WeaponSelectorComponent implements OnInit {
   weapons: Array<Weapon>;
   weaponTypes: Array<WeaponType>;
   secondaryAttribute: any;
-  selectedWeapon: Weapon;
+  selectedWeapon: any;
   isTalentSelectable: Boolean;
   constructor(
     public dialog: MatDialog,

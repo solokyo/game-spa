@@ -2,6 +2,7 @@
 	"weaponTypes" : [
 		{
 			"name": "assaultRifle",
+			"icon": "/assets/images/weapons/ar.png",
 			"bonus": [
 				{
 					"attribute": "assaultRifleDamageBonus",
@@ -15,6 +16,7 @@
 		},
 		{
 			"name": "lmg",
+			"icon": "/assets/images/weapons/lmg.png",
 			"bonus": [
 				{
 					"attribute": "lmgDamageBonus",
@@ -28,6 +30,7 @@
 		},
 		{
 			"name": "marksmanRifle",
+			"icon": "/assets/images/weapons/mmr.png",
 			"bonus": [
 				{
 					"attribute": "marksmanRifleDamageBonus",
@@ -41,6 +44,7 @@
 		},
 		{
 			"name": "pistol",
+			"icon": "/assets/images/weapons/pistol.png",
 			"bonus": [
 				{
 					"attribute": "pistolDamageBonus",
@@ -50,6 +54,7 @@
 		},
 		{
 			"name": "rifle",
+			"icon": "/assets/images/weapons/rifle.png",
 			"bonus": [
 				{
 					"attribute": "rifleDamageBonus",
@@ -63,6 +68,7 @@
 		},
 		{
 			"name": "shotgun",
+			"icon": "/assets/images/weapons/shotgun.png",
 			"bonus": [
 				{
 					"attribute": "shotgunDamageBonus",
@@ -76,6 +82,7 @@
 		},
 		{
 			"name": "smg",
+			"icon": "/assets/images/weapons/smg.png",
 			"bonus": [
 				{
 					"attribute": "smgDamageBonus",
