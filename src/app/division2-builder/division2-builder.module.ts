@@ -18,11 +18,12 @@ import { GearModSelectorComponent } from './gear-mod-selector/gear-mod-selector.
 import { GearTalentSelectorComponent } from './gear-talent-selector/gear-talent-selector.component';
 import { SpecializationComponent } from './specialization/specialization.component';
 import { KeenersWatchComponent } from './keeners-watch/keeners-watch.component';
+import { SkillSelectorComponent } from './skill-selector/skill-selector.component';
 
 
 
 @NgModule({
-  declarations: [Division2BuilderComponent, StatBoardComponent, WeaponSelectorComponent, ObjectPickerDialogComponent, WeaponTalentSelectorComponent, WeaponModSelectorComponent, GearSelectorComponent, WeaponAttributeSelectorComponent, GearPickerDialogComponent, GearAttributeSelectorComponent, GearModSelectorComponent, GearTalentSelectorComponent, SpecializationComponent, KeenersWatchComponent],
+  declarations: [Division2BuilderComponent, StatBoardComponent, WeaponSelectorComponent, ObjectPickerDialogComponent, WeaponTalentSelectorComponent, WeaponModSelectorComponent, GearSelectorComponent, WeaponAttributeSelectorComponent, GearPickerDialogComponent, GearAttributeSelectorComponent, GearModSelectorComponent, GearTalentSelectorComponent, SpecializationComponent, KeenersWatchComponent, SkillSelectorComponent],
   imports: [
     CommonModule, HttpClientModule, MaterialModule, BrowserAnimationsModule
   ],
