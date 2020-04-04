@@ -1000,7 +1000,7 @@
 		{
 			"slot": "underbarrel",
 			"name": "Laser Pointer",
-			"availableOn": ["long","short"],
+			"availableOn": ["long","short","side"],
 			"bonus": [
 				{
 					"attribute": "criticalHitChance",
@@ -1022,7 +1022,7 @@
 		{
 			"slot": "underbarrel",
 			"name": "Small Laser Pointer",
-			"availableOn": ["long","short"],
+			"availableOn": ["long","short","side"],
 			"bonus": [
 				{
 					"attribute": "criticalHitChance",
