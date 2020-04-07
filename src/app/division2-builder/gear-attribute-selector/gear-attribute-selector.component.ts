@@ -23,21 +23,21 @@ export class GearAttributeSelectorComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  selectWeaponMod(avaliableMod: any): void {
+  selectGearAttribute(avaliableMod: any): void {
     const dialogRef = this.dialog.open(ObjectPickerDialogComponent, {
       width: '1080px',
       data: {
-        key: 'gearMod', value: this.gearAttributes.filter(mod => {
+        key: 'gearAttribute', value: this.gearAttributes.filter(mod => {
           return avaliableMod.slot === mod.slot && mod.availableOn.includes(avaliableMod.type);
         })
       }
     });
 
-    dialogRef.afterClosed().subscribe(mod => {
-      console.log(mod);
-      if (mod) {
-        this.utilService.updateOrPush(this.gear.mod, mod, 'slot');
-        this.updated.emit(mod);
+    dialogRef.afterClosed().subscribe(attribute => {
+      console.log(attribute);
+      if (attribute) {
+        this.utilService.updateOrPush(this.gear.mod, attribute, 'slot');
+        this.updated.emit(attribute);
       }
     });
   }
