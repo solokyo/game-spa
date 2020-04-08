@@ -22,11 +22,11 @@ export class GearModSelectorComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  selectGearAttribute(avaliableMod: any): void {
+  selectGearMod(avaliableMod: any): void {
     const dialogRef = this.dialog.open(ObjectPickerDialogComponent, {
       width: '1080px',
       data: {
-        key: 'gearAttribute', value: this.gearMods.filter(mod => {
+        key: 'gearMod', value: this.gearMods.filter(mod => {
           return avaliableMod.slot === mod.slot && mod.availableOn.includes(avaliableMod.type);
         })
       }
