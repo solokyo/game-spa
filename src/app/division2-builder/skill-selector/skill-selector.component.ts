@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-skill-selector',
+  selector: 'd2b-skill-selector',
   templateUrl: './skill-selector.component.html',
   styleUrls: ['./skill-selector.component.css']
 })

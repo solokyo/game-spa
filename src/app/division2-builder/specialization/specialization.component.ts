@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-specialization',
+  selector: 'd2b-specialization',
   templateUrl: './specialization.component.html',
   styleUrls: ['./specialization.component.css']
 })
