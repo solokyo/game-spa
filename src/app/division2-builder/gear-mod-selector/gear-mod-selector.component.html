@@ -1,1 +1,25 @@
 <p>gear-mod-selector works!</p>
+
+<div *ngIf="gear.rarity==='exotic';then displayModTemplate else selectModTemplate"></div>
+
+<ng-template #selectModTemplate>
+    <div *ngFor="let avaliableMod of gear.avaliableMods;" (click)="selectgearMod(avaliableMod)">
+        {{avaliableMod.slot}}
+        <div *ngIf="isSelected(avaliableMod)"></div>
+        <div *ngIf="isSelected(avaliableMod)">
+            {{isSelected(avaliableMod).name}}
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #displayModTemplate>
+    <div>
+        <div *ngFor="let mod of gear.mods">
+            <p>{{mod.name}}</p>
+            <ng-container *ngFor="let each of mod.bonus">
+                <span>{{each.attribute}}</span>
+                <span>{{each.value | percent:'.2'}}</span>
+            </ng-container>
+        </div>
+    </div>
+</ng-template>
