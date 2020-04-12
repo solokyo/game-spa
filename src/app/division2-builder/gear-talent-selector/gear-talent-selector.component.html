@@ -1,1 +1,15 @@
-<p>gear-talent-selector works!</p>
+<div *ngIf="isTalentSelectable;then selectTalentTemplate else displayTalentTemplate"></div>
+
+<ng-template #selectTalentTemplate>
+    <div *ngIf="!gear.talent" (click)="selectgearTalent()">Select a talent</div>
+    <div *ngIf="gear.talent" (click)="selectgearTalent()">
+        <span>{{gear.talent.name}}</span>
+        <span>{{gear.talent.description}}</span>
+    </div>
+</ng-template>
+
+<ng-template #displayTalentTemplate>
+    <div>
+        <span>{{gear.talent.name}}</span>
+    </div>
+</ng-template>
