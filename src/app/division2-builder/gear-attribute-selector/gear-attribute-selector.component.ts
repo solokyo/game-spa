@@ -18,7 +18,11 @@ export class GearAttributeSelectorComponent implements OnInit {
     public dialog: MatDialog,
     private utilService: UtilService,
     private dataService: DataService
-  ) { }
+  ) {
+    this.dataService.getStable('gearAttributes', '/assets/gearAttributes').subscribe(data => {
+      this.gearAttributes = data;
+    });
+  }
 
   ngOnInit(): void {
   }

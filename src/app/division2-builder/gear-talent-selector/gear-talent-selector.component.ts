@@ -18,7 +18,11 @@ export class GearTalentSelectorComponent implements OnInit {
     public dialog: MatDialog,
     private utilService: UtilService,
     private dataService: DataService
-  ) { }
+  ) { 
+    this.dataService.getStable('gearTalents','/assets/gear-talents.json').subscribe(data => {
+      this.gearTalents = data;
+    })
+  }
 
   ngOnInit(): void {
   }

@@ -18,7 +18,11 @@ export class GearModSelectorComponent implements OnInit {
     public dialog: MatDialog,
     private utilService: UtilService,
     private dataService: DataService
-  ) { }
+  ) {
+    this.dataService.getStable('gearModRolls', '/assets/gear-mod-rolls.json').subscribe(data => {
+      this.gearMods = data;
+    })
+  }
 
   ngOnInit(): void {
   }
