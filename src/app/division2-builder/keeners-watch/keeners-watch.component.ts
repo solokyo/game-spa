@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { UtilService } from '../shared/util.service';
+import { DataService } from '../shared/data.service';
 
 @Component({
   selector: 'd2b-keeners-watch',
@@ -7,7 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KeenersWatchComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public dialog: MatDialog,
+    private utilService: UtilService,
+    private dataService: DataService
+  ) { }
 
   ngOnInit(): void {
   }
