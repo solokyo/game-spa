@@ -36,7 +36,7 @@ export class StatService {
 
     this.equippedGears$ = new BehaviorSubject<Gear>(null);
     this.equippedGears$.subscribe(data => {
-      if(data){
+      if (data) {
         this.equippedGears = this.utilService.updateOrPush(this.equippedGears, data, 'type');
         console.log(this.equippedGears);
       }
@@ -55,7 +55,7 @@ export class StatService {
 
   updateEquippedGear(equippedGear: Gear): void {
     console.log(equippedGear);
-    
+
     this.equippedGears$.next(equippedGear);
     this.updateStats();
   }
@@ -67,6 +67,9 @@ export class StatService {
     this.stats$.next(this.stats);
   }
 
+  private extractGearSets() {
+    // this.gearSets
+  }
   private sum(obj): void {
     Object.keys(obj).forEach(key => {
       if (typeof obj[key] === 'object') {
