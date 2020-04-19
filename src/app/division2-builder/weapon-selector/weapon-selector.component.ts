@@ -8,6 +8,7 @@ import { StatService } from '../shared/stat.service'
 import { Weapon } from '../shared/types/weapon';
 import { WeaponType } from '../shared/types/weapon-type';
 
+// TODO: exotic weapons will be reroll-able from TU9
 @Component({
   selector: 'd2b-weapon-selector',
   templateUrl: './weapon-selector.component.html',
