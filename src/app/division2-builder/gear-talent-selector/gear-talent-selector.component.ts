@@ -27,12 +27,12 @@ export class GearTalentSelectorComponent implements OnInit {
   ngOnInit(): void {
   }
   
-  selectGearMod(avaliableMod: any): void {
+  selectGearTalent(gear: any): void {
     const dialogRef = this.dialog.open(ObjectPickerDialogComponent, {
       width: '1080px',
       data: {
         key: 'gearMod', value: this.gearTalents.filter(talent => {
-          return avaliableMod.slot === talent.slot && talent.availableOn.includes(avaliableMod.type);
+          return gear.slot === talent.slot && talent.availableOn.includes(gear.type);
         })
       }
     });
