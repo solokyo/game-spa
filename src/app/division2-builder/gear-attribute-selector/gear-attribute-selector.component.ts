@@ -31,9 +31,7 @@ export class GearAttributeSelectorComponent implements OnInit {
     const dialogRef = this.dialog.open(ObjectPickerDialogComponent, {
       width: '1080px',
       data: {
-        key: 'gearAttribute', value: this.gearAttributes.filter(mod => {
-          return avaliableMod.slot === mod.slot && mod.availableOn.includes(avaliableMod.type);
-        })
+        key: 'attribute', value: this.gearAttributes
       }
     });
 
