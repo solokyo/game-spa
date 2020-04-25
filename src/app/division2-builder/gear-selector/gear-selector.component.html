@@ -21,10 +21,14 @@
             <!-- Icon, display other attributes -->
         </div>
         <d2b-gear-attribute-selector (updated)="updateSelectedGear()" [gear]="selectedGear"></d2b-gear-attribute-selector>
-        <!-- If backpack && chest -->
-        <d2b-gear-talent-selector (updated)="updateSelectedGear()" [gear]="selectedGear"></d2b-gear-talent-selector>
-        <!-- If backpack && chest && mask -->
-        <d2b-gear-mod-selector (updated)="updateSelectedGear()" [gear]="selectedGear"></d2b-gear-mod-selector>
+        <!-- If backpack || chest || exotic -->
+        <ng-container *ngIf="hasTalent">
+            <d2b-gear-talent-selector (updated)="updateSelectedGear()" [gear]="selectedGear"></d2b-gear-talent-selector>
+        </ng-container>
+         <!-- TODO: unbrand holster has 1 utility slot -->
+        <ng-container *ngIf="hasModSlot">
+            <d2b-gear-mod-selector (updated)="updateSelectedGear()" [gear]="selectedGear"></d2b-gear-mod-selector>
+        </ng-container>
     </div>
     <ng-container *ngIf="selectedGear;then display else select"></ng-container>
 </div>

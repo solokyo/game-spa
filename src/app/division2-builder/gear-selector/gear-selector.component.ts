@@ -17,6 +17,8 @@ export class GearSelectorComponent implements OnInit {
   gears: Array<Gear>;
   brands: Array<any>;
   selectedGear: Gear;
+  hasTalent: boolean;
+  hasModSlot: boolean;
   constructor(
     public dialog: MatDialog,
     private dataService: DataService,
@@ -43,7 +45,8 @@ export class GearSelectorComponent implements OnInit {
         foo.bonus = this.slot.bonus;
 
         this.selectedGear = foo;
-
+        this.hasModSlot = this.slot.slot === 'Chest' || this.slot.slot === 'Backpack' || this.slot.slot === 'Mask';
+        this.hasTalent = this.slot.slot === 'Chest' || this.slot.slot === 'Backpack' || this.selectedGear.rarity === 'exotic';
         this.updateSelectedGear();
       }
     });

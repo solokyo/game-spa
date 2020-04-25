@@ -14,6 +14,7 @@ export class GearTalentSelectorComponent implements OnInit {
   @Input() gear: Gear;
   @Output() updated = new EventEmitter<boolean>();
   gearTalents: Array<any>;
+  isTalentSelectable : boolean;
   constructor(
     public dialog: MatDialog,
     private utilService: UtilService,
@@ -25,6 +26,7 @@ export class GearTalentSelectorComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.isTalentSelectable = this.gear.type === 'Chest' || this.gear.type === 'Backpack';
   }
   
   selectGearTalent(gear: any): void {

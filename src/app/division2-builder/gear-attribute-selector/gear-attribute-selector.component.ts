@@ -19,7 +19,7 @@ export class GearAttributeSelectorComponent implements OnInit {
     private utilService: UtilService,
     private dataService: DataService
   ) {
-    this.dataService.getStable('gearAttributes', '/assets/gearAttributes').subscribe(data => {
+    this.dataService.getStable('gearAttributes', '/assets/gear-attributes.json').subscribe(data => {
       this.gearAttributes = data;
     });
   }
