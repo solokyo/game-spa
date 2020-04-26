@@ -31,12 +31,15 @@ export class GearTalentSelectorComponent implements OnInit {
   
   selectGearTalent(gear: any): void {
     const dialogRef = this.dialog.open(ObjectPickerDialogComponent, {
-      width: '1080px',
-      data: {
-        key: 'gearMod', value: this.gearTalents.filter(talent => {
-          return gear.slot === talent.slot && talent.availableOn.includes(gear.type);
-        })
-      }
+      width: '720px',
+      data: {key:'weaponTalent',value: this.gearTalents.filter(talent=>{
+        for (let i = 0; i < talent.availableOn.length; i++) {
+          if (talent.availableOn[i] === this.gear.type) {
+              return true;
+          }
+        }
+        return false;
+      })}
     });
 
     dialogRef.afterClosed().subscribe(mod => {
