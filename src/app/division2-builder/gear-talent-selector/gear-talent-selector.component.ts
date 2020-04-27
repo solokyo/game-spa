@@ -42,11 +42,11 @@ export class GearTalentSelectorComponent implements OnInit {
       })}
     });
 
-    dialogRef.afterClosed().subscribe(mod => {
-      console.log(mod);
-      if (mod) {
-        this.utilService.updateOrPush(this.gear.mod, mod, 'slot');
-        this.updated.emit(mod);
+    dialogRef.afterClosed().subscribe(talent => {
+      console.log(talent);
+      if (talent) {
+        this.utilService.updateOrPush(this.gear.mod, talent, 'slot');
+        this.updated.emit(talent);
       }
     });
   }
