@@ -1,4 +1,10 @@
-<p>gear-mod-selector works!</p>
+<div (click)="selectgearMod(avaliableMod)">
+    {{avaliableMod.slot}}
+    <div *ngIf="isSelected(avaliableMod)"></div>
+    <div *ngIf="isSelected(avaliableMod)">
+        {{isSelected(avaliableMod).name}}
+    </div>
+</div>
 
 <div *ngIf="gear.rarity==='exotic';then displayModTemplate else selectModTemplate"></div>
 

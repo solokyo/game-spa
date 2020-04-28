@@ -3,222 +3,222 @@
         {
             "name": "Combined Arms",
             "description": "Shooting an enemy increases total skill damage by 25% for 3s.",
-            "availableOn": ["backpack"]
+            "availableOn": ["Backpack"]
         },
         {
             "name": "Energize",
             "description": "Using an armor kit grants +1 skill tier for 15s. If already at skill tier 6, grants overcharge.",
-            "availableOn": ["backpack"]
+            "availableOn": ["Backpack"]
         },
         {
             "name": "Tech support",
             "description": "Skill kills increase total skill damage by 25% for 20s.",
-            "availableOn": ["backpack"]
+            "availableOn": ["Backpack"]
         },
         {
             "name": "Calculated",
             "description": "Kills from cover reduce skill cooldowns by 10%.",
-            "availableOn": ["backpack"]
+            "availableOn": ["Backpack"]
         },
         {
             "name": "Shock and Awe",
             "description": "Applying a status effect to an enemy increases total skill damage and repair by 20% for 20s.",
-            "availableOn": ["backpack"]
+            "availableOn": ["Backpack"]
         },
         {
             "name": "Safeguard",
             "description": "While at full armor, increases total skill repair by 100%.",
-            "availableOn": ["backpack"]
+            "availableOn": ["Backpack"]
         },
         {
             "name": "Overclock",
             "description": "You and allies within 7m of your deployed skills, gain +25% reload speed and reduces active cooldowns by 0.2s each second.",
-            "availableOn": ["backpack"]
+            "availableOn": ["Backpack"]
         },
         {
             "name": "Bloodsucker",
             "description": "Killing an enemy adds and refreshes a stack of +10% bonus armor for 10s. Max stack is 10.",
-            "availableOn": ["backpack"]
+            "availableOn": ["Backpack"]
         },
         {
             "name": "Leadership",
             "description": "Performing a cover to cover grants 12% of your armor as bonus armor to you and all allies for 10s. This is doubled if you end within 10m of an enemy. Cooldown: 10s.",
-            "availableOn": ["backpack"]
+            "availableOn": ["Backpack"]
         },
         {
             "name": "Protector",
             "description": "When your shield is damaged, you gain +5% and all other allies gain +15% of your armor as bonus armor for 3s. Cooldown: 3s.",
-            "availableOn": ["backpack"]
+            "availableOn": ["Backpack"]
         },
         {
             "name": "Vigilance",
             "description": "Increases total weapon damage by 25%. Taking damage disables this buff for 4s.",
-            "availableOn": ["backpack"]
+            "availableOn": ["Backpack"]
         },
         {
             "name": "Versatile",
             "description": "Amplifies total weapon damage for 10s when swapping between your primary and secondary weapons if they are different. 35% to enemies within 15m for Shotguns and SMGs. 35% to enemies further than 25m for Rifles and Marksman Rifles. 10% to enemies between 15-25m for LMGs and Assault Rifles. At most once per 5s per weapon type.",
-            "availableOn": ["backpack"]
+            "availableOn": ["Backpack"]
         },
         {
             "name": "Opportunistic",
             "description": "Enemies you hit with shotguns and marksman rifles amplifies the damage they take by 10% from all sources for 5s.",
-            "availableOn": ["backpack"]
+            "availableOn": ["Backpack"]
         },
         {
             "name": "Unstoppable Force",
             "description": "Killing an enemy increases total weapon damage by 5% for 15s. Stacks up to 5 times.",
-            "availableOn": ["backpack"]
+            "availableOn": ["Backpack"]
         },
         {
             "name": "Companion",
             "description": "While you are within 5m of an ally or skill, total weapon damage is increased by 15%.",
-            "availableOn": ["backpack"]
+            "availableOn": ["Backpack"]
         },
         {
             "name": "Composure",
             "description": "While in cover, increases total weapon damage by 15%.",
-            "availableOn": ["backpack"]
+            "availableOn": ["Backpack"]
         },
         {
             "name": "Concussion",
             "description": "Headshots increase total weapon damage by 10% for 1.5s. 5s with marksman rifles. Headshot kills additionally increase total weapon damage by 15% for 10s.",
-            "availableOn": ["backpack"]
+            "availableOn": ["Backpack"]
         },
         {
             "name": "Creeping Death",
             "description": "When you apply a status effect, it is also applied to all enemies within 5m of your target. Cooldown: 20s",
-            "availableOn": ["backpack"]
+            "availableOn": ["Backpack"]
         },
         {
             "name": "Wicked",
             "description": "Applying a status effect increases total weapon damage by 18% for 20s.",
-            "availableOn": ["backpack"]
+            "availableOn": ["Backpack"]
         },
         {
             "name": "Galvanize",
             "description": "Applying a Blind, Ensnare, Confuse, or Shock to an enemy grants 40% of your armor as bonus armor to you and all allies within 20m of that enemy for 10s.",
-            "availableOn": ["backpack"]
+            "availableOn": ["Backpack"]
         },
         {
             "name": "Clutch",
             "description": "If you are below 15% armor, critical hits repair 3% missing armor. Kills allow you to repair up to 100% armor for 4-10s, based on your [Weapon] core attribute.",
-            "availableOn": ["backpack"]
+            "availableOn": ["Backpack"]
         },
         {
             "name": "Tag Team",
             "description": "The last enemy you have damaged with a skill is marked. Dealing weapon damage to that enemy consumes the mark to reduce active cooldowns by 4s.",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         },
         {
             "name": "Kinetic Momentum",
             "description": "When in combat, each skill generates a stack while active or not on cooldown. Stacks increase your total skill damage by 1% and total skill repair by 2%. Up to 15 stacks per skill. Lost when on cooldown.",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         },
         {
             "name": "Skilled",
             "description": "Skill kills have a 25% chance to reset skill cooldowns. If no skills were on cooldown, you instead gain one-time buff that immediately refreshes a skill's cooldown when it goes on cooldown.",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         },
         {
             "name": "Spotter",
             "description": "Amplifies total weapon and skill damage by 15% to pulsed enemies.",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         },
         {
             "name": "Explosive Delivery",
             "description": "Whenever you throw a skill, 1.5 seconds after landing, it creates an explosion damaging enemies within 5m. Damage scales with skill tier dealing 25-100% damage of a concussion grenade. At most once per skill. Remote Pulse, All Turrets, All Hives, Explosive Seeker, Cluster Seeker, Mender Seeker, Decoy, All Traps.",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         },
         {
             "name": "Empathic Resolve",
             "description": "Repairing an ally, increases their total weapon and skill damage by 3-15% for 10s. 1-7% if self. Effectiveness increased by your skill tier.",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         },
         {
             "name": "Overwatch",
             "description": "After staying in cover for 10s, increase your and all allies' total weapon and skill damage by 12% as long as you remain in cover or in a cover-to-cover move.",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         },
         {
             "name": "Intimidate",
             "description": "While you have bonus armor, amplifies total weapon damage by 35% to enemies within 10m.",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         },
         {
             "name": "Unbreakable",
             "description": "When your armor is depleted, repair 95% of your armor. Cooldown: 60s.",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         },
         {
             "name": "Vanguard",
             "description": "Deploying a shield makes it invulnerable for 5s and grants 45% of your armor as bonus armor to all other allies for 20s. Cooldown: 25s",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         },
         {
             "name": "Protected Reload",
             "description": "Grants +20% bonus armor while reloading. Grants 0-18% of your armor as bonus armor to all other allies when they are reloading, based on your [defense] core attribute.",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         },
         {
             "name": "Glass Cannon",
             "description": "All damage you deal is amplified by 25%. All damage you take is amplified by 50%.",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         },
         {
             "name": "Gunslinger",
             "description": "Weapon swapping increases total weapon damage by 20% for 5s. This buff is lost for 5s if you weapon swap while it is active.",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         },
         {
             "name": "Focus",
             "description": "Increases total weapon damage by 5% every second you are aiming while scoped 8x or higher, up to 50%.",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         },
         {
             "name": "Braced",
             "description": "While in cover weapon handling is increased by +45%.",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         },
         {
             "name": "Spark",
             "description": "Damaging an enemy with a skill increases total weapon damage by 15% for 15s.",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         },
         {
             "name": "Obliterate",
             "description": "Critical hits increase total weapon damage by 1% for 5s. Stacks up to 15 times.",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         },
         {
             "name": "Trauma",
-            "description": "Applies blind to an enemy hit in the head. Cooldown: 30s. Applies bleed to an enemy hit in the chest. Cooldown: 30s.",
-            "availableOn": ["chest"]
+            "description": "Applies blind to an enemy hit in the head. Cooldown: 30s. Applies bleed to an enemy hit in the Chest. Cooldown: 30s.",
+            "availableOn": ["Chest"]
         },
         {
             "name": "Reassigned",
             "description": "Killing an enemy adds 1 round of a random special ammo into your sidearm. Cooldown: 20s",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         },
         {
             "name": "Mad Bomber",
             "description": "Grenade radius is increased by 50%. Grenades that kill an enemy are refunded. Grenades can now be 'cooked' by holding the fire button, making them explode earlier",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         },
         {
             "name": "Tamper Proff",
             "description": "Enemies that walk within 3m of your hive, turret or remote pluse are shocked. Arm time: 5s, Cooldown per skill: 10s",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         },
         {
             "name": "Efficient",
             "description": "Using an armor kit has a 50% chance to not consume the armor kit. Specialization armor kit bonuses are increased by 100%",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         },
         {
             "name": "Enternch",
             "description": "If your below 30% armor, headshots from cover repair 20% of your armor. Cooldown: 3s",
-            "availableOn": ["chest"]
+            "availableOn": ["Chest"]
         }
     ]
 }

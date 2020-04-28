@@ -13,25 +13,25 @@ import { ObjectPickerDialogComponent } from '../object-picker-dialog/object-pick
 export class GearModSelectorComponent implements OnInit {
   @Input() gear: Gear;
   @Output() updated = new EventEmitter<boolean>();
-  gearMods: Array<any>;
+  gearModRolls: Array<any>;
   constructor(
     public dialog: MatDialog,
     private utilService: UtilService,
     private dataService: DataService
   ) {
     this.dataService.getStable('gearModRolls', '/assets/gear-mod-rolls.json').subscribe(data => {
-      this.gearMods = data;
+      this.gearModRolls = data;
     })
   }
 
   ngOnInit(): void {
   }
-  selectGearMod(avaliableMod: any): void {
+  selectGearMod(): void {
     const dialogRef = this.dialog.open(ObjectPickerDialogComponent, {
       width: '1080px',
       data: {
-        key: 'gearMod', value: this.gearMods.filter(mod => {
-          return avaliableMod.slot === mod.slot && mod.availableOn.includes(avaliableMod.type);
+        key: 'gearMod', value: this.gearModRolls.filter(roll =>{
+          return roll.category === this.gear;
         })
       }
     });
