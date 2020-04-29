@@ -1,17 +1,7 @@
-<div *ngIf="gear?.rarity === 'exotic'; then display else select"></div>
 <!-- TODO: add gearset 1 attribute template -->
-<ng-template #select>
-    <div *ngIf="!gear.hasOwnProperty('secondaryAttribute')" (click)="selectGearAttribute(gear.type)">Select second
-        attribute</div>
-    <div *ngIf="gear.hasOwnProperty('secondaryAttribute')" (click)="selectGearAttribute(gear.type)">
-        <span>{{secondaryAttribute.attribute}}</span>
-        <span>{{secondaryAttribute.value | percent:'.2'}}</span>
-    </div>
-</ng-template>
-
-<ng-template #display>
-    <div>
-        <span>{{gear.secondaryAttribute.bonus[0].attribute}}</span>
-        <span>{{gear.secondaryAttribute.bonus[0].value | percent:'.2'}}</span>
-    </div>
-</ng-template>
+<div *ngIf="!gear.hasOwnProperty('secondaryAttribute')" (click)="selectGearAttribute(gear.type)">Select second
+    attribute</div>
+<div *ngIf="gear.hasOwnProperty('secondaryAttribute')" (click)="selectGearAttribute(gear.type)">
+    <span>{{secondaryAttribute.attribute}}</span>
+    <span>{{secondaryAttribute.value | percent:'.2'}}</span>
+</div>
