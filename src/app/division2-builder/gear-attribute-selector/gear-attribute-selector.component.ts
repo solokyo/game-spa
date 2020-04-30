@@ -38,7 +38,7 @@ export class GearAttributeSelectorComponent implements OnInit {
     dialogRef.afterClosed().subscribe(attribute => {
       console.log(attribute);
       if (attribute) {
-        this.utilService.updateOrPush(this.gear.mod, attribute, 'slot');
+        // 
         this.updated.emit(attribute);
       }
     });
