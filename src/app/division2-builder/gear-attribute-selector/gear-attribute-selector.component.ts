@@ -38,7 +38,7 @@ export class GearAttributeSelectorComponent implements OnInit {
     dialogRef.afterClosed().subscribe(attribute => {
       console.log(attribute);
       if (attribute) {
-        // 
+        this.gear.secondaryAttribute = attribute;
         this.updated.emit(attribute);
       }
     });
