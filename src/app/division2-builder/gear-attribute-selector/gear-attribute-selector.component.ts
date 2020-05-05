@@ -43,4 +43,6 @@ export class GearAttributeSelectorComponent implements OnInit {
       }
     });
   }
+
+  select(){}
 }
